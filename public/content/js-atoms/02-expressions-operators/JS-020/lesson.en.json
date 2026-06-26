@@ -1,14 +1,63 @@
 {
   "number": 20,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "math-operators",
+  "title": "Math Operators",
+  "subtitle": "Basic math operators",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "math",
+    "operators",
+    "addition",
+    "subtraction",
+    "multiplication",
+    "division",
+    "beginner"
+  ],
+  "prerequisites": ["JS-019"],
+  "previous": "JS-019",
+  "next": "JS-021",
+  "estimatedReadingTime": 3,
+  "goal": "Get to know JavaScript's basic math operators.",
+  "explanation": [
+    "JavaScript supports standard math operators.",
+    "+ adds numbers.",
+    "- subtracts numbers.",
+    "* multiplies numbers.",
+    "/ divides numbers.",
+    "These operators are used in almost every program."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Math operators are like calculator buttons. Each button performs its own math operation."
+  },
+  "codeExample": "console.log(5 + 2);\nconsole.log(5 - 2);\nconsole.log(5 * 2);\nconsole.log(10 / 2);",
+  "result": "7\n3\n10\n5",
+  "remember": [
+    "+ adds.",
+    "- subtracts.",
+    "* multiplies.",
+    "/ divides."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Don't confuse * with the × sign. In JavaScript, multiplication uses *."
+  },
+  "quiz": {
+    "question": "Which operator is used for multiplication?",
+    "options": [
+      "*",
+      "x",
+      "#"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Arithmetic Operators",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,59 @@
 {
   "number": 21,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "remainder",
+  "title": "Remainder %",
+  "subtitle": "Залишок після ділення",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "remainder",
+    "modulo",
+    "operators",
+    "math",
+    "beginner"
+  ],
+  "prerequisites": ["JS-020"],
+  "previous": "JS-020",
+  "next": "JS-022",
+  "estimatedReadingTime": 3,
+  "goal": "Зрозумій, як працює оператор залишку %.",
+  "explanation": [
+    "Оператор % повертає залишок після ділення.",
+    "Він показує, що залишилося після того, як число поділили на рівні частини.",
+    "Якщо залишку немає, результат дорівнює 0.",
+    "Оператор % часто використовують для перевірки парності чисел.",
+    "Це один із найкорисніших математичних операторів."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви, що розкладаєш 7 яблук по 2 в коробку. Після трьох повних коробок одне яблуко залишиться. Саме його й повертає оператор %."
+  },
+  "codeExample": "console.log(7 % 2);\nconsole.log(10 % 2);\nconsole.log(9 % 2);",
+  "result": "1\n0\n1",
+  "remember": [
+    "% повертає залишок.",
+    "Якщо залишку немає — результат 0.",
+    "% часто використовують для перевірки парності."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Багато хто думає, що % означає відсотки. Насправді в JavaScript це оператор залишку після ділення."
+  },
+  "quiz": {
+    "question": "Який результат поверне 10 % 2?",
+    "options": [
+      "0",
+      "2",
+      "5"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Remainder (%)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

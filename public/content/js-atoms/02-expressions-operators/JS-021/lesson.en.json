@@ -1,14 +1,59 @@
 {
   "number": 21,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "remainder",
+  "title": "Remainder %",
+  "subtitle": "Leftover after division",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "remainder",
+    "modulo",
+    "operators",
+    "math",
+    "beginner"
+  ],
+  "prerequisites": ["JS-020"],
+  "previous": "JS-020",
+  "next": "JS-022",
+  "estimatedReadingTime": 3,
+  "goal": "Understand how the remainder operator % works.",
+  "explanation": [
+    "The % operator returns the remainder after division.",
+    "It shows what is left after a number is split into equal parts.",
+    "If there is no remainder, the result is 0.",
+    "The % operator is often used to check whether a number is even or odd.",
+    "It is one of the most useful math operators."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine packing 7 apples into boxes of 2. After three full boxes, one apple is left over. That is what the % operator returns."
+  },
+  "codeExample": "console.log(7 % 2);\nconsole.log(10 % 2);\nconsole.log(9 % 2);",
+  "result": "1\n0\n1",
+  "remember": [
+    "% returns the remainder.",
+    "If there is no remainder, the result is 0.",
+    "% is often used to check even or odd numbers."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Many people think % means percent. In JavaScript, it is the remainder operator after division."
+  },
+  "quiz": {
+    "question": "What does 10 % 2 return?",
+    "options": [
+      "0",
+      "2",
+      "5"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Remainder (%)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

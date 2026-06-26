@@ -1,14 +1,59 @@
 {
   "number": 19,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "plus-operator",
+  "title": "Plus Operator +",
+  "subtitle": "Додає числа або об'єднує текст",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "plus",
+    "addition",
+    "string",
+    "operators",
+    "beginner"
+  ],
+  "prerequisites": ["JS-018"],
+  "previous": "JS-018",
+  "next": "JS-020",
+  "estimatedReadingTime": 3,
+  "goal": "Зрозумій, як оператор + працює з числами та рядками.",
+  "explanation": [
+    "Оператор + може виконувати дві різні задачі.",
+    "Якщо обидва значення є числами — він додає їх.",
+    "Якщо хоча б одне значення є рядком — він об'єднує текст.",
+    "Тому один і той самий оператор може поводитися по-різному.",
+    "JavaScript сам визначає, який режим використати."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви універсальний клей. Він може або скласти два числа разом, або склеїти два шматочки тексту."
+  },
+  "codeExample": "console.log(5 + 3);\n\nconsole.log(\"Hello\" + \"!\");",
+  "result": "8\nHello!",
+  "remember": [
+    "+ додає числа.",
+    "+ об'єднує рядки.",
+    "Поведінка залежить від типів даних."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто очікують, що + завжди додає числа. Якщо одне зі значень є рядком, JavaScript виконає об'єднання тексту."
+  },
+  "quiz": {
+    "question": "Що поверне \"5\" + 3?",
+    "options": [
+      "\"53\"",
+      "8",
+      "Помилку"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Addition (+)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,59 @@
 {
   "number": 19,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "plus-operator",
+  "title": "Plus Operator +",
+  "subtitle": "Adds numbers or joins text",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "plus",
+    "addition",
+    "string",
+    "operators",
+    "beginner"
+  ],
+  "prerequisites": ["JS-018"],
+  "previous": "JS-018",
+  "next": "JS-020",
+  "estimatedReadingTime": 3,
+  "goal": "Understand how the + operator works with numbers and strings.",
+  "explanation": [
+    "The + operator can do two different jobs.",
+    "If both values are numbers, it adds them.",
+    "If at least one value is a string, it joins the text together.",
+    "So the same operator can behave differently.",
+    "JavaScript decides which mode to use on its own."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a universal glue. It can either put two numbers together, or stick two pieces of text side by side."
+  },
+  "codeExample": "console.log(5 + 3);\n\nconsole.log(\"Hello\" + \"!\");",
+  "result": "8\nHello!",
+  "remember": [
+    "+ adds numbers.",
+    "+ joins strings.",
+    "The behavior depends on the data types."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often expect + to always add numbers. If one of the values is a string, JavaScript will concatenate text instead."
+  },
+  "quiz": {
+    "question": "What does \"5\" + 3 return?",
+    "options": [
+      "\"53\"",
+      "8",
+      "An error"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Addition (+)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }
