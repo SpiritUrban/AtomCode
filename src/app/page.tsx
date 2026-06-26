@@ -1,5 +1,8 @@
 import AppShell from "@/components/AppShell";
+import { buildSections } from "@/lib/loadContent";
 
 export default function Home() {
-  return <AppShell />;
+  const sections = buildSections();
+
+  return <AppShell sections={sections} />;
 }

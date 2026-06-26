@@ -3,7 +3,7 @@ pid: 16052
 cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
 command: "npm run dev"
 started_at: 2026-06-26T03:33:10.389Z
-running_for_ms: 609995   
+running_for_ms: 1255006  
 ---
 
 > atomcode@0.1.0 dev
@@ -25,3 +25,434 @@ running_for_ms: 609995
  GET / 200 in 888ms
  ✓ Compiled in 187ms
  ✓ Compiled in 186ms
+ ✓ Compiled in 293ms
+ ✓ Compiled / in 471ms
+ GET / 200 in 905ms
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./src/lib/loadContent.ts:1:1
+Module not found: Can't resolve 'fs'
+> 1 | import fs from "fs";
+    | ^^^^^^^^^^^^^^^^^^^^
+  2 | import path from "path";
+  3 | import { lessonsToArray } from "@/lib/lessons";
+  4 | import { Difficulty, type Lesson, type Section } from "@/types/lesson";
+
+
+
+Import traces:
+  Server Component:
+    ./src/lib/loadContent.ts
+    ./src/app/page.tsx
+
+  Client Component Browser:
+    ./src/lib/loadContent.ts [Client Component Browser]
+    ./src/components/AppShell.tsx [Client Component Browser]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/lib/loadContent.ts [Client Component SSR]
+    ./src/components/AppShell.tsx [Client Component SSR]
+    ./src/components/AppShell.tsx [Server Component]
+    ./src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ✓ Compiled in 506ms
+ ✓ Compiled in 291ms
+ ○ Compiling / ...
+ ✓ Compiled / in 556ms
+ GET / 200 in 1127ms
+ GET / 200 in 763ms
+ GET / 200 in 422ms
+ GET / 200 in 449ms
