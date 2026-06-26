@@ -1,14 +1,59 @@
 {
   "number": 25,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "template-literals",
+  "title": "Template Literals",
+  "subtitle": "Insert variables right into text",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "template-literals",
+    "strings",
+    "interpolation",
+    "text",
+    "beginner"
+  ],
+  "prerequisites": ["JS-024"],
+  "previous": "JS-024",
+  "next": "JS-026",
+  "estimatedReadingTime": 3,
+  "goal": "Learn how to use template literals to build text with variables.",
+  "explanation": [
+    "Template literals are a modern way to create text strings.",
+    "They use backticks (`) instead of regular quotes.",
+    "Inside the string, you can insert variables with ${}.",
+    "This is much easier to read than long chains with the + operator.",
+    "Template literals are very common in modern JavaScript."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a letter template with blank spots for a name or city. JavaScript automatically fills in the right values."
+  },
+  "codeExample": "let name = \"Vitalii\";\n\nconsole.log(`Hello, ${name}!`);",
+  "result": "Hello, Vitalii!",
+  "remember": [
+    "Template literals use backticks (`).",
+    "${} inserts a variable's value.",
+    "This approach is much easier to read."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often use regular quotes instead of backticks. In that case, ${name} will not work."
+  },
+  "quiz": {
+    "question": "Which character is used for template literals?",
+    "options": [
+      "Backtick (`)",
+      "Double quotes (\")",
+      "Single quotes (')"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Template literals",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

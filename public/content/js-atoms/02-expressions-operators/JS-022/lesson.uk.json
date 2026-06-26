@@ -1,14 +1,59 @@
 {
   "number": 22,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "increment",
+  "title": "Increment ++",
+  "subtitle": "Збільшити значення на один",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "increment",
+    "++",
+    "operators",
+    "math",
+    "beginner"
+  ],
+  "prerequisites": ["JS-021"],
+  "previous": "JS-021",
+  "next": "JS-023",
+  "estimatedReadingTime": 2,
+  "goal": "Навчись використовувати оператор ++ для збільшення значення змінної.",
+  "explanation": [
+    "Оператор ++ збільшує значення змінної рівно на один.",
+    "Він є коротким записом для x = x + 1.",
+    "Increment дуже часто використовують у лічильниках, циклах та іграх.",
+    "Після виконання оператора змінна містить нове значення.",
+    "Це один із найуживаніших операторів у JavaScript."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви табло з рахунком. Після кожного забитого гола натискають кнопку, і число автоматично збільшується на один."
+  },
+  "codeExample": "let score = 5;\n\nscore++;\n\nconsole.log(score);",
+  "result": "6",
+  "remember": [
+    "++ додає одиницю.",
+    "x++ означає x = x + 1.",
+    "Increment працює лише зі змінними."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Не можна написати 5++. Оператор ++ працює тільки зі змінною, а не з готовим числом."
+  },
+  "quiz": {
+    "question": "Яке значення матиме score після виконання score++ якщо спочатку score = 5?",
+    "options": [
+      "6",
+      "5",
+      "4"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Increment (++)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

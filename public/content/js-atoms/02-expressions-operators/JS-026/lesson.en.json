@@ -1,14 +1,59 @@
 {
   "number": 26,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "operator-precedence",
+  "title": "Operator Precedence",
+  "subtitle": "Order of operator execution",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "operators",
+    "precedence",
+    "math",
+    "expressions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-025"],
+  "previous": "JS-025",
+  "next": "JS-027",
+  "estimatedReadingTime": 3,
+  "goal": "Understand the order in which JavaScript evaluates operators.",
+  "explanation": [
+    "When an expression has several operators, JavaScript does not always go left to right — it follows precedence rules.",
+    "Multiplication and division have higher precedence than addition and subtraction.",
+    "Parentheses are always evaluated first.",
+    "The order of execution can completely change the result of an expression.",
+    "When in doubt, use parentheses to make the code clearer."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a line at a store. Some customers have priority and go first. Some operators run before others in the same way."
+  },
+  "codeExample": "console.log(2 + 3 * 4);\n\nconsole.log((2 + 3) * 4);",
+  "result": "14\n20",
+  "remember": [
+    "Multiplication and division run first.",
+    "Parentheses have the highest precedence.",
+    "Operator order affects the result."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often expect JavaScript to always evaluate an expression left to right. In reality, it follows operator precedence rules."
+  },
+  "quiz": {
+    "question": "What does 2 + 3 * 4 return?",
+    "options": [
+      "14",
+      "20",
+      "24"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Operator precedence",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

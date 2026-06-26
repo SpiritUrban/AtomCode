@@ -1,14 +1,59 @@
 {
   "number": 26,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "operator-precedence",
+  "title": "Operator Precedence",
+  "subtitle": "Порядок виконання операторів",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "operators",
+    "precedence",
+    "math",
+    "expressions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-025"],
+  "previous": "JS-025",
+  "next": "JS-027",
+  "estimatedReadingTime": 3,
+  "goal": "Зрозумій, у якому порядку JavaScript виконує оператори.",
+  "explanation": [
+    "Коли у виразі кілька операторів, JavaScript виконує їх не зліва направо, а за правилами пріоритету.",
+    "Множення та ділення мають вищий пріоритет, ніж додавання і віднімання.",
+    "Дужки завжди виконуються першими.",
+    "Порядок виконання може повністю змінити результат виразу.",
+    "Якщо є сумніви — використовуй дужки, щоб зробити код зрозумілішим."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви чергу в магазині. Деякі покупці мають пріоритет і проходять першими. Так само деякі оператори виконуються раніше за інші."
+  },
+  "codeExample": "console.log(2 + 3 * 4);\n\nconsole.log((2 + 3) * 4);",
+  "result": "14\n20",
+  "remember": [
+    "Множення і ділення виконуються раніше.",
+    "Дужки мають найвищий пріоритет.",
+    "Порядок операторів впливає на результат."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто очікують, що JavaScript завжди обчислює вираз зліва направо. Насправді він дотримується правил пріоритету операторів."
+  },
+  "quiz": {
+    "question": "Який результат поверне 2 + 3 * 4?",
+    "options": [
+      "14",
+      "20",
+      "24"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Operator precedence",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

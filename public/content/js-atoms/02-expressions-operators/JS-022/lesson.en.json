@@ -1,14 +1,59 @@
 {
   "number": 22,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "increment",
+  "title": "Increment ++",
+  "subtitle": "Increase a value by one",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "increment",
+    "++",
+    "operators",
+    "math",
+    "beginner"
+  ],
+  "prerequisites": ["JS-021"],
+  "previous": "JS-021",
+  "next": "JS-023",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how to use the ++ operator to increase a variable's value.",
+  "explanation": [
+    "The ++ operator increases a variable's value by exactly one.",
+    "It is shorthand for x = x + 1.",
+    "Increment is very common in counters, loops, and games.",
+    "After the operator runs, the variable holds the new value.",
+    "It is one of the most widely used operators in JavaScript."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a scoreboard. After each goal, someone presses a button and the number automatically goes up by one."
+  },
+  "codeExample": "let score = 5;\n\nscore++;\n\nconsole.log(score);",
+  "result": "6",
+  "remember": [
+    "++ adds one.",
+    "x++ means x = x + 1.",
+    "Increment works only with variables."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "You cannot write 5++. The ++ operator works only with a variable, not a plain number."
+  },
+  "quiz": {
+    "question": "What value will score have after score++ if score starts at 5?",
+    "options": [
+      "6",
+      "5",
+      "4"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Increment (++)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

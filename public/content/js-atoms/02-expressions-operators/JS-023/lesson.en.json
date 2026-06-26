@@ -1,14 +1,59 @@
 {
   "number": 23,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "decrement",
+  "title": "Decrement --",
+  "subtitle": "Decrease a value by one",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "decrement",
+    "--",
+    "operators",
+    "math",
+    "beginner"
+  ],
+  "prerequisites": ["JS-022"],
+  "previous": "JS-022",
+  "next": "JS-024",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how to use the -- operator to decrease a variable's value.",
+  "explanation": [
+    "The -- operator decreases a variable's value by exactly one.",
+    "It is shorthand for x = x - 1.",
+    "Decrement is often used to count lives, time, or number of attempts.",
+    "After the operator runs, the variable holds the new value.",
+    "It is one of JavaScript's basic operators."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a game where you lose one life after each mistake. That is how the -- operator works."
+  },
+  "codeExample": "let lives = 3;\n\nlives--;\n\nconsole.log(lives);",
+  "result": "2",
+  "remember": [
+    "-- subtracts one.",
+    "x-- means x = x - 1.",
+    "Decrement works only with variables."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "You cannot write 10--. The -- operator works only with variables."
+  },
+  "quiz": {
+    "question": "What value will lives have after lives-- if lives starts at 3?",
+    "options": [
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Decrement (--)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

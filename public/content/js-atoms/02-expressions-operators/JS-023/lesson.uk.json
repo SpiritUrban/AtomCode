@@ -1,14 +1,59 @@
 {
   "number": 23,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "decrement",
+  "title": "Decrement --",
+  "subtitle": "Зменшити значення на один",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "decrement",
+    "--",
+    "operators",
+    "math",
+    "beginner"
+  ],
+  "prerequisites": ["JS-022"],
+  "previous": "JS-022",
+  "next": "JS-024",
+  "estimatedReadingTime": 2,
+  "goal": "Навчись використовувати оператор -- для зменшення значення змінної.",
+  "explanation": [
+    "Оператор -- зменшує значення змінної рівно на один.",
+    "Він є коротким записом для x = x - 1.",
+    "Decrement часто використовують для підрахунку життів, часу або кількості спроб.",
+    "Після виконання оператора змінна містить нове значення.",
+    "Це один із базових операторів JavaScript."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви гру, де після кожної помилки зникає одне життя. Саме так працює оператор --."
+  },
+  "codeExample": "let lives = 3;\n\nlives--;\n\nconsole.log(lives);",
+  "result": "2",
+  "remember": [
+    "-- віднімає одиницю.",
+    "x-- означає x = x - 1.",
+    "Decrement працює лише зі змінними."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Не можна написати 10--. Оператор -- працює лише зі змінними."
+  },
+  "quiz": {
+    "question": "Яке значення матиме lives після виконання lives-- якщо спочатку lives = 3?",
+    "options": [
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Decrement (--)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Decrement",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

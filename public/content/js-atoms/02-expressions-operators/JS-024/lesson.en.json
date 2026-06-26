@@ -1,14 +1,59 @@
 {
   "number": 24,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "string-concatenation",
+  "title": "String Concatenation",
+  "subtitle": "Joining strings together",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "string",
+    "concatenation",
+    "operators",
+    "text",
+    "beginner"
+  ],
+  "prerequisites": ["JS-023"],
+  "previous": "JS-023",
+  "next": "JS-025",
+  "estimatedReadingTime": 3,
+  "goal": "Learn how to join text strings using the + operator.",
+  "explanation": [
+    "String concatenation means combining several strings into one.",
+    "The + operator is used for this.",
+    "JavaScript simply attaches the text one piece after another.",
+    "If you need a space between words, you must add it yourself.",
+    "Joining strings is often used to build messages, titles, and text content."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine two train cars. Coupling them together gives you one longer train. JavaScript joins several strings the same way."
+  },
+  "codeExample": "let text = \"Hello\" + \" \" + \"World\";\n\nconsole.log(text);",
+  "result": "Hello World",
+  "remember": [
+    "+ can join strings.",
+    "Spaces must be added manually.",
+    "The result is one new string."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often forget to add a space between words and get HelloWorld instead of Hello World."
+  },
+  "quiz": {
+    "question": "What does \"Hello\" + \" \" + \"World\" output?",
+    "options": [
+      "Hello World",
+      "HelloWorld",
+      "An error"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Addition (+)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

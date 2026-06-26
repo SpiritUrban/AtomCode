@@ -1,14 +1,59 @@
 {
   "number": 25,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "template-literals",
+  "title": "Template Literals",
+  "subtitle": "Вставляй змінні прямо в текст",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "template-literals",
+    "strings",
+    "interpolation",
+    "text",
+    "beginner"
+  ],
+  "prerequisites": ["JS-024"],
+  "previous": "JS-024",
+  "next": "JS-026",
+  "estimatedReadingTime": 3,
+  "goal": "Навчись використовувати шаблонні рядки для створення тексту зі змінними.",
+  "explanation": [
+    "Template Literals — це сучасний спосіб створювати текстові рядки.",
+    "Вони використовують символи ` (бектики) замість звичайних лапок.",
+    "Усередині рядка можна вставляти змінні за допомогою ${}.",
+    "Такий запис читається значно легше, ніж довгі ланцюжки з оператором +.",
+    "Template Literals дуже часто використовуються в сучасному JavaScript."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви шаблон листа, у якому є порожні місця для імені чи міста. JavaScript автоматично підставляє потрібні значення."
+  },
+  "codeExample": "let name = \"Vitalii\";\n\nconsole.log(`Hello, ${name}!`);",
+  "result": "Hello, Vitalii!",
+  "remember": [
+    "Template Literals використовують бектики (`).",
+    "${} вставляє значення змінної.",
+    "Цей спосіб читати значно легше."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто використовують звичайні лапки замість бектиків. У такому випадку ${name} не працюватиме."
+  },
+  "quiz": {
+    "question": "Який символ використовується для Template Literals?",
+    "options": [
+      "Бектик (`)",
+      "Подвійні лапки (\")",
+      "Одинарні лапки (')"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Template literals",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,61 @@
 {
   "number": 27,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "type-conversion",
+  "title": "Type Conversion",
+  "subtitle": "Converting between data types",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "type-conversion",
+    "number",
+    "string",
+    "boolean",
+    "casting",
+    "beginner"
+  ],
+  "prerequisites": ["JS-026"],
+  "previous": "JS-026",
+  "next": "JS-028",
+  "estimatedReadingTime": 4,
+  "goal": "Learn how to convert values between different data types.",
+  "explanation": [
+    "JavaScript lets you change a value's type.",
+    "The functions Number(), String(), and Boolean() are used for this.",
+    "They create a new value of a different type.",
+    "Type conversion is common when working with forms, APIs, and user input.",
+    "Understanding type conversion helps you avoid unexpected program behavior."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine water. You can pour it from a glass into a bottle or a cup. The content stays the same, but the container changes. JavaScript can change a value's type the same way."
+  },
+  "codeExample": "console.log(Number(\"42\"));\nconsole.log(String(42));\nconsole.log(Boolean(0));",
+  "result": "42\n\"42\"\nfalse",
+  "remember": [
+    "Number() creates a number.",
+    "String() creates a string.",
+    "Boolean() creates a boolean value.",
+    "A value's type can be changed."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Not every string can be converted to a number. For example, Number(\"Hello\") returns NaN."
+  },
+  "quiz": {
+    "question": "Which function converts the string \"42\" to a number?",
+    "options": [
+      "Number()",
+      "String()",
+      "Boolean()"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Type conversion",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures#type_conversion",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

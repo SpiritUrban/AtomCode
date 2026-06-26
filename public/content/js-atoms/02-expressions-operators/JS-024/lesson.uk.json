@@ -1,14 +1,59 @@
 {
   "number": 24,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "string-concatenation",
+  "title": "String Concatenation",
+  "subtitle": "Об'єднання рядків",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "string",
+    "concatenation",
+    "operators",
+    "text",
+    "beginner"
+  ],
+  "prerequisites": ["JS-023"],
+  "previous": "JS-023",
+  "next": "JS-025",
+  "estimatedReadingTime": 3,
+  "goal": "Навчись об'єднувати текстові рядки за допомогою оператора +.",
+  "explanation": [
+    "String Concatenation означає об'єднання кількох рядків в один.",
+    "Для цього використовується оператор +.",
+    "JavaScript просто з'єднує текст один за одним.",
+    "Якщо потрібен пробіл між словами, його потрібно додати самостійно.",
+    "Об'єднання рядків часто використовують для створення повідомлень, заголовків і текстів."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви два вагони поїзда. Зчепивши їх разом, отримуєш один довший поїзд. Так само JavaScript з'єднує кілька рядків у один."
+  },
+  "codeExample": "let text = \"Hello\" + \" \" + \"World\";\n\nconsole.log(text);",
+  "result": "Hello World",
+  "remember": [
+    "+ може об'єднувати рядки.",
+    "Пробіл потрібно додавати вручну.",
+    "Результатом буде один новий рядок."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто забувають додати пробіл між словами й отримують HelloWorld замість Hello World."
+  },
+  "quiz": {
+    "question": "Що виведе \"Hello\" + \" \" + \"World\"?",
+    "options": [
+      "Hello World",
+      "HelloWorld",
+      "Помилку"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Addition (+)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Addition",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }
