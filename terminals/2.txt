@@ -1,0 +1,27 @@
+---
+pid: 18260
+cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
+command: "if (Test-Path .next) { Remove-Item -Recurse -Force .next }; npm run build"
+started_at: 2026-06-26T02:45:58.149Z
+running_for_ms: 275007   
+---
+Remove-Item : �� 㤠���� 㤠���� ������� C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\.next\trace: �⪠���� � 
+����㯥 �� ������� ���.
+��ப�:1 ����:24
++ if (Test-Path .next) { Remove-Item -Recurse -Force .next }; npm run b ...
++                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (trace:FileInfo) [Remove-Item], ArgumentException
+    + FullyQualifiedErrorId : RemoveFileSystemItemArgumentError,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : �� 㤠���� 㤠���� ������� C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\.next: ����� �� ����.
+��ப�:1 ����:24
++ if (Test-Path .next) { Remove-Item -Recurse -Force .next }; npm run b ...
++                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\spiri\...\AtomCode\.next:DirectoryInfo) [Remove-Item], IOException
+    + FullyQualifiedErrorId : RemoveFileSystemItemIOError,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+> atomcode@0.1.0 build
+> node scripts/generate-images.mjs && next build
+
+Generated SVG lesson images in public/images/js-atoms/
+   ▲ Next.js 15.5.19
+

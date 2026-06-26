@@ -2,132 +2,143 @@ import type { Lesson } from "@/types/lesson";
 
 export const jsAtomsLessons: Lesson[] = [
   {
-    id: "js-001",
+    id: "variables",
     code: "JS-001",
     number: 1,
     title: "Variables",
-    subtitle: "Storing data in named containers",
+    subtitle: "Boxes for your data",
     section: "jsAtoms",
-    image: "/images/js-atoms/js-001-variables.svg",
+    image: "/images/js-atoms/js-001-variables.png",
     difficulty: "Beginner",
-    duration: "3 min",
-    goal: "Understand what a variable is and how to declare one in JavaScript.",
+    duration: "2 min",
+    goal: "Learn what a variable is and why programmers use it.",
     explanation: [
-      "A variable is a named container that holds a value.",
-      "You create a variable with let or const, then assign data to it.",
-      "Once stored, you can read or update the value using the variable name.",
+      "Уяви звичайну коробку. Ти можеш покласти всередину будь-яку річ, а потім дістати її пізніше.",
+      "У JavaScript роль такої коробки виконує змінна (variable).",
+      "Змінна має ім'я. Через це ім'я програма знає, де лежить потрібне значення.",
+      "Одного разу записавши значення, ти можеш використовувати його скільки завгодно разів.",
+      "Це дозволяє програмам запам'ятовувати інформацію між різними командами.",
     ],
     analogy: {
-      title: "Labeled box",
-      text: "Think of a variable like a labeled box in a warehouse. The label is the name, the contents are the value. You can open the box and change what's inside (with let).",
+      title: "Аналогія",
+      text: "Змінна схожа на підписану коробку. На коробці написано 'name', а всередині лежить 'Vitalii'.",
     },
-    codeExample: `let username = "Alex";
-let score = 42;
+    codeExample: `let name = "Vitalii";
 
-console.log(username); // "Alex"
-console.log(score);    // 42`,
-    result: 'username holds "Alex", score holds 42',
+console.log(name);`,
+    result: "Vitalii",
     remember: [
-      "Variables store values under a name",
-      "Use let when the value may change later",
-      "Variable names should describe what they hold",
+      "Змінна зберігає дані.",
+      "Кожна змінна має ім'я.",
+      "Через ім'я можна отримати значення.",
     ],
     mistake: {
-      title: "Using a variable before declaring it",
-      text: "Always declare a variable before you use it. JavaScript will throw a ReferenceError if you skip this step.",
+      title: "Типова помилка",
+      text: "Новачки часто думають, що змінна — це саме значення. Насправді це місце, де значення зберігається.",
     },
     quiz: {
-      question: "What keyword creates a variable that can be reassigned?",
-      options: ["const", "let", "var only", "fixed"],
-      answer: 1,
-    },
-  },
-  {
-    id: "js-002",
-    code: "JS-002",
-    number: 2,
-    title: "let vs const",
-    subtitle: "Choosing the right declaration keyword",
-    section: "jsAtoms",
-    image: "/images/js-atoms/js-002-let-vs-const.svg",
-    difficulty: "Beginner",
-    duration: "4 min",
-    goal: "Know when to use let versus const and why it matters.",
-    explanation: [
-      "let declares a variable you can reassign later.",
-      "const declares a variable that cannot be reassigned after initialization.",
-      "Default to const. Switch to let only when you need to change the binding.",
-    ],
-    analogy: {
-      title: "Sticky note vs engraved plaque",
-      text: "let is like a sticky note — you can peel it off and write a new value. const is like an engraved plaque — once set, the label stays fixed (though the object inside may still change).",
-    },
-    codeExample: `let mood = "happy";
-mood = "excited"; // OK with let
-
-const PI = 3.14159;
-// PI = 3.14; // Error! Cannot reassign const
-
-const colors = ["red", "blue"];
-colors.push("green"); // OK — mutating the array, not reassigning`,
-    result: "let can be reassigned; const cannot be reassigned",
-    remember: [
-      "Prefer const by default",
-      "Use let when the variable will be reassigned",
-      "const prevents rebinding, not mutation of objects/arrays",
-    ],
-    quiz: {
-      question: "Which line will cause an error?",
-      options: [
-        'const x = 1; x = 2;',
-        'let x = 1; x = 2;',
-        'const arr = []; arr.push(1);',
-        'let name = "A"; name = "B";',
-      ],
+      question: "Що зберігає змінна?",
+      options: ["Дані", "Функції браузера", "CSS"],
       answer: 0,
     },
   },
   {
-    id: "js-003",
+    id: "let-vs-const",
+    code: "JS-002",
+    number: 2,
+    title: "let vs const",
+    subtitle: "Can the value change?",
+    section: "jsAtoms",
+    image: "/images/js-atoms/js-002-let-vs-const.png",
+    difficulty: "Beginner",
+    duration: "3 min",
+    goal: "Understand when to use let and when to use const.",
+    explanation: [
+      "JavaScript пропонує два сучасних способи створення змінних.",
+      "const означає, що змінна завжди повинна посилатися на те саме значення.",
+      "let означає, що значення можна змінювати пізніше.",
+      "Якщо ти не плануєш нічого змінювати — використовуй const.",
+      "Якщо значення буде змінюватися під час роботи програми — використовуй let.",
+    ],
+    analogy: {
+      title: "Аналогія",
+      text: "const — це коробка із замком. let — звичайна коробка, яку можна відкривати і міняти її вміст.",
+    },
+    codeExample: `let score = 10;
+
+score = 20;
+
+const age = 30;
+
+// age = 31 ❌`,
+    result: "TypeError: Assignment to constant variable.",
+    remember: [
+      "let можна змінювати.",
+      "const не можна переприсвоювати.",
+      "За замовчуванням використовуй const.",
+    ],
+    mistake: {
+      title: "Типова помилка",
+      text: "Багато хто думає, що const робить дані повністю незмінними. Насправді він лише забороняє переприсвоїти саму змінну.",
+    },
+    quiz: {
+      question: "Яку змінну варто використовувати за замовчуванням?",
+      options: ["const", "let", "var"],
+      answer: 0,
+    },
+  },
+  {
+    id: "primitive-types",
     code: "JS-003",
     number: 3,
     title: "Primitive Types",
-    subtitle: "The building blocks of JavaScript values",
+    subtitle: "The basic building blocks",
     section: "jsAtoms",
-    image: "/images/js-atoms/js-003-primitive-types.svg",
+    image: "/images/js-atoms/js-003-primitive-types.png",
     difficulty: "Beginner",
-    duration: "5 min",
-    goal: "Identify the seven primitive types and recognize them in code.",
+    duration: "3 min",
+    goal: "Learn the basic data types in JavaScript.",
     explanation: [
-      "Primitives are the simplest values in JavaScript — they are not objects.",
-      "The seven primitives are: string, number, boolean, null, undefined, symbol, and bigint.",
-      "typeof helps you inspect what type a value is at runtime.",
+      "Будь-яка інформація у JavaScript має свій тип.",
+      "Числа використовуються для математичних обчислень.",
+      "Рядки (strings) зберігають текст.",
+      "Boolean має лише два значення: true або false.",
+      "null означає навмисно порожнє значення.",
+      "undefined означає, що значення ще не встановлено.",
     ],
     analogy: {
-      title: "Periodic table of values",
-      text: "Primitives are like chemical elements — basic units that combine to build more complex structures. Strings are words, numbers are quantities, booleans are yes/no switches.",
+      title: "Аналогія",
+      text: "Типи даних схожі на різні види LEGO-цеглинок. Вони різні за формою, але саме з них будується вся програма.",
     },
-    codeExample: `typeof "hello"    // "string"
-typeof 42         // "number"
-typeof true       // "boolean"
-typeof undefined  // "undefined"
-typeof null       // "object" (historical quirk!)
-typeof 10n        // "bigint"
-typeof Symbol()   // "symbol"`,
-    result: "Each primitive has a distinct typeof result (except null)",
+    codeExample: `let age = 42;
+
+let name = "Vitalii";
+
+let isAdmin = true;
+
+let empty = null;
+
+let future;`,
+    result: `42
+"Vitalii"
+true
+null
+undefined`,
     remember: [
-      "7 primitive types: string, number, boolean, null, undefined, symbol, bigint",
-      "typeof null returns \"object\" — a famous JavaScript quirk",
-      "Primitives are immutable — you cannot change them in place",
+      "Number — числа.",
+      "String — текст.",
+      "Boolean — true / false.",
+      "null — порожньо навмисно.",
+      "undefined — значення ще немає.",
     ],
     mistake: {
-      title: "Confusing null and undefined",
-      text: "undefined means a variable was declared but not assigned. null is an intentional absence of value. They are not interchangeable.",
+      title: "Типова помилка",
+      text: "Новачки часто плутають null і undefined. Це різні значення з різним призначенням.",
     },
     quiz: {
-      question: "What does typeof null return?",
-      options: ["null", "undefined", "object", "boolean"],
-      answer: 2,
+      question: "Який тип використовується для тексту?",
+      options: ["String", "Boolean", "Number"],
+      answer: 0,
     },
   },
 ];
