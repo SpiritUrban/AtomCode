@@ -1,14 +1,58 @@
 {
   "number": 10,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "dynamic-typing",
+  "title": "Dynamic Typing",
+  "subtitle": "One box. Different values.",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "dynamic-typing",
+    "types",
+    "variables",
+    "beginner"
+  ],
+  "prerequisites": ["JS-009"],
+  "previous": "JS-009",
+  "next": "JS-011",
+  "estimatedReadingTime": 2,
+  "goal": "Learn that a JavaScript variable can store values of different types.",
+  "explanation": [
+    "JavaScript has dynamic typing.",
+    "This means the same variable can store values of different types.",
+    "At first a variable may hold text, then a number, then a boolean.",
+    "The type belongs to the value itself, not to the variable.",
+    "That is why JavaScript is called a dynamically typed language."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a regular box. Today it holds a book, tomorrow a ball, and the day after a phone. The box stays the same — only its contents change."
+  },
+  "codeExample": "let data = \"Hello\";\n\ndata = 42;\n\ndata = true;",
+  "result": "data → true",
+  "remember": [
+    "JavaScript has dynamic typing.",
+    "One variable can hold different data types.",
+    "The type belongs to the value, not the variable."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think a variable must always store one data type. In JavaScript, that is not the case."
+  },
+  "quiz": {
+    "question": "What does dynamic typing mean?",
+    "options": [
+      "One variable can store different data types.",
+      "All variables must be of type Number only.",
+      "A variable's type cannot change."
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Dynamic typing",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

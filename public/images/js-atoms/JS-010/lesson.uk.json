@@ -1,14 +1,58 @@
 {
   "number": 10,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "dynamic-typing",
+  "title": "Dynamic Typing",
+  "subtitle": "One box. Different values.",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "dynamic-typing",
+    "types",
+    "variables",
+    "beginner"
+  ],
+  "prerequisites": ["JS-009"],
+  "previous": "JS-009",
+  "next": "JS-011",
+  "estimatedReadingTime": 2,
+  "goal": "Learn that a JavaScript variable can store values of different types.",
+  "explanation": [
+    "JavaScript має динамічну типізацію.",
+    "Це означає, що одна й та сама змінна може зберігати значення різних типів.",
+    "Спочатку у змінній може бути текст, потім число, а потім логічне значення.",
+    "Тип належить самому значенню, а не змінній.",
+    "Саме тому JavaScript називають мовою з динамічною типізацією."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви звичайну коробку. Сьогодні в ній лежить книжка, завтра м'яч, а післязавтра телефон. Коробка одна й та сама, змінюється лише її вміст."
+  },
+  "codeExample": "let data = \"Hello\";\n\ndata = 42;\n\ndata = true;",
+  "result": "data → true",
+  "remember": [
+    "JavaScript має динамічну типізацію.",
+    "Одна змінна може містити різні типи даних.",
+    "Тип належить значенню, а не змінній."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що змінна завжди повинна зберігати один тип даних. У JavaScript це не так."
+  },
+  "quiz": {
+    "question": "Що означає динамічна типізація?",
+    "options": [
+      "Одна змінна може зберігати різні типи даних.",
+      "Усі змінні мають лише тип Number.",
+      "Тип змінної не можна змінювати."
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Dynamic typing",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

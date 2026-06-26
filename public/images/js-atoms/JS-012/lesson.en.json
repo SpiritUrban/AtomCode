@@ -1,14 +1,59 @@
 {
   "number": 12,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "reassignment",
+  "title": "Reassignment",
+  "subtitle": "Replace the value",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "variables",
+    "assignment",
+    "reassignment",
+    "let",
+    "beginner"
+  ],
+  "prerequisites": ["JS-011"],
+  "previous": "JS-011",
+  "next": "JS-013",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how to replace the value stored in a variable.",
+  "explanation": [
+    "Reassignment means replacing an old value with a new one.",
+    "The variable stays the same, but its contents change.",
+    "The = operator is used for this.",
+    "Only variables created with let can be reassigned.",
+    "After reassignment, the old value is no longer stored in that variable."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "At first there was an apple in the box. You took it out and put in a pizza. The box stayed the same — only its contents changed."
+  },
+  "codeExample": "let food = \"Apple\";\n\nfood = \"Pizza\";\n\nconsole.log(food);",
+  "result": "Pizza",
+  "remember": [
+    "Reassignment changes the value.",
+    "The variable stays the same.",
+    "Reassignment works with let."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes think they are creating a new variable. In fact, they are only changing the value of an existing one."
+  },
+  "quiz": {
+    "question": "What changes during reassignment?",
+    "options": [
+      "The value",
+      "The variable name",
+      "The JavaScript type system"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Assignment",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

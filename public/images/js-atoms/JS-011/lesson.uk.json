@@ -1,14 +1,58 @@
 {
   "number": 11,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "value-vs-variable",
+  "title": "Value vs Variable",
+  "subtitle": "The box is not the thing.",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "variables",
+    "values",
+    "memory",
+    "beginner"
+  ],
+  "prerequisites": ["JS-010"],
+  "previous": "JS-010",
+  "next": "JS-012",
+  "estimatedReadingTime": 2,
+  "goal": "Understand the difference between a variable and the value stored inside it.",
+  "explanation": [
+    "Змінна і значення — це не одне й те саме.",
+    "Змінна — це місце, де зберігаються дані.",
+    "Значення — це те, що знаходиться всередині змінної.",
+    "Одна й та сама змінна може зберігати різні значення протягом роботи програми.",
+    "Розуміння цієї різниці допомагає легше читати й писати код."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Коробка — це змінна. Предмет усередині коробки — це значення. Коробка не є предметом, вона лише його зберігає."
+  },
+  "codeExample": "let name = \"Vitalii\";\n\nconsole.log(name);",
+  "result": "Vitalii",
+  "remember": [
+    "Variable — це контейнер.",
+    "Value — це дані всередині контейнера.",
+    "Змінна і значення — різні поняття."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто називають значення змінною. Насправді змінна лише містить значення."
+  },
+  "quiz": {
+    "question": "Що є змінною у виразі let name = \"Vitalii\"?",
+    "options": [
+      "name",
+      "\"Vitalii\"",
+      "console.log"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Variables",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

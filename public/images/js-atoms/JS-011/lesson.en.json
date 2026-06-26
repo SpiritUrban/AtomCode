@@ -1,14 +1,58 @@
 {
   "number": 11,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "value-vs-variable",
+  "title": "Value vs Variable",
+  "subtitle": "The box is not the thing.",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "variables",
+    "values",
+    "memory",
+    "beginner"
+  ],
+  "prerequisites": ["JS-010"],
+  "previous": "JS-010",
+  "next": "JS-012",
+  "estimatedReadingTime": 2,
+  "goal": "Understand the difference between a variable and the value stored inside it.",
+  "explanation": [
+    "A variable and a value are not the same thing.",
+    "A variable is a place where data is stored.",
+    "A value is what lives inside the variable.",
+    "The same variable can hold different values during the program's execution.",
+    "Understanding this difference makes code easier to read and write."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "The box is the variable. The object inside the box is the value. The box is not the object — it only stores it."
+  },
+  "codeExample": "let name = \"Vitalii\";\n\nconsole.log(name);",
+  "result": "Vitalii",
+  "remember": [
+    "A variable is a container.",
+    "A value is the data inside the container.",
+    "Variables and values are different concepts."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often call the value a variable. In reality, the variable only holds the value."
+  },
+  "quiz": {
+    "question": "What is the variable in let name = \"Vitalii\"?",
+    "options": [
+      "name",
+      "\"Vitalii\"",
+      "console.log"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Variables",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

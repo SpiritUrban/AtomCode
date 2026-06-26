@@ -1,14 +1,59 @@
 {
   "number": 12,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "reassignment",
+  "title": "Reassignment",
+  "subtitle": "Replace the value",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "variables",
+    "assignment",
+    "reassignment",
+    "let",
+    "beginner"
+  ],
+  "prerequisites": ["JS-011"],
+  "previous": "JS-011",
+  "next": "JS-013",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how to replace the value stored in a variable.",
+  "explanation": [
+    "Переприсвоєння (reassignment) означає заміну старого значення новим.",
+    "Змінна залишається тією самою, але її вміст змінюється.",
+    "Для цього використовують оператор =.",
+    "Переприсвоювати можна лише змінні, створені через let.",
+    "Після переприсвоєння старе значення більше не зберігається в цій змінній."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "У коробці спочатку лежало яблуко. Ти дістав його й поклав піцу. Коробка залишилася та сама, змінився лише її вміст."
+  },
+  "codeExample": "let food = \"Apple\";\n\nfood = \"Pizza\";\n\nconsole.log(food);",
+  "result": "Pizza",
+  "remember": [
+    "Reassignment змінює значення.",
+    "Змінна залишається тією самою.",
+    "Переприсвоєння працює для let."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді думають, що створюють нову змінну. Насправді вони лише змінюють значення вже існуючої."
+  },
+  "quiz": {
+    "question": "Що змінюється під час reassignment?",
+    "options": [
+      "Значення",
+      "Назва змінної",
+      "Тип JavaScript"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Assignment",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }
