@@ -36,7 +36,10 @@ export default function LessonContent({
   copied,
 }: LessonContentProps) {
   return (
-    <div className="flex h-full flex-col overflow-y-auto p-6">
+    <div
+      id="lesson-content-scroll"
+      className="flex h-full w-full flex-col overflow-y-auto overscroll-contain p-6"
+    >
       <div className="mb-1 flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-atom-accent/15 px-2 py-0.5 text-xs font-medium text-atom-accent">
           {difficultyLabel[lesson.difficulty]}

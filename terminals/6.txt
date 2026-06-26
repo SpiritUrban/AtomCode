@@ -1,0 +1,27 @@
+---
+pid: 21000
+cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
+command: "Stop-Process -Name node -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 2; npm run dev"
+started_at: 2026-06-26T03:31:21.860Z
+running_for_ms: 514994   
+---
+
+> atomcode@0.1.0 dev
+> next dev --turbo
+
+   ▲ Next.js 15.5.19 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.101:3000
+
+ ✓ Starting...
+
+   We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+   The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+   - include was updated to add 'node_modules/.cache/atomcode-next/types/**/*.ts'
+
+ ✓ Ready in 3.5s
+ ○ Compiling / ...
+ ✓ Compiled / in 9.4s
+ GET / 200 in 10613ms
+ GET / 200 in 481ms

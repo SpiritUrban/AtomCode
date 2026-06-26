@@ -1,5 +1,4 @@
 import { Difficulty, type Lesson } from "@/types/lesson";
-import image from "./image.png";
 
 export const lesson: Lesson = {
   id: "JS-002",
@@ -9,7 +8,7 @@ export const lesson: Lesson = {
   title: "let vs const",
   subtitle: "Can the value change?",
   slug: "let-vs-const",
-  image: image.src,
+  image: "/images/js-atoms/JS-002/image.png",
   difficulty: Difficulty.Beginner,
   duration: "3 min",
   tags: ["let", "const", "variables", "basics", "beginner"],

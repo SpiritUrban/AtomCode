@@ -1,0 +1,23 @@
+---
+pid: 16052
+cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
+command: "npm run dev"
+started_at: 2026-06-26T03:33:10.389Z
+running_for_ms: 405001   
+---
+
+> atomcode@0.1.0 dev
+> next dev --turbo
+
+   ▲ Next.js 15.5.19 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.101:3000
+
+ ✓ Starting...
+ ✓ Ready in 3s
+ ○ Compiling / ...
+ ✓ Compiled / in 10.2s
+ GET / 200 in 373ms
+ GET / 200 in 723ms
+ ✓ Compiled in 253ms
+ ✓ Compiled in 609ms

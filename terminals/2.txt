@@ -3,7 +3,7 @@ pid: 18260
 cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
 command: "if (Test-Path .next) { Remove-Item -Recurse -Force .next }; npm run build"
 started_at: 2026-06-26T02:45:58.149Z
-running_for_ms: 275007   
+running_for_ms: 3120011  
 ---
 Remove-Item : �� 㤠���� 㤠���� ������� C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\.next\trace: �⪠���� � 
 ����㯥 �� ������� ���.
@@ -25,3 +25,11 @@ Remove-Item : �� 㤠���� 㤠���� ������� C:\Us
 Generated SVG lesson images in public/images/js-atoms/
    ▲ Next.js 15.5.19
 
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 28.4s
+   Linting and checking validity of types ...
+   Collecting page data ...
+unhandledRejection [Error [PageNotFoundError]: Cannot find module for page: /_document] {
+  type: 'PageNotFoundError',
+  code: 'ENOENT'
+}

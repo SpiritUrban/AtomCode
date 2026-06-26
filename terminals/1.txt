@@ -3,7 +3,7 @@ pid: 16568
 cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
 command: "npm install"
 started_at: 2026-06-26T02:31:57.337Z
-running_for_ms: 575002   
+running_for_ms: 3900003  
 ---
 
 added 349 packages, and audited 350 packages in 4m

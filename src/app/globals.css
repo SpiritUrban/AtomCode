@@ -20,8 +20,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#lesson-viewer {
-  overscroll-behavior: none;
+#lesson-content-scroll,
+#sidebar-nav {
+  overscroll-behavior: contain;
 }
 
 ::-webkit-scrollbar {

@@ -54,6 +54,50 @@ export default function LessonViewer({
     [lessons, onLessonChange],
   );
 
+  const switchLesson = useCallback(
+    (direction: "up" | "down") => {
+      if (scrollLocked.current || !lesson) return;
+
+      scrollLocked.current = true;
+      if (scrollTimer.current) clearTimeout(scrollTimer.current);
+      scrollTimer.current = setTimeout(() => {
+        scrollLocked.current = false;
+      }, SCROLL_COOLDOWN_MS);
+
+      if (direction === "down") {
+        if (lesson.next && lessonsRecord[lesson.next]) {
+          goToCode(lesson.next);
+        } else {
+          goToIndex(currentIndex + 1);
+        }
+      } else {
+        if (lesson.previous && lessonsRecord[lesson.previous]) {
+          goToCode(lesson.previous);
+        } else {
+          goToIndex(currentIndex - 1);
+        }
+      }
+    },
+    [lesson, lessonsRecord, currentIndex, goToCode, goToIndex],
+  );
+
+  const handleSidebarScroll = useCallback((e: React.WheelEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const nav = document.getElementById("sidebar-nav");
+    if (nav) nav.scrollTop += e.deltaY;
+  }, []);
+
+  const handleCenterScroll = useCallback(
+    (e: React.WheelEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+      if (e.deltaY > 0) switchLesson("down");
+      else if (e.deltaY < 0) switchLesson("up");
+    },
+    [switchLesson],
+  );
+
   const handlePrevious = () => {
     if (lesson?.previous) {
       goToCode(lesson.previous);
@@ -77,41 +121,6 @@ export default function LessonViewer({
   const hasNext = lesson?.next
     ? !!lessonsRecord[lesson.next]
     : currentIndex < lessons.length - 1;
-
-  const handleWheel = useCallback(
-    (e: WheelEvent) => {
-      e.preventDefault();
-      if (scrollLocked.current || !lesson) return;
-
-      scrollLocked.current = true;
-      if (scrollTimer.current) clearTimeout(scrollTimer.current);
-      scrollTimer.current = setTimeout(() => {
-        scrollLocked.current = false;
-      }, SCROLL_COOLDOWN_MS);
-
-      if (e.deltaY > 0) {
-        if (lesson.next && lessonsRecord[lesson.next]) {
-          goToCode(lesson.next);
-        } else {
-          goToIndex(currentIndex + 1);
-        }
-      } else if (e.deltaY < 0) {
-        if (lesson.previous && lessonsRecord[lesson.previous]) {
-          goToCode(lesson.previous);
-        } else {
-          goToIndex(currentIndex - 1);
-        }
-      }
-    },
-    [lesson, lessonsRecord, currentIndex, goToCode, goToIndex],
-  );
-
-  useEffect(() => {
-    const el = document.getElementById("lesson-viewer");
-    if (!el) return;
-    el.addEventListener("wheel", handleWheel, { passive: false });
-    return () => el.removeEventListener("wheel", handleWheel);
-  }, [handleWheel]);
 
   useEffect(() => {
     setCopied(false);
@@ -144,11 +153,20 @@ export default function LessonViewer({
   };
 
   return (
-    <div id="lesson-viewer" className="flex h-full flex-1 overflow-hidden">
-      <div className="flex h-full w-2/5 shrink-0 border-r border-atom-border bg-atom-bg">
+    <div className="flex h-full flex-1 overflow-hidden">
+      <div
+        className="h-full aspect-square shrink-0 border-r border-atom-border bg-atom-bg"
+        onWheel={handleSidebarScroll}
+      >
         <LessonImage src={lesson.image} alt={lesson.title} code={lesson.code} />
       </div>
-      <div className="flex h-full flex-1 bg-atom-surface">
+
+      <div
+        className="h-full min-w-0 flex-1 bg-atom-bg"
+        onWheel={handleCenterScroll}
+      />
+
+      <div className="h-full w-[34rem] max-w-full shrink-0 overflow-hidden border-l border-atom-border bg-atom-surface xl:w-[42rem]">
         <LessonContent
           lesson={lesson}
           prerequisites={prerequisites}

@@ -1,0 +1,41 @@
+---
+pid: 744
+cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
+command: "Stop-Process -Name node -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 2; npm run dev"
+started_at: 2026-06-26T03:31:06.308Z
+running_for_ms: 529963   
+---
+
+> atomcode@0.1.0 dev
+> next dev --turbo
+
+   ▲ Next.js 15.5.19 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.101:3000
+
+ ✓ Starting...
+[Error: ENOENT: no such file or directory, mkdir 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\C:\Users\spiri\AppData\Local\Temp\atomcode-next\cache'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'mkdir',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\C:\\Users\\spiri\\AppData\\Local\\Temp\\atomcode-next\\cache'
+}
+node:internal/fs/promises:858
+  return await PromisePrototypeThen(
+         ^
+
+Error: ENOENT: no such file or directory, mkdir 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\C:\Users\spiri\AppData\Local\Temp\atomcode-next'
+    at async Object.mkdir (node:internal/fs/promises:858:10)
+    at async C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\next\dist\trace\report\to-json.js:126:17
+    at async Object.flushAll (C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\next\dist\trace\report\to-json.js:46:17)
+    at async Promise.all (index 0)
+    at async MultiReporter.flushAll (C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\next\dist\trace\report\index.js:24:9)
+    at async handleSessionStop (C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\next\dist\cli\next-dev.js:102:5)
+    at async ChildProcess.<anonymous> (C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\next\dist\cli\next-dev.js:296:17) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'mkdir',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\C:\\Users\\spiri\\AppData\\Local\\Temp\\atomcode-next'
+}
+
+Node.js v20.19.6

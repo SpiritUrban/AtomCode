@@ -1,5 +1,4 @@
 import { Difficulty, type Lesson } from "@/types/lesson";
-import image from "./image.png";
 
 export const lesson: Lesson = {
   id: "JS-001",
@@ -9,7 +8,7 @@ export const lesson: Lesson = {
   title: "Variables",
   subtitle: "Boxes for your data",
   slug: "variables",
-  image: image.src,
+  image: "/images/js-atoms/JS-001/image.png",
   difficulty: Difficulty.Beginner,
   duration: "2 min",
   tags: ["variables", "memory", "basics", "beginner"],

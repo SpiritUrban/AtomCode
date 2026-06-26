@@ -23,7 +23,7 @@ export default function Sidebar({
         </h2>
       </div>
 
-      <nav className="flex-1 overflow-y-auto py-2">
+      <nav id="sidebar-nav" className="flex-1 overflow-y-auto py-2">
         {lessons.map((lesson) => {
           const isActive = lesson.code === activeLessonCode;
           const isLearned = learnedIds.has(lesson.code);

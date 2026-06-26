@@ -1,5 +1,4 @@
 import { Difficulty, type Lesson } from "@/types/lesson";
-import image from "./image.png";
 
 export const lesson: Lesson = {
   id: "JS-003",
@@ -9,7 +8,7 @@ export const lesson: Lesson = {
   title: "Primitive Types",
   subtitle: "The basic building blocks",
   slug: "primitive-types",
-  image: image.src,
+  image: "/images/js-atoms/JS-003/image.png",
   difficulty: Difficulty.Beginner,
   duration: "3 min",
   tags: ["types", "primitives", "string", "number", "boolean", "basics", "beginner"],

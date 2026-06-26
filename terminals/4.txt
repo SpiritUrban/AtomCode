@@ -1,0 +1,16 @@
+---
+pid: 6224
+cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
+command: "npm run dev"
+started_at: 2026-06-26T03:29:37.455Z
+running_for_ms: 619992   
+---
+
+> atomcode@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.101:3000
+
+ ✓ Starting...
