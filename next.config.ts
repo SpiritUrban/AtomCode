@@ -11,8 +11,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   ...(isGithubPages && {
-    basePath: "/AtomCode",
-    assetPrefix: "/AtomCode/",
+    basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "/AtomCode",
+    assetPrefix: `${process.env.NEXT_PUBLIC_BASE_PATH ?? "/AtomCode"}/`,
   }),
 };
 
