@@ -1,4 +1,7 @@
-import { jsAtomsLessons } from "@/data/jsAtoms";
+import {
+  jsAtomsLessons,
+  jsAtomsLessonsRecord,
+} from "@/content/jsAtoms";
 import type { Section } from "@/types/lesson";
 
 export const sections: Section[] = [
@@ -8,6 +11,7 @@ export const sections: Section[] = [
     label: "JavaScript",
     enabled: true,
     lessons: jsAtomsLessons,
+    lessonsRecord: jsAtomsLessonsRecord,
   },
   {
     id: "cssAtoms",
@@ -15,6 +19,7 @@ export const sections: Section[] = [
     label: "CSS",
     enabled: false,
     lessons: [],
+    lessonsRecord: {},
   },
   {
     id: "htmlAtoms",
@@ -22,6 +27,7 @@ export const sections: Section[] = [
     label: "HTML",
     enabled: false,
     lessons: [],
+    lessonsRecord: {},
   },
   {
     id: "gitAtoms",
@@ -29,6 +35,7 @@ export const sections: Section[] = [
     label: "Git",
     enabled: false,
     lessons: [],
+    lessonsRecord: {},
   },
   {
     id: "reactAtoms",
@@ -36,6 +43,7 @@ export const sections: Section[] = [
     label: "React",
     enabled: false,
     lessons: [],
+    lessonsRecord: {},
   },
   {
     id: "tsAtoms",
@@ -43,6 +51,7 @@ export const sections: Section[] = [
     label: "TypeScript",
     enabled: false,
     lessons: [],
+    lessonsRecord: {},
   },
   {
     id: "nodeAtoms",
@@ -50,6 +59,7 @@ export const sections: Section[] = [
     label: "Node.js",
     enabled: false,
     lessons: [],
+    lessonsRecord: {},
   },
   {
     id: "linuxAtoms",
@@ -57,6 +67,7 @@ export const sections: Section[] = [
     label: "Linux",
     enabled: false,
     lessons: [],
+    lessonsRecord: {},
   },
 ];
 

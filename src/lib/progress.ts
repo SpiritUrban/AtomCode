@@ -11,17 +11,17 @@ export function getLearnedLessons(): Set<string> {
   }
 }
 
-export function isLessonLearned(lessonId: string): boolean {
-  return getLearnedLessons().has(lessonId);
+export function isLessonLearned(lessonCode: string): boolean {
+  return getLearnedLessons().has(lessonCode);
 }
 
-export function toggleLessonLearned(lessonId: string): boolean {
+export function toggleLessonLearned(lessonCode: string): boolean {
   const learned = getLearnedLessons();
-  if (learned.has(lessonId)) {
-    learned.delete(lessonId);
+  if (learned.has(lessonCode)) {
+    learned.delete(lessonCode);
   } else {
-    learned.add(lessonId);
+    learned.add(lessonCode);
   }
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...learned]));
-  return learned.has(lessonId);
+  return learned.has(lessonCode);
 }

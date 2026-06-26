@@ -10,8 +10,8 @@ import LessonViewer from "@/components/LessonViewer";
 export default function AppShell() {
   const defaultSection = getDefaultSection();
   const [activeSectionId, setActiveSectionId] = useState(defaultSection.id);
-  const [activeLessonId, setActiveLessonId] = useState(
-    defaultSection.lessons[0]?.id ?? "",
+  const [activeLessonCode, setActiveLessonCode] = useState(
+    defaultSection.lessons[0]?.code ?? "",
   );
   const [learnedIds, setLearnedIds] = useState<Set<string>>(new Set());
 
@@ -22,13 +22,13 @@ export default function AppShell() {
     if (!section || !section.enabled) return;
     setActiveSectionId(sectionId);
     if (section.lessons.length > 0) {
-      setActiveLessonId(section.lessons[0].id);
+      setActiveLessonCode(section.lessons[0].code);
     }
     setLearnedIds(getLearnedLessons());
   }, []);
 
-  const handleLessonSelect = useCallback((lessonId: string) => {
-    setActiveLessonId(lessonId);
+  const handleLessonSelect = useCallback((code: string) => {
+    setActiveLessonCode(code);
     setLearnedIds(getLearnedLessons());
   }, []);
 
@@ -43,7 +43,7 @@ export default function AppShell() {
       <div className="flex flex-1 overflow-hidden pt-14">
         <Sidebar
           lessons={activeSection.lessons}
-          activeLessonId={activeLessonId}
+          activeLessonCode={activeLessonCode}
           learnedIds={learnedIds}
           onLessonSelect={handleLessonSelect}
         />
@@ -51,7 +51,8 @@ export default function AppShell() {
         {activeSection.lessons.length > 0 ? (
           <LessonViewer
             lessons={activeSection.lessons}
-            activeLessonId={activeLessonId}
+            lessonsRecord={activeSection.lessonsRecord}
+            activeLessonCode={activeLessonCode}
             onLessonChange={handleLessonSelect}
             onLearnedChange={setLearnedIds}
           />

@@ -1,0 +1,15 @@
+---
+pid: 17900
+cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
+command: "npm run build"
+started_at: 2026-06-26T02:53:37.297Z
+running_for_ms: 459999   
+---
+
+> atomcode@0.1.0 build
+> next build
+
+   ▲ Next.js 15.5.19
+
+   Creating an optimized production build ...
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\.next\cache\webpack\server-production\0.pack_' -> 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\.next\cache\webpack\server-production\0.pack'

@@ -4,14 +4,14 @@ import type { Lesson } from "@/types/lesson";
 
 type SidebarProps = {
   lessons: Lesson[];
-  activeLessonId: string;
+  activeLessonCode: string;
   learnedIds: Set<string>;
-  onLessonSelect: (lessonId: string) => void;
+  onLessonSelect: (code: string) => void;
 };
 
 export default function Sidebar({
   lessons,
-  activeLessonId,
+  activeLessonCode,
   learnedIds,
   onLessonSelect,
 }: SidebarProps) {
@@ -25,14 +25,14 @@ export default function Sidebar({
 
       <nav className="flex-1 overflow-y-auto py-2">
         {lessons.map((lesson) => {
-          const isActive = lesson.id === activeLessonId;
-          const isLearned = learnedIds.has(lesson.id);
+          const isActive = lesson.code === activeLessonCode;
+          const isLearned = learnedIds.has(lesson.code);
 
           return (
             <button
-              key={lesson.id}
+              key={lesson.code}
               type="button"
-              onClick={() => onLessonSelect(lesson.id)}
+              onClick={() => onLessonSelect(lesson.code)}
               className={[
                 "flex w-full items-start gap-2 px-4 py-2.5 text-left transition-all",
                 isActive

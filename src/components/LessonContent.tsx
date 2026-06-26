@@ -1,12 +1,17 @@
 "use client";
 
 import type { Lesson } from "@/types/lesson";
+import { difficultyLabel } from "@/types/lesson";
 import CodeBlock from "@/components/CodeBlock";
 import QuizBlock from "@/components/QuizBlock";
 import LessonControls from "@/components/LessonControls";
+import PrerequisitesPanel from "@/components/PrerequisitesPanel";
+import ResourcesPanel from "@/components/ResourcesPanel";
 
 type LessonContentProps = {
   lesson: Lesson;
+  prerequisites: Lesson[];
+  onPrerequisiteSelect: (code: string) => void;
   onPrevious: () => void;
   onNext: () => void;
   onMarkLearned: () => void;
@@ -19,6 +24,8 @@ type LessonContentProps = {
 
 export default function LessonContent({
   lesson,
+  prerequisites,
+  onPrerequisiteSelect,
   onPrevious,
   onNext,
   onMarkLearned,
@@ -30,11 +37,24 @@ export default function LessonContent({
 }: LessonContentProps) {
   return (
     <div className="flex h-full flex-col overflow-y-auto p-6">
-      <div className="mb-1 flex items-center gap-2">
+      <div className="mb-1 flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-atom-accent/15 px-2 py-0.5 text-xs font-medium text-atom-accent">
-          {lesson.difficulty}
+          {difficultyLabel[lesson.difficulty]}
         </span>
         <span className="text-xs text-atom-muted">{lesson.duration}</span>
+        {lesson.estimatedReadingTime && (
+          <span className="text-xs text-atom-muted">
+            ~{lesson.estimatedReadingTime} min read
+          </span>
+        )}
+        {lesson.tags.slice(0, 3).map((tag) => (
+          <span
+            key={tag}
+            className="rounded-full bg-atom-card px-2 py-0.5 text-xs text-atom-muted"
+          >
+            #{tag}
+          </span>
+        ))}
       </div>
 
       <h1 className="font-display text-3xl font-bold tracking-tight text-atom-text">
@@ -43,6 +63,11 @@ export default function LessonContent({
       <p className="mt-1 text-sm text-atom-muted">{lesson.subtitle}</p>
 
       <div className="mt-5 space-y-4">
+        <PrerequisitesPanel
+          prerequisites={prerequisites}
+          onLessonSelect={onPrerequisiteSelect}
+        />
+
         <section>
           <h2 className="mb-1 text-xs font-semibold uppercase tracking-wider text-atom-accent">
             Goal
@@ -64,28 +89,34 @@ export default function LessonContent({
           </ul>
         </section>
 
-        <section className="rounded-xl border border-atom-warning/30 bg-atom-warning/5 p-4">
-          <h2 className="mb-1 text-xs font-semibold uppercase tracking-wider text-atom-warning">
-            {lesson.analogy.title}
-          </h2>
-          <p className="text-sm leading-relaxed text-atom-text">{lesson.analogy.text}</p>
-        </section>
+        {lesson.analogy && (
+          <section className="rounded-xl border border-atom-warning/30 bg-atom-warning/5 p-4">
+            <h2 className="mb-1 text-xs font-semibold uppercase tracking-wider text-atom-warning">
+              {lesson.analogy.title}
+            </h2>
+            <p className="text-sm leading-relaxed text-atom-text">{lesson.analogy.text}</p>
+          </section>
+        )}
 
-        <section>
-          <h2 className="mb-2 text-xs font-semibold uppercase tracking-wider text-atom-accent2">
-            Code
-          </h2>
-          <CodeBlock code={lesson.codeExample} onCopy={onCopyCode} copied={copied} />
-          <p className="mt-2 text-xs text-atom-muted">
-            <span className="font-semibold text-atom-accent2">Result: </span>
-            {lesson.result}
-          </p>
-        </section>
+        {lesson.codeExample && (
+          <section>
+            <h2 className="mb-2 text-xs font-semibold uppercase tracking-wider text-atom-accent2">
+              Code
+            </h2>
+            <CodeBlock code={lesson.codeExample} onCopy={onCopyCode} copied={copied} />
+            {lesson.result && (
+              <p className="mt-2 text-xs text-atom-muted">
+                <span className="font-semibold text-atom-accent2">Result: </span>
+                <span className="whitespace-pre-line">{lesson.result}</span>
+              </p>
+            )}
+          </section>
+        )}
 
         {lesson.mistake && (
           <section className="rounded-xl border border-red-400/20 bg-red-400/5 p-4">
             <h2 className="mb-1 text-xs font-semibold uppercase tracking-wider text-red-400">
-              Common Mistake — {lesson.mistake.title}
+              {lesson.mistake.title}
             </h2>
             <p className="text-sm leading-relaxed text-atom-text">{lesson.mistake.text}</p>
           </section>
@@ -111,6 +142,8 @@ export default function LessonContent({
             answer={lesson.quiz.answer}
           />
         )}
+
+        <ResourcesPanel resources={lesson.resources ?? []} />
       </div>
 
       <LessonControls
@@ -122,6 +155,8 @@ export default function LessonContent({
         hasNext={hasNext}
         isLearned={isLearned}
         copied={copied}
+        hasCode={!!lesson.codeExample}
+        hasPlayground={!!lesson.playground}
       />
     </div>
   );

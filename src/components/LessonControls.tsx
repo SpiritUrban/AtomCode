@@ -9,6 +9,8 @@ type LessonControlsProps = {
   hasNext: boolean;
   isLearned: boolean;
   copied: boolean;
+  hasCode: boolean;
+  hasPlayground: boolean;
 };
 
 export default function LessonControls({
@@ -20,6 +22,8 @@ export default function LessonControls({
   hasNext,
   isLearned,
   copied,
+  hasCode,
+  hasPlayground,
 }: LessonControlsProps) {
   return (
     <div className="flex flex-wrap items-center gap-2 pt-4">
@@ -51,13 +55,25 @@ export default function LessonControls({
       >
         {isLearned ? "✓ Learned" : "Mark as learned"}
       </button>
-      <button
-        type="button"
-        onClick={onCopyCode}
-        className="rounded-lg border border-atom-border bg-atom-card px-4 py-2 text-sm font-medium text-atom-text transition-all hover:border-atom-accent2/50"
-      >
-        {copied ? "Copied!" : "Copy code"}
-      </button>
+      {hasCode && (
+        <button
+          type="button"
+          onClick={onCopyCode}
+          className="rounded-lg border border-atom-border bg-atom-card px-4 py-2 text-sm font-medium text-atom-text transition-all hover:border-atom-accent2/50"
+        >
+          {copied ? "Copied!" : "Copy code"}
+        </button>
+      )}
+      {hasPlayground && (
+        <button
+          type="button"
+          disabled
+          title="Coming soon"
+          className="rounded-lg border border-atom-accent2/30 bg-atom-accent2/10 px-4 py-2 text-sm font-medium text-atom-accent2 transition-all disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          Open Playground
+        </button>
+      )}
     </div>
   );
 }
