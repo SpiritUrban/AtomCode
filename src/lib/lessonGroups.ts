@@ -3,6 +3,7 @@ import type { Lesson, LessonGroup } from "@/types/lesson";
 
 export type LessonGroupConfig = {
   id: string;
+  folder: string;
   label: Record<Locale, string> | string;
   from: number;
   to: number;

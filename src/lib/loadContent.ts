@@ -6,6 +6,11 @@ import {
   isPublishedLesson,
   type LessonGroupConfig,
 } from "@/lib/lessonGroups";
+import {
+  findGroupConfigForLesson,
+  jsAtomsAssetUrl,
+  jsAtomsPublicDir,
+} from "@/lib/contentPaths";
 import type { Locale } from "@/lib/i18n";
 import { Difficulty, type Lesson, type Section } from "@/types/lesson";
 
@@ -39,13 +44,20 @@ function loadSectionLessons(
   sectionId: string,
   basePath: string,
   manifestPath: string,
+  groupsPath: string,
   locale: Locale,
 ): { lessons: Lesson[]; lessonsRecord: Record<string, Lesson> } {
   const manifest = readJsonFile<string[]>(manifestPath);
+  const groupConfig = fs.existsSync(groupsPath)
+    ? readJsonFile<LessonGroupConfig[]>(groupsPath)
+    : [];
   const lessonsRecord: Record<string, Lesson> = {};
 
   for (const code of manifest) {
-    const lessonDir = path.join(basePath, code);
+    const group = findGroupConfigForLesson(code, groupConfig);
+    const lessonDir = group
+      ? path.join(basePath, group.folder, code)
+      : path.join(basePath, code);
     const jsonPath = resolveLessonJsonPath(lessonDir, locale);
     if (!jsonPath) continue;
 
@@ -56,7 +68,7 @@ function loadSectionLessons(
       id: code,
       code,
       section: sectionId,
-      image: `/images/js-atoms/${code}/image.png`,
+      image: jsAtomsAssetUrl(code, group?.folder ?? ""),
       difficulty: difficultyMap[raw.difficulty],
     };
   }
@@ -88,11 +100,13 @@ const emptyLessonGroups: Section["lessonGroups"] = [];
 
 export function buildSections(locale: Locale): Section[] {
   const publicDir = path.join(process.cwd(), "public");
-  const jsAtomsBase = path.join(publicDir, "images", "js-atoms");
+  const jsAtomsBase = path.join(publicDir, ...jsAtomsPublicDir());
+  const groupsPath = path.join(jsAtomsBase, "groups.json");
   const jsAtoms = loadSectionLessons(
     "jsAtoms",
     jsAtomsBase,
     path.join(jsAtomsBase, "manifest.json"),
+    groupsPath,
     locale,
   );
 
@@ -107,7 +121,7 @@ export function buildSections(locale: Locale): Section[] {
       lessonGroups: loadLessonGroups(
         jsAtoms.lessons,
         locale,
-        path.join(jsAtomsBase, "groups.json"),
+        groupsPath,
       ),
     },
     {
