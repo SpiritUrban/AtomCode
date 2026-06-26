@@ -3,7 +3,7 @@ pid: 16052
 cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
 command: "npm run dev"
 started_at: 2026-06-26T03:33:10.389Z
-running_for_ms: 1255006  
+running_for_ms: 1435007  
 ---
 
 > atomcode@0.1.0 dev
@@ -456,3 +456,7 @@ https://nextjs.org/docs/messages/module-not-found
  GET / 200 in 763ms
  GET / 200 in 422ms
  GET / 200 in 449ms
+ ✓ Compiled in 108ms
+ ○ Compiling / ...
+ ✓ Compiled / in 506ms
+ GET / 200 in 959ms

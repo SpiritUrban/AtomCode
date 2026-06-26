@@ -16,20 +16,23 @@ const difficultyMap: Record<LessonJson["difficulty"], Difficulty> = {
   Advanced: Difficulty.Advanced,
 };
 
+function readJsonFile<T>(filePath: string): T {
+  const raw = fs.readFileSync(filePath, "utf-8").replace(/^\uFEFF/, "");
+  return JSON.parse(raw) as T;
+}
+
 function loadSectionLessons(
   sectionId: string,
   basePath: string,
   manifestPath: string,
 ): { lessons: Lesson[]; lessonsRecord: Record<string, Lesson> } {
-  const manifest = JSON.parse(
-    fs.readFileSync(manifestPath, "utf-8"),
-  ) as string[];
+  const manifest = readJsonFile<string[]>(manifestPath);
 
   const lessonsRecord: Record<string, Lesson> = {};
 
   for (const code of manifest) {
     const jsonPath = path.join(basePath, code, "lesson.json");
-    const raw = JSON.parse(fs.readFileSync(jsonPath, "utf-8")) as LessonJson;
+    const raw = readJsonFile<LessonJson>(jsonPath);
 
     lessonsRecord[code] = {
       ...raw,
