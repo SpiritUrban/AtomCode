@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import type { Lesson, Section } from "@/types/lesson";
 import { locales, type Locale } from "@/lib/i18n";
-import { getBasePath, getSectionSlug, lessonPath } from "@/lib/routes";
+import {
+  getBasePath,
+  getSectionSlug,
+  lessonPathWithBase,
+} from "@/lib/routes";
 
 const SITE_NAME = "AtomCode";
 const SITE_DESCRIPTION =
@@ -17,7 +21,7 @@ export function buildLessonMetadata(
   lesson: Lesson,
 ): Metadata {
   const sectionSlug = getSectionSlug(section.id);
-  const path = lessonPath(locale, sectionSlug, lesson.slug);
+  const path = lessonPathWithBase(locale, sectionSlug, lesson.slug);
   const canonical = `${getSiteUrl()}${path}`;
 
   const title = `${lesson.title} — ${section.label} | ${SITE_NAME}`;
@@ -31,7 +35,7 @@ export function buildLessonMetadata(
       languages: Object.fromEntries(
         locales.map((loc) => [
           loc,
-          `${getSiteUrl()}${lessonPath(loc, sectionSlug, lesson.slug)}`,
+          `${getSiteUrl()}${lessonPathWithBase(loc, sectionSlug, lesson.slug)}`,
         ]),
       ),
     },

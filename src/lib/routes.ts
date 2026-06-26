@@ -28,13 +28,22 @@ export function getBasePath(): string {
   return process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 }
 
+/** Internal app route — do not prepend basePath (Next.js adds it automatically). */
 export function lessonPath(
   locale: Locale,
   sectionSlug: string,
   lessonSlug: string,
 ): string {
-  const base = getBasePath();
-  return `${base}/${locale}/${sectionSlug}/${lessonSlug}/`;
+  return `/${locale}/${sectionSlug}/${lessonSlug}/`;
+}
+
+/** Full path for canonical URLs, sitemaps, and other absolute links. */
+export function lessonPathWithBase(
+  locale: Locale,
+  sectionSlug: string,
+  lessonSlug: string,
+): string {
+  return `${getBasePath()}${lessonPath(locale, sectionSlug, lessonSlug)}`;
 }
 
 export function resolveLessonRoute(
@@ -59,7 +68,7 @@ export function resolveLessonRoute(
 
 export function getDefaultLessonPath(sections: Section[], locale: Locale): string {
   const section = sections.find((s) => s.enabled && s.lessons.length > 0);
-  if (!section) return `${getBasePath()}/${locale}`;
+  if (!section) return `/${locale}/`;
 
   return lessonPath(
     locale,
