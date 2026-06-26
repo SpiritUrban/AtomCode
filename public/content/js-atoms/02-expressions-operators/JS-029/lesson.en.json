@@ -1,14 +1,59 @@
 {
   "number": 29,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "string-function",
+  "title": "String()",
+  "subtitle": "Converting to text",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "string",
+    "type-conversion",
+    "casting",
+    "text",
+    "beginner"
+  ],
+  "prerequisites": ["JS-028"],
+  "previous": "JS-028",
+  "next": "JS-030",
+  "estimatedReadingTime": 3,
+  "goal": "Learn how to convert values to text using String().",
+  "explanation": [
+    "String() converts any value to a text string.",
+    "Numbers, booleans, and other types can be represented as text.",
+    "After conversion, the value becomes a string.",
+    "String() is often used to build messages and display data to the user.",
+    "It is one of the most common ways to work with text in JavaScript."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a label printer. It can print a text representation of any value."
+  },
+  "codeExample": "console.log(String(42));\nconsole.log(String(true));",
+  "result": "\"42\"\n\"true\"",
+  "remember": [
+    "String() creates a string.",
+    "Any value can be shown as text.",
+    "The result is always a string."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "After String(42) you get text, not a number. Math operations will behave differently."
+  },
+  "quiz": {
+    "question": "What does String(true) return?",
+    "options": [
+      "\"true\"",
+      "true",
+      "1"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — String()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/String",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

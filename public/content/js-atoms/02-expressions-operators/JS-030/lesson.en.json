@@ -1,14 +1,60 @@
 {
   "number": 30,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "boolean-function",
+  "title": "Boolean()",
+  "subtitle": "Converting to true or false",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "boolean",
+    "type-conversion",
+    "truthy",
+    "falsy",
+    "beginner"
+  ],
+  "prerequisites": ["JS-029"],
+  "previous": "JS-029",
+  "next": "JS-031",
+  "estimatedReadingTime": 4,
+  "goal": "Learn how to convert values to true or false using Boolean().",
+  "explanation": [
+    "Boolean() converts any value to the boolean type.",
+    "The result is always either true or false.",
+    "Most values in JavaScript convert to true.",
+    "Some special values, such as 0 or an empty string, convert to false.",
+    "Boolean() is very important for conditions and program logic."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a guard at the entrance. They check any value and make only one of two decisions: yes (true) or no (false)."
+  },
+  "codeExample": "console.log(Boolean(1));\nconsole.log(Boolean(0));\nconsole.log(Boolean(\"Hello\"));\nconsole.log(Boolean(\"\"));",
+  "result": "true\nfalse\ntrue\nfalse",
+  "remember": [
+    "Boolean() returns true or false.",
+    "0 converts to false.",
+    "An empty string converts to false.",
+    "Most other values become true."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think any text means false. In reality, even the string \"false\" converts to true because it is not empty."
+  },
+  "quiz": {
+    "question": "What does Boolean(0) return?",
+    "options": [
+      "false",
+      "true",
+      "0"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Boolean()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/Boolean",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

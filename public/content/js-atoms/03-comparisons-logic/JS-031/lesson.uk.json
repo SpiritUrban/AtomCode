@@ -1,14 +1,60 @@
 {
   "number": 31,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "comparison",
+  "title": "Comparison",
+  "subtitle": "Порівняння значень",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "comparison",
+    "operators",
+    "boolean",
+    "true",
+    "false",
+    "beginner"
+  ],
+  "prerequisites": ["JS-030"],
+  "previous": "JS-030",
+  "next": "JS-032",
+  "estimatedReadingTime": 3,
+  "goal": "Зрозумій, що порівняння завжди повертає true або false.",
+  "explanation": [
+    "Comparison означає порівняння двох значень.",
+    "JavaScript може перевірити, чи значення однакові, різні, більші або менші.",
+    "Результатом порівняння завжди буде boolean: true або false.",
+    "Якщо умова правильна — результат true.",
+    "Якщо умова неправильна — результат false."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Порівняння схоже на питання з відповіддю «так» або «ні». JavaScript дивиться на два значення й відповідає true або false."
+  },
+  "codeExample": "console.log(5 === 5);\nconsole.log(5 === 10);",
+  "result": "true\nfalse",
+  "remember": [
+    "Порівняння повертає boolean.",
+    "true означає, що перевірка правильна.",
+    "false означає, що перевірка неправильна."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді очікують, що порівняння поверне саме значення. Насправді воно повертає лише true або false."
+  },
+  "quiz": {
+    "question": "Що повертає порівняння?",
+    "options": [
+      "true або false",
+      "Тільки числа",
+      "Тільки рядки"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Comparison operators",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,65 @@
 {
   "number": 33,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "loose-vs-strict-inequality",
+  "title": "!= vs !==",
+  "subtitle": "Перевірка нерівності",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "inequality",
+    "not-equal",
+    "strict-inequality",
+    "comparison",
+    "type-conversion",
+    "beginner"
+  ],
+  "prerequisites": ["JS-032"],
+  "previous": "JS-032",
+  "next": "JS-034",
+  "estimatedReadingTime": 4,
+  "goal": "Зрозумій різницю між != та !== у JavaScript.",
+  "explanation": [
+    "!= перевіряє, чи значення різні після можливого перетворення типів.",
+    "!== перевіряє, чи різні значення або різні типи без автоматичного перетворення.",
+    "Через перетворення типів оператор != може давати неочікувані результати.",
+    "Наприклад, 0 != false повертає false, бо JavaScript вважає їх рівними після перетворення.",
+    "У більшості випадків безпечніше використовувати !==."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "!= схожий на м'яку перевірку: він спочатку може підлаштувати значення. !== — строга перевірка: якщо типи різні, значення вже вважаються різними."
+  },
+  "codeExample": "console.log(0 != false);\nconsole.log(0 !== false);",
+  "result": "false\ntrue",
+  "remember": [
+    "!= може перетворювати типи.",
+    "!== не перетворює типи.",
+    "У більшості випадків використовуй !==."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто очікують, що 0 != false буде true. Але через перетворення типів JavaScript вважає їх рівними."
+  },
+  "quiz": {
+    "question": "Який оператор перевіряє нерівність без перетворення типів?",
+    "options": [
+      "!==",
+      "!=",
+      "=="
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Strict inequality (!==)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_inequality",
+      "type": "mdn"
+    },
+    {
+      "title": "MDN — Inequality (!=)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Inequality",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,59 @@
 {
   "number": 29,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "string-function",
+  "title": "String()",
+  "subtitle": "Перетворення на текст",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "string",
+    "type-conversion",
+    "casting",
+    "text",
+    "beginner"
+  ],
+  "prerequisites": ["JS-028"],
+  "previous": "JS-028",
+  "next": "JS-030",
+  "estimatedReadingTime": 3,
+  "goal": "Навчись перетворювати значення на текст за допомогою String().",
+  "explanation": [
+    "String() перетворює будь-яке значення на текстовий рядок.",
+    "Числа, boolean та інші типи можуть бути представлені у вигляді тексту.",
+    "Після перетворення значення стає рядком.",
+    "String() часто використовують для формування повідомлень та відображення даних користувачу.",
+    "Це один із найпоширеніших способів роботи з текстом у JavaScript."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви принтер етикеток. Він може надрукувати текстове представлення будь-якого значення."
+  },
+  "codeExample": "console.log(String(42));\nconsole.log(String(true));",
+  "result": "\"42\"\n\"true\"",
+  "remember": [
+    "String() створює рядок.",
+    "Будь-яке значення можна показати як текст.",
+    "Результатом завжди буде String."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Після String(42) ти отримуєш не число, а текст. Математичні операції працюватимуть вже інакше."
+  },
+  "quiz": {
+    "question": "Що поверне String(true)?",
+    "options": [
+      "\"true\"",
+      "true",
+      "1"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — String()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/String",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

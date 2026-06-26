@@ -1,14 +1,60 @@
 {
   "number": 31,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "comparison",
+  "title": "Comparison",
+  "subtitle": "Comparing values",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "comparison",
+    "operators",
+    "boolean",
+    "true",
+    "false",
+    "beginner"
+  ],
+  "prerequisites": ["JS-030"],
+  "previous": "JS-030",
+  "next": "JS-032",
+  "estimatedReadingTime": 3,
+  "goal": "Understand that a comparison always returns true or false.",
+  "explanation": [
+    "Comparison means checking two values against each other.",
+    "JavaScript can test whether values are equal, different, greater, or less.",
+    "The result of a comparison is always a boolean: true or false.",
+    "If the condition is correct, the result is true.",
+    "If the condition is wrong, the result is false."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "A comparison is like a yes-or-no question. JavaScript looks at two values and answers true or false."
+  },
+  "codeExample": "console.log(5 === 5);\nconsole.log(5 === 10);",
+  "result": "true\nfalse",
+  "remember": [
+    "A comparison returns a boolean.",
+    "true means the check passed.",
+    "false means the check failed."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes expect a comparison to return the value itself. In reality, it returns only true or false."
+  },
+  "quiz": {
+    "question": "What does a comparison return?",
+    "options": [
+      "true or false",
+      "Only numbers",
+      "Only strings"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Comparison operators",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

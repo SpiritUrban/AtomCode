@@ -1,14 +1,65 @@
 {
   "number": 32,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "loose-vs-strict-equality",
+  "title": "== vs ===",
+  "subtitle": "Схожі, але різні",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "equality",
+    "loose-equality",
+    "strict-equality",
+    "comparison",
+    "type-conversion",
+    "beginner"
+  ],
+  "prerequisites": ["JS-031"],
+  "previous": "JS-031",
+  "next": "JS-033",
+  "estimatedReadingTime": 4,
+  "goal": "Зрозумій різницю між == та === у JavaScript.",
+  "explanation": [
+    "== перевіряє рівність після можливого перетворення типів.",
+    "=== перевіряє і значення, і тип без автоматичного перетворення.",
+    "Через це == іноді дає неочікувані результати.",
+    "Наприклад, 0 == false повертає true, бо JavaScript перетворює типи перед порівнянням.",
+    "У більшості випадків безпечніше використовувати ===."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "== схожий на суддю, який каже: «вони достатньо схожі». === схожий на строгого суддю, який перевіряє і вигляд, і тип документа."
+  },
+  "codeExample": "console.log(0 == false);\nconsole.log(0 === false);",
+  "result": "true\nfalse",
+  "remember": [
+    "== може перетворювати типи.",
+    "=== не перетворює типи.",
+    "У більшості випадків використовуй ===."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що == і === майже однакові. Насправді різниця дуже важлива через автоматичне перетворення типів."
+  },
+  "quiz": {
+    "question": "Який оператор перевіряє і значення, і тип?",
+    "options": [
+      "===",
+      "==",
+      "="
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Strict equality (===)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality",
+      "type": "mdn"
+    },
+    {
+      "title": "MDN — Equality (==)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

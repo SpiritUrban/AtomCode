@@ -1,14 +1,60 @@
 {
   "number": 30,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "boolean-function",
+  "title": "Boolean()",
+  "subtitle": "Перетворення на true або false",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "boolean",
+    "type-conversion",
+    "truthy",
+    "falsy",
+    "beginner"
+  ],
+  "prerequisites": ["JS-029"],
+  "previous": "JS-029",
+  "next": "JS-031",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись перетворювати значення на true або false за допомогою Boolean().",
+  "explanation": [
+    "Boolean() перетворює будь-яке значення на логічний тип.",
+    "Результатом завжди буде або true, або false.",
+    "Більшість значень у JavaScript перетворюються на true.",
+    "Деякі спеціальні значення, наприклад 0 або порожній рядок, перетворюються на false.",
+    "Boolean() дуже важливий для умов та логіки програм."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви охоронця на вході. Він перевіряє будь-яке значення і приймає лише одне з двох рішень: так (true) або ні (false)."
+  },
+  "codeExample": "console.log(Boolean(1));\nconsole.log(Boolean(0));\nconsole.log(Boolean(\"Hello\"));\nconsole.log(Boolean(\"\"));",
+  "result": "true\nfalse\ntrue\nfalse",
+  "remember": [
+    "Boolean() повертає true або false.",
+    "0 перетворюється на false.",
+    "Порожній рядок перетворюється на false.",
+    "Більшість інших значень стають true."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що будь-який текст означає false. Насправді навіть рядок \"false\" перетвориться на true, тому що він не порожній."
+  },
+  "quiz": {
+    "question": "Що поверне Boolean(0)?",
+    "options": [
+      "false",
+      "true",
+      "0"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Boolean()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean/Boolean",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

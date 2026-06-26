@@ -1,14 +1,59 @@
 {
   "number": 28,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "number-function",
+  "title": "Number()",
+  "subtitle": "Converting to a number",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "number",
+    "type-conversion",
+    "casting",
+    "primitive-types",
+    "beginner"
+  ],
+  "prerequisites": ["JS-027"],
+  "previous": "JS-027",
+  "next": "JS-029",
+  "estimatedReadingTime": 3,
+  "goal": "Learn how to convert values to numbers using Number().",
+  "explanation": [
+    "Number() converts a value to the number type.",
+    "It is most often used to convert text entered by the user.",
+    "If a string contains a valid number, the conversion succeeds.",
+    "After conversion, you can perform math operations on the value.",
+    "If conversion is not possible, JavaScript returns NaN."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a card with \"42\" written on it. Number() reads the text and turns it into the actual number 42."
+  },
+  "codeExample": "console.log(Number(\"42\"));\nconsole.log(Number(\"100\"));",
+  "result": "42\n100",
+  "remember": [
+    "Number() creates a number.",
+    "\"42\" and 42 are different data types.",
+    "Invalid values may produce NaN."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think Number() works with any text. For example, Number(\"Hello\") returns NaN."
+  },
+  "quiz": {
+    "question": "What does Number(\"42\") return?",
+    "options": [
+      "42",
+      "\"42\"",
+      "NaN"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Number()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }
