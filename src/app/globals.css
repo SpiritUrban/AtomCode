@@ -41,3 +41,50 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #6ee7b7;
 }
+
+/* Code syntax highlighting — AtomCode theme */
+.code-block .hljs {
+  background: transparent;
+  color: #e2e8f0;
+}
+
+.code-block .hljs-comment,
+.code-block .hljs-quote {
+  color: #64748b;
+  font-style: italic;
+}
+
+.code-block .hljs-keyword,
+.code-block .hljs-selector-tag,
+.code-block .hljs-built_in {
+  color: #818cf8;
+}
+
+.code-block .hljs-string,
+.code-block .hljs-regexp,
+.code-block .hljs-symbol {
+  color: #6ee7b7;
+}
+
+.code-block .hljs-number,
+.code-block .hljs-literal,
+.code-block .hljs-boolean {
+  color: #fbbf24;
+}
+
+.code-block .hljs-title,
+.code-block .hljs-title.function_,
+.code-block .hljs-function {
+  color: #38bdf8;
+}
+
+.code-block .hljs-variable,
+.code-block .hljs-params,
+.code-block .hljs-attr {
+  color: #e2e8f0;
+}
+
+.code-block .hljs-operator,
+.code-block .hljs-punctuation {
+  color: #94a3b8;
+}
