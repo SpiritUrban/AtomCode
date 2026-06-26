@@ -1,14 +1,59 @@
 {
   "number": 16,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "expression",
+  "title": "Expression",
+  "subtitle": "Produces a value",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "expression",
+    "values",
+    "operators",
+    "basics",
+    "beginner"
+  ],
+  "prerequisites": ["JS-015"],
+  "previous": "JS-015",
+  "next": "JS-017",
+  "estimatedReadingTime": 3,
+  "goal": "Learn what an expression is and why every expression produces a value.",
+  "explanation": [
+    "Expression — це будь-який фрагмент коду, який обчислюється в одне значення.",
+    "Виразом може бути математичний приклад, порівняння або об'єднання рядків.",
+    "JavaScript спочатку обчислює expression, а вже потім використовує отримане значення.",
+    "Одне значення може бути числом, рядком, boolean або будь-яким іншим типом.",
+    "Практично кожна програма складається з великої кількості expressions."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Expression схожий на калькулятор. Ти вводиш приклад, а на виході завжди отримуєш готовий результат."
+  },
+  "codeExample": "console.log(5 + 3);\nconsole.log(\"Hi\" + \"!\");\nconsole.log(10 > 3);",
+  "result": "8\nHi!\ntrue",
+  "remember": [
+    "Expression завжди повертає значення.",
+    "Результат expression можна використовувати далі.",
+    "5 + 3, \"Hi\" + \"!\" і 10 > 3 — це expressions."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що expression обов'язково має бути математикою. Насправді будь-який код, який повертає значення, є expression."
+  },
+  "quiz": {
+    "question": "Що робить expression?",
+    "options": [
+      "Повертає значення",
+      "Створює файл",
+      "Зупиняє програму"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Expressions",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

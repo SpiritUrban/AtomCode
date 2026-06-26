@@ -1,14 +1,59 @@
 {
   "number": 17,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "statement",
+  "title": "Statement",
+  "subtitle": "Does something",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "statement",
+    "syntax",
+    "execution",
+    "basics",
+    "beginner"
+  ],
+  "prerequisites": ["JS-016"],
+  "previous": "JS-016",
+  "next": "JS-018",
+  "estimatedReadingTime": 3,
+  "goal": "Understand what a statement is and how it differs from an expression.",
+  "explanation": [
+    "Statement — це команда, яку виконує JavaScript.",
+    "На відміну від expression, statement не обов'язково повертає значення.",
+    "Його задача — виконати певну дію.",
+    "Наприклад, оголосити змінну, вивести інформацію в консоль або виконати умову.",
+    "Програма складається з великої кількості statements, які виконуються один за одним."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Expression схожий на відповідь калькулятора. Statement схожий на натискання кнопки, яка запускає певну дію."
+  },
+  "codeExample": "let age = 25;\n\nconsole.log(age);",
+  "result": "25",
+  "remember": [
+    "Statement виконує дію.",
+    "Програма складається зі statements.",
+    "Expression створює значення, statement використовує їх."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто плутають expression і statement. Expression виробляє значення, а statement виконує дію."
+  },
+  "quiz": {
+    "question": "Що робить statement?",
+    "options": [
+      "Виконує дію",
+      "Завжди повертає число",
+      "Створює HTML"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Statements",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

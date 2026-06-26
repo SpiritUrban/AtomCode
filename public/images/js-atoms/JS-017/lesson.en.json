@@ -1,14 +1,59 @@
 {
   "number": 17,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "statement",
+  "title": "Statement",
+  "subtitle": "Does something",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "statement",
+    "syntax",
+    "execution",
+    "basics",
+    "beginner"
+  ],
+  "prerequisites": ["JS-016"],
+  "previous": "JS-016",
+  "next": "JS-018",
+  "estimatedReadingTime": 3,
+  "goal": "Understand what a statement is and how it differs from an expression.",
+  "explanation": [
+    "A statement is a command that JavaScript executes.",
+    "Unlike an expression, a statement does not necessarily return a value.",
+    "Its job is to perform a specific action.",
+    "For example, declare a variable, print information to the console, or run a condition.",
+    "A program consists of many statements that run one after another."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "An expression is like a calculator's answer. A statement is like pressing a button that triggers a specific action."
+  },
+  "codeExample": "let age = 25;\n\nconsole.log(age);",
+  "result": "25",
+  "remember": [
+    "A statement performs an action.",
+    "A program is made of statements.",
+    "An expression creates a value; a statement uses it."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often confuse expressions and statements. An expression produces a value; a statement performs an action."
+  },
+  "quiz": {
+    "question": "What does a statement do?",
+    "options": [
+      "Performs an action",
+      "Always returns a number",
+      "Creates HTML"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Statements",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

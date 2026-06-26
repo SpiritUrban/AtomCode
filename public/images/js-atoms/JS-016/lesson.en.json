@@ -1,14 +1,59 @@
 {
   "number": 16,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "expression",
+  "title": "Expression",
+  "subtitle": "Produces a value",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "expression",
+    "values",
+    "operators",
+    "basics",
+    "beginner"
+  ],
+  "prerequisites": ["JS-015"],
+  "previous": "JS-015",
+  "next": "JS-017",
+  "estimatedReadingTime": 3,
+  "goal": "Learn what an expression is and why every expression produces a value.",
+  "explanation": [
+    "An expression is any piece of code that evaluates to a single value.",
+    "An expression can be a math calculation, a comparison, or string concatenation.",
+    "JavaScript first evaluates the expression, then uses the resulting value.",
+    "That value can be a number, string, boolean, or any other type.",
+    "Almost every program is built from a large number of expressions."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "An expression is like a calculator. You enter a calculation and always get a ready result."
+  },
+  "codeExample": "console.log(5 + 3);\nconsole.log(\"Hi\" + \"!\");\nconsole.log(10 > 3);",
+  "result": "8\nHi!\ntrue",
+  "remember": [
+    "An expression always returns a value.",
+    "The result of an expression can be used further in the program.",
+    "5 + 3, \"Hi\" + \"!\", and 10 > 3 are expressions."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think an expression must be math. In reality, any code that produces a value is an expression."
+  },
+  "quiz": {
+    "question": "What does an expression do?",
+    "options": [
+      "Returns a value",
+      "Creates a file",
+      "Stops the program"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Expressions",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

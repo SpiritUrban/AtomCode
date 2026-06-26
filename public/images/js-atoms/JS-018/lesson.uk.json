@@ -1,14 +1,59 @@
 {
   "number": 18,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "assignment-operator",
+  "title": "Assignment Operator =",
+  "subtitle": "Put a value inside",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "assignment",
+    "operator",
+    "variables",
+    "basics",
+    "beginner"
+  ],
+  "prerequisites": ["JS-017"],
+  "previous": "JS-017",
+  "next": "JS-019",
+  "estimatedReadingTime": 3,
+  "goal": "Learn how the assignment operator stores a value inside a variable.",
+  "explanation": [
+    "Оператор = використовується для запису значення у змінну.",
+    "Спочатку JavaScript обчислює праву частину виразу.",
+    "Після цього отримане значення записується у змінну зліва.",
+    "Знак = не означає математичну рівність. Він означає «записати значення».",
+    "Це один із найважливіших операторів у JavaScript."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Знак = схожий на конвеєр, який кладе готовий предмет у підписану коробку."
+  },
+  "codeExample": "let fruit = \"Apple\";\n\nconsole.log(fruit);",
+  "result": "Apple",
+  "remember": [
+    "= записує значення у змінну.",
+    "Спочатку обчислюється права частина.",
+    "Потім значення потрапляє у змінну."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Багато новачків думають, що = означає «дорівнює». У JavaScript це оператор присвоєння, а не перевірки рівності."
+  },
+  "quiz": {
+    "question": "Що робить оператор = ?",
+    "options": [
+      "Записує значення у змінну",
+      "Порівнює два значення",
+      "Видаляє змінну"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Assignment",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

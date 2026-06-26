@@ -1,14 +1,59 @@
 {
   "number": 18,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "assignment-operator",
+  "title": "Assignment Operator =",
+  "subtitle": "Put a value inside",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "assignment",
+    "operator",
+    "variables",
+    "basics",
+    "beginner"
+  ],
+  "prerequisites": ["JS-017"],
+  "previous": "JS-017",
+  "next": "JS-019",
+  "estimatedReadingTime": 3,
+  "goal": "Learn how the assignment operator stores a value inside a variable.",
+  "explanation": [
+    "The = operator is used to store a value in a variable.",
+    "JavaScript first evaluates the expression on the right side.",
+    "Then the resulting value is stored in the variable on the left.",
+    "The = sign does not mean mathematical equality. It means \"store this value\".",
+    "This is one of the most important operators in JavaScript."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "The = sign is like a conveyor belt that places a ready item into a labeled box."
+  },
+  "codeExample": "let fruit = \"Apple\";\n\nconsole.log(fruit);",
+  "result": "Apple",
+  "remember": [
+    "= stores a value in a variable.",
+    "The right side is evaluated first.",
+    "Then the value goes into the variable."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Many beginners think = means \"equals\". In JavaScript it is the assignment operator, not an equality check."
+  },
+  "quiz": {
+    "question": "What does the = operator do?",
+    "options": [
+      "Stores a value in a variable",
+      "Compares two values",
+      "Deletes a variable"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Assignment",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }
