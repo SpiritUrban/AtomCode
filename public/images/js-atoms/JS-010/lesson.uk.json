@@ -2,7 +2,7 @@
   "number": 10,
   "slug": "dynamic-typing",
   "title": "Dynamic Typing",
-  "subtitle": "One box. Different values.",
+  "subtitle": "Одна коробка. Різні значення.",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -15,7 +15,7 @@
   "previous": "JS-009",
   "next": "JS-011",
   "estimatedReadingTime": 2,
-  "goal": "Learn that a JavaScript variable can store values of different types.",
+  "goal": "Дізнайся, що змінна в JavaScript може зберігати значення різних типів.",
   "explanation": [
     "JavaScript має динамічну типізацію.",
     "Це означає, що одна й та сама змінна може зберігати значення різних типів.",

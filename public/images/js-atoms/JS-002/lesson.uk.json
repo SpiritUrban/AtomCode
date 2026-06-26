@@ -2,7 +2,7 @@
   "number": 2,
   "slug": "let-vs-const",
   "title": "let vs const",
-  "subtitle": "Can the value change?",
+  "subtitle": "Чи може значення змінитися?",
   "difficulty": "Beginner",
   "duration": "3 min",
   "tags": ["let", "const", "variables", "basics", "beginner"],
@@ -10,7 +10,7 @@
   "previous": "JS-001",
   "next": "JS-003",
   "estimatedReadingTime": 3,
-  "goal": "Understand when to use let and when to use const.",
+  "goal": "Зрозумій, коли використовувати let, а коли const.",
   "explanation": [
     "JavaScript пропонує два сучасних способи створення змінних.",
     "const означає, що змінна завжди повинна посилатися на те саме значення.",

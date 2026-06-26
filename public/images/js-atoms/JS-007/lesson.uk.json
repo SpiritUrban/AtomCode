@@ -2,7 +2,7 @@
   "number": 7,
   "slug": "null",
   "title": "null",
-  "subtitle": "Empty on purpose",
+  "subtitle": "Порожньо навмисно",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -15,7 +15,7 @@
   "previous": "JS-006",
   "next": "JS-008",
   "estimatedReadingTime": 2,
-  "goal": "Learn what the null value means in JavaScript.",
+  "goal": "Дізнайся, що означає значення null у JavaScript.",
   "explanation": [
     "null — це спеціальне значення, яке означає навмисно порожнє місце.",
     "Його використовують тоді, коли змінна існує, але зараз у ній немає потрібного значення.",

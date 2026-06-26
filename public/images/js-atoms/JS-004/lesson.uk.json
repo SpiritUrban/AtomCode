@@ -2,7 +2,7 @@
   "number": 4,
   "slug": "number",
   "title": "Number",
-  "subtitle": "Everything starts with numbers",
+  "subtitle": "Усе починається з чисел",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -16,7 +16,7 @@
   "previous": "JS-003",
   "next": "JS-005",
   "estimatedReadingTime": 2,
-  "goal": "Learn how JavaScript stores and uses numeric values.",
+  "goal": "Дізнайся, як JavaScript зберігає та використовує числові значення.",
   "explanation": [
     "Number — це тип даних для чисел у JavaScript.",
     "Числа потрібні для підрахунків: вік, ціна, кількість, рейтинг, відстань, координати.",

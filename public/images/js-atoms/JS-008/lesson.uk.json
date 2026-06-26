@@ -2,7 +2,7 @@
   "number": 8,
   "slug": "undefined",
   "title": "undefined",
-  "subtitle": "Not assigned yet",
+  "subtitle": "Ще не присвоєно",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -15,7 +15,7 @@
   "previous": "JS-007",
   "next": "JS-009",
   "estimatedReadingTime": 2,
-  "goal": "Learn what undefined means in JavaScript.",
+  "goal": "Дізнайся, що означає undefined у JavaScript.",
   "explanation": [
     "undefined означає, що значення ще не було встановлено.",
     "Якщо створити змінну без значення, JavaScript автоматично присвоїть їй undefined.",

@@ -2,7 +2,7 @@
   "number": 11,
   "slug": "value-vs-variable",
   "title": "Value vs Variable",
-  "subtitle": "The box is not the thing.",
+  "subtitle": "Коробка — не те саме, що вміст",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -15,7 +15,7 @@
   "previous": "JS-010",
   "next": "JS-012",
   "estimatedReadingTime": 2,
-  "goal": "Understand the difference between a variable and the value stored inside it.",
+  "goal": "Зрозумій різницю між змінною та значенням, яке в ній зберігається.",
   "explanation": [
     "Змінна і значення — це не одне й те саме.",
     "Змінна — це місце, де зберігаються дані.",

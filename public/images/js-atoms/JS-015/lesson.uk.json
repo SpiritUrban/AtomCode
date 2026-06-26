@@ -2,7 +2,7 @@
   "number": 15,
   "slug": "console-log",
   "title": "console.log()",
-  "subtitle": "Show the value",
+  "subtitle": "Покажи значення",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -16,7 +16,7 @@
   "previous": "JS-014",
   "next": "JS-016",
   "estimatedReadingTime": 2,
-  "goal": "Learn how to display values in the JavaScript console.",
+  "goal": "Дізнайся, як виводити значення в консоль JavaScript.",
   "explanation": [
     "console.log() виводить значення в консоль.",
     "Це один із найважливіших інструментів програміста для перевірки роботи програми.",

@@ -2,7 +2,7 @@
   "number": 6,
   "slug": "boolean",
   "title": "Boolean",
-  "subtitle": "True or False",
+  "subtitle": "True або False",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -17,7 +17,7 @@
   "previous": "JS-005",
   "next": "JS-007",
   "estimatedReadingTime": 2,
-  "goal": "Learn how JavaScript stores true and false values.",
+  "goal": "Дізнайся, як JavaScript зберігає значення true і false.",
   "explanation": [
     "Boolean — це тип даних, який може містити лише два значення: true або false.",
     "Його використовують тоді, коли відповідь може бути тільки «так» або «ні».",

@@ -2,7 +2,7 @@
   "number": 13,
   "slug": "naming-variables",
   "title": "Naming Variables",
-  "subtitle": "Choose good names",
+  "subtitle": "Обирай гарні назви",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -16,7 +16,7 @@
   "previous": "JS-012",
   "next": "JS-014",
   "estimatedReadingTime": 2,
-  "goal": "Learn how to choose clear and meaningful variable names.",
+  "goal": "Дізнайся, як обирати зрозумілі та змістовні назви змінних.",
   "explanation": [
     "Назва змінної повинна пояснювати, що саме вона зберігає.",
     "Чим зрозуміліша назва, тим легше читати код.",

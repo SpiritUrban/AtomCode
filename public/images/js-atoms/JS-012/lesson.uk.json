@@ -2,7 +2,7 @@
   "number": 12,
   "slug": "reassignment",
   "title": "Reassignment",
-  "subtitle": "Replace the value",
+  "subtitle": "Замінити значення",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -16,7 +16,7 @@
   "previous": "JS-011",
   "next": "JS-013",
   "estimatedReadingTime": 2,
-  "goal": "Learn how to replace the value stored in a variable.",
+  "goal": "Дізнайся, як замінити значення, збережене в змінній.",
   "explanation": [
     "Переприсвоєння (reassignment) означає заміну старого значення новим.",
     "Змінна залишається тією самою, але її вміст змінюється.",

@@ -2,7 +2,7 @@
   "number": 9,
   "slug": "typeof",
   "title": "typeof",
-  "subtitle": "What's inside?",
+  "subtitle": "Що всередині?",
   "difficulty": "Beginner",
   "duration": "3 min",
   "tags": [
@@ -18,7 +18,7 @@
   "previous": "JS-008",
   "next": "JS-010",
   "estimatedReadingTime": 3,
-  "goal": "Learn how to check the type of any value in JavaScript.",
+  "goal": "Дізнайся, як перевірити тип будь-якого значення в JavaScript.",
   "explanation": [
     "typeof — це оператор, який повідомляє тип значення.",
     "Він допомагає зрозуміти, чи є значення числом, текстом, логічним значенням або іншим типом.",

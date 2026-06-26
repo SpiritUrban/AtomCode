@@ -2,7 +2,7 @@
   "number": 5,
   "slug": "string",
   "title": "String",
-  "subtitle": "Text inside quotes",
+  "subtitle": "Текст у лапках",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -16,7 +16,7 @@
   "previous": "JS-004",
   "next": "JS-006",
   "estimatedReadingTime": 2,
-  "goal": "Learn how JavaScript stores text values.",
+  "goal": "Дізнайся, як JavaScript зберігає текстові значення.",
   "explanation": [
     "String — це тип даних для тексту.",
     "Усі слова, речення, повідомлення та назви у JavaScript зберігаються як String.",

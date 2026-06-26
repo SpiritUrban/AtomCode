@@ -2,7 +2,7 @@
   "number": 14,
   "slug": "comments",
   "title": "Comments",
-  "subtitle": "Notes for humans",
+  "subtitle": "Нотатки для людей",
   "difficulty": "Beginner",
   "duration": "2 min",
   "tags": [
@@ -15,7 +15,7 @@
   "previous": "JS-013",
   "next": "JS-015",
   "estimatedReadingTime": 2,
-  "goal": "Learn what comments are and why programmers use them.",
+  "goal": "Дізнайся, що таке коментарі і навіщо їх використовують програмісти.",
   "explanation": [
     "Коментарі — це пояснення всередині коду.",
     "JavaScript повністю ігнорує коментарі під час виконання програми.",

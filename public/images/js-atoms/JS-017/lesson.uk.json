@@ -2,7 +2,7 @@
   "number": 17,
   "slug": "statement",
   "title": "Statement",
-  "subtitle": "Does something",
+  "subtitle": "Виконує дію",
   "difficulty": "Beginner",
   "duration": "3 min",
   "tags": [
@@ -16,7 +16,7 @@
   "previous": "JS-016",
   "next": "JS-018",
   "estimatedReadingTime": 3,
-  "goal": "Understand what a statement is and how it differs from an expression.",
+  "goal": "Зрозумій, що таке statement і чим він відрізняється від expression.",
   "explanation": [
     "Statement — це команда, яку виконує JavaScript.",
     "На відміну від expression, statement не обов'язково повертає значення.",

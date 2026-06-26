@@ -2,7 +2,7 @@
   "number": 16,
   "slug": "expression",
   "title": "Expression",
-  "subtitle": "Produces a value",
+  "subtitle": "Повертає значення",
   "difficulty": "Beginner",
   "duration": "3 min",
   "tags": [
@@ -16,7 +16,7 @@
   "previous": "JS-015",
   "next": "JS-017",
   "estimatedReadingTime": 3,
-  "goal": "Learn what an expression is and why every expression produces a value.",
+  "goal": "Дізнайся, що таке expression і чому кожен expression повертає значення.",
   "explanation": [
     "Expression — це будь-який фрагмент коду, який обчислюється в одне значення.",
     "Виразом може бути математичний приклад, порівняння або об'єднання рядків.",

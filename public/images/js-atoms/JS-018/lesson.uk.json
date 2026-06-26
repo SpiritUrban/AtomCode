@@ -2,7 +2,7 @@
   "number": 18,
   "slug": "assignment-operator",
   "title": "Assignment Operator =",
-  "subtitle": "Put a value inside",
+  "subtitle": "Поклади значення всередину",
   "difficulty": "Beginner",
   "duration": "3 min",
   "tags": [
@@ -16,7 +16,7 @@
   "previous": "JS-017",
   "next": "JS-019",
   "estimatedReadingTime": 3,
-  "goal": "Learn how the assignment operator stores a value inside a variable.",
+  "goal": "Дізнайся, як оператор присвоєння записує значення в змінну.",
   "explanation": [
     "Оператор = використовується для запису значення у змінну.",
     "Спочатку JavaScript обчислює праву частину виразу.",
