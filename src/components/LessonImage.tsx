@@ -11,16 +11,16 @@ type LessonImageProps = {
 
 export default function LessonImage({ src, alt, code }: LessonImageProps) {
   return (
-    <div className="flex h-full w-full items-center justify-center p-3">
-      <div className="relative h-full w-full overflow-hidden rounded-2xl border-2 border-atom-border bg-atom-card shadow-2xl shadow-atom-accent/5">
-        <div className="absolute left-3 top-3 z-10 rounded-full bg-atom-bg/80 px-3 py-1 text-xs font-mono font-bold text-atom-accent backdrop-blur-sm">
+    <div className="relative h-full w-full p-2">
+      <div className="relative h-full w-full overflow-hidden rounded-xl border-2 border-atom-border bg-atom-card">
+        <div className="absolute left-2 top-2 z-10 rounded-full bg-atom-bg/80 px-2.5 py-1 text-xs font-mono font-bold text-atom-accent backdrop-blur-sm">
           {code}
         </div>
         <Image
           src={assetPath(src)}
           alt={alt}
           fill
-          className="object-contain p-2"
+          className="object-cover"
           sizes="(max-height: 100vh) 50vw"
           priority
         />

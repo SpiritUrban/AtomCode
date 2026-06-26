@@ -81,13 +81,6 @@ export default function LessonViewer({
     [lesson, lessonsRecord, currentIndex, goToCode, goToIndex],
   );
 
-  const handleSidebarScroll = useCallback((e: React.WheelEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    const nav = document.getElementById("sidebar-nav");
-    if (nav) nav.scrollTop += e.deltaY;
-  }, []);
-
   const handleCenterScroll = useCallback(
     (e: React.WheelEvent) => {
       e.preventDefault();
@@ -153,20 +146,15 @@ export default function LessonViewer({
   };
 
   return (
-    <div className="flex h-full flex-1 overflow-hidden">
+    <div className="flex h-full min-w-0 flex-1 overflow-hidden">
       <div
-        className="h-full aspect-square shrink-0 border-r border-atom-border bg-atom-bg"
-        onWheel={handleSidebarScroll}
+        className="h-full aspect-square shrink-0 max-w-[calc(100%-18rem)] border-r border-atom-border bg-atom-bg"
+        onWheel={handleCenterScroll}
       >
         <LessonImage src={lesson.image} alt={lesson.title} code={lesson.code} />
       </div>
 
-      <div
-        className="h-full min-w-0 flex-1 bg-atom-bg"
-        onWheel={handleCenterScroll}
-      />
-
-      <div className="h-full w-[34rem] max-w-full shrink-0 overflow-hidden border-l border-atom-border bg-atom-surface xl:w-[42rem]">
+      <div className="h-full min-w-[18rem] flex-1 basis-0 overflow-hidden bg-atom-surface">
         <LessonContent
           lesson={lesson}
           prerequisites={prerequisites}
