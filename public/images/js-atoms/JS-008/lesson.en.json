@@ -1,0 +1,58 @@
+{
+  "number": 8,
+  "slug": "undefined",
+  "title": "undefined",
+  "subtitle": "Not assigned yet",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "undefined",
+    "primitive-types",
+    "variables",
+    "beginner"
+  ],
+  "prerequisites": ["JS-007"],
+  "previous": "JS-007",
+  "next": "JS-009",
+  "estimatedReadingTime": 2,
+  "goal": "Learn what undefined means in JavaScript.",
+  "explanation": [
+    "undefined means a value has not been assigned yet.",
+    "If you create a variable without a value, JavaScript automatically assigns undefined to it.",
+    "Unlike null, undefined does not need to be written manually.",
+    "This means the variable exists but does not contain anything yet.",
+    "undefined is common while writing and debugging programs."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine an empty box that nothing has been put into yet. Nobody has even decided what should go inside. That is undefined."
+  },
+  "codeExample": "let age;\n\nconsole.log(age);",
+  "result": "undefined",
+  "remember": [
+    "undefined means a value has not been set yet.",
+    "JavaScript can assign undefined automatically.",
+    "undefined and null are different values."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Many beginners think undefined and null mean the same thing. In reality, they serve different purposes."
+  },
+  "quiz": {
+    "question": "When does JavaScript automatically return undefined?",
+    "options": [
+      "When a variable is created without a value",
+      "When a number equals zero",
+      "When a String is used"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — undefined",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

@@ -1,0 +1,58 @@
+{
+  "number": 8,
+  "slug": "undefined",
+  "title": "undefined",
+  "subtitle": "Not assigned yet",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "undefined",
+    "primitive-types",
+    "variables",
+    "beginner"
+  ],
+  "prerequisites": ["JS-007"],
+  "previous": "JS-007",
+  "next": "JS-009",
+  "estimatedReadingTime": 2,
+  "goal": "Learn what undefined means in JavaScript.",
+  "explanation": [
+    "undefined означає, що значення ще не було встановлено.",
+    "Якщо створити змінну без значення, JavaScript автоматично присвоїть їй undefined.",
+    "На відміну від null, undefined не потрібно записувати вручну.",
+    "Це означає, що змінна існує, але поки що нічого не містить.",
+    "undefined часто зустрічається під час написання та налагодження програм."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви порожню коробку, в яку ще нічого не поклали. Ніхто навіть не вирішив, що там має лежати. Це undefined."
+  },
+  "codeExample": "let age;\n\nconsole.log(age);",
+  "result": "undefined",
+  "remember": [
+    "undefined означає, що значення ще не встановлено.",
+    "JavaScript може присвоїти undefined автоматично.",
+    "undefined і null — різні значення."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Багато новачків думають, що undefined і null означають одне й те саме. Насправді їх призначення різне."
+  },
+  "quiz": {
+    "question": "Коли JavaScript автоматично повертає undefined?",
+    "options": [
+      "Коли змінна створена без значення",
+      "Коли число дорівнює нулю",
+      "Коли використовується String"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — undefined",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

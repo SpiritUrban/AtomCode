@@ -1,0 +1,58 @@
+{
+  "number": 7,
+  "slug": "null",
+  "title": "null",
+  "subtitle": "Empty on purpose",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "null",
+    "primitive-types",
+    "empty",
+    "beginner"
+  ],
+  "prerequisites": ["JS-006"],
+  "previous": "JS-006",
+  "next": "JS-008",
+  "estimatedReadingTime": 2,
+  "goal": "Learn what the null value means in JavaScript.",
+  "explanation": [
+    "null — це спеціальне значення, яке означає навмисно порожнє місце.",
+    "Його використовують тоді, коли змінна існує, але зараз у ній немає потрібного значення.",
+    "Це означає, що програміст свідомо записав у змінну null.",
+    "Наприклад, користувач ще не вибрав улюблений колір або товар ще не призначений покупцю.",
+    "null означає не 'невідомо', а саме 'порожньо навмисно'."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви стіл із табличкою «Місце для вази». Ваза зараз відсутня, але місце спеціально залишене порожнім. Це і є null."
+  },
+  "codeExample": "let favoriteColor = null;\n\nconsole.log(favoriteColor);",
+  "result": "null",
+  "remember": [
+    "null означає навмисно порожнє значення.",
+    "Змінна існує.",
+    "Значення спеціально встановлено в null."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Не плутай null з undefined. null встановлює програміст, а undefined зазвичай з'являється автоматично."
+  },
+  "quiz": {
+    "question": "Що означає null?",
+    "options": [
+      "Навмисно порожнє значення",
+      "Помилка",
+      "Будь-який текст"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — null",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

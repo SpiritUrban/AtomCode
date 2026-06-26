@@ -1,0 +1,61 @@
+{
+  "number": 9,
+  "slug": "typeof",
+  "title": "typeof",
+  "subtitle": "What's inside?",
+  "difficulty": "Beginner",
+  "duration": "3 min",
+  "tags": [
+    "typeof",
+    "types",
+    "number",
+    "string",
+    "boolean",
+    "operator",
+    "beginner"
+  ],
+  "prerequisites": ["JS-008"],
+  "previous": "JS-008",
+  "next": "JS-010",
+  "estimatedReadingTime": 3,
+  "goal": "Learn how to check the type of any value in JavaScript.",
+  "explanation": [
+    "typeof — це оператор, який повідомляє тип значення.",
+    "Він допомагає зрозуміти, чи є значення числом, текстом, логічним значенням або іншим типом.",
+    "Це дуже корисно під час налагодження програм і перевірки даних.",
+    "typeof завжди повертає результат у вигляді рядка.",
+    "Це один із найпростіших інструментів для дослідження значень у JavaScript."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "typeof схожий на лупу або сканер, який дивиться всередину коробки й повідомляє, що саме там знаходиться."
+  },
+  "codeExample": "console.log(typeof 42);\nconsole.log(typeof \"Hello\");\nconsole.log(typeof true);",
+  "result": "number\nstring\nboolean",
+  "remember": [
+    "typeof визначає тип значення.",
+    "Результат typeof завжди є рядком.",
+    "typeof допомагає перевіряти дані."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що typeof повертає сам тип. Насправді він повертає текстову назву типу, наприклад \"number\" або \"string\"."
+  },
+  "quiz": {
+    "question": "Що поверне typeof 42?",
+    "options": [
+      "\"number\"",
+      "42",
+      "Number"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — typeof",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

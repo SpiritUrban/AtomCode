@@ -1,0 +1,61 @@
+{
+  "number": 9,
+  "slug": "typeof",
+  "title": "typeof",
+  "subtitle": "What's inside?",
+  "difficulty": "Beginner",
+  "duration": "3 min",
+  "tags": [
+    "typeof",
+    "types",
+    "number",
+    "string",
+    "boolean",
+    "operator",
+    "beginner"
+  ],
+  "prerequisites": ["JS-008"],
+  "previous": "JS-008",
+  "next": "JS-010",
+  "estimatedReadingTime": 3,
+  "goal": "Learn how to check the type of any value in JavaScript.",
+  "explanation": [
+    "typeof is an operator that tells you the type of a value.",
+    "It helps you understand whether a value is a number, text, boolean, or another type.",
+    "This is very useful when debugging programs and checking data.",
+    "typeof always returns a result as a string.",
+    "It is one of the simplest tools for exploring values in JavaScript."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "typeof is like a magnifying glass or scanner that looks inside a box and reports what is inside."
+  },
+  "codeExample": "console.log(typeof 42);\nconsole.log(typeof \"Hello\");\nconsole.log(typeof true);",
+  "result": "number\nstring\nboolean",
+  "remember": [
+    "typeof determines the type of a value.",
+    "The result of typeof is always a string.",
+    "typeof helps you inspect data."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think typeof returns the type itself. In fact, it returns the type name as text, such as \"number\" or \"string\"."
+  },
+  "quiz": {
+    "question": "What will typeof 42 return?",
+    "options": [
+      "\"number\"",
+      "42",
+      "Number"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — typeof",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

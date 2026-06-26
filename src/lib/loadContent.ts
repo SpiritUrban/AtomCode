@@ -26,16 +26,8 @@ function resolveLessonJsonPath(
   lessonDir: string,
   locale: Locale,
 ): string | null {
-  const candidates = [
-    path.join(lessonDir, `lesson.${locale}.json`),
-    path.join(lessonDir, "lesson.json"),
-  ];
-
-  for (const candidate of candidates) {
-    if (fs.existsSync(candidate)) return candidate;
-  }
-
-  return null;
+  const jsonPath = path.join(lessonDir, `lesson.${locale}.json`);
+  return fs.existsSync(jsonPath) ? jsonPath : null;
 }
 
 function loadSectionLessons(

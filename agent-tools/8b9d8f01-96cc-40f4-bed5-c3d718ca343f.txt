@@ -1,0 +1,288 @@
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Mic
+
+... (output truncated) ...
+
+� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:451
++ ...  -Path "$dir/lesson.en.json" -Value $json -Encoding utf8NoBOM }; if ( ...
++                                                         ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 
+Set-Content : �� 㤠���� �ਢ易�� ��ࠬ��� "Encoding". �� 㤠���� �८�ࠧ����� ���祭�� "utf8NoBOM" � ⨯ 
+"Microsoft.PowerShell.Commands.FileSystemCmdletProviderEncoding". �訡��: "�� 㤠���� ᮯ��⠢��� ���⮥ ��� 
+�����䨪��� utf8NoBOM � �����⨬� ������ ����᫨⥫�.  ������ ���� �� ᫥����� ���� ����᫨⥫� � ���஡�� 
+�� ࠧ:
+Unknown, String, Unicode, Byte, BigEndianUnicode, UTF8, UTF7, UTF32, Ascii, Default, Oem, BigEndianUTF32"
+��ப�:1 ����:573
++ ... tent -Path "$dir/lesson.uk.json" -Value $json -Encoding utf8NoBOM } }
++                                                             ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Content], ParameterBindingException
+    + FullyQualifiedErrorId : CannotConvertArgumentNoMessage,Microsoft.PowerShell.Commands.SetContentCommand
+ 

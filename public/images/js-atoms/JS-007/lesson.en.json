@@ -1,0 +1,58 @@
+{
+  "number": 7,
+  "slug": "null",
+  "title": "null",
+  "subtitle": "Empty on purpose",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "null",
+    "primitive-types",
+    "empty",
+    "beginner"
+  ],
+  "prerequisites": ["JS-006"],
+  "previous": "JS-006",
+  "next": "JS-008",
+  "estimatedReadingTime": 2,
+  "goal": "Learn what the null value means in JavaScript.",
+  "explanation": [
+    "null is a special value that means an intentionally empty place.",
+    "It is used when a variable exists but currently holds no meaningful value.",
+    "This means the programmer deliberately assigned null to the variable.",
+    "For example, a user has not chosen a favorite color yet, or a product has not been assigned to a buyer.",
+    "null does not mean \"unknown\" — it means \"empty on purpose\"."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a table with a sign that says \"Place for a vase.\" The vase is missing, but the spot was deliberately left empty. That is null."
+  },
+  "codeExample": "let favoriteColor = null;\n\nconsole.log(favoriteColor);",
+  "result": "null",
+  "remember": [
+    "null means an intentionally empty value.",
+    "The variable exists.",
+    "The value was deliberately set to null."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Do not confuse null with undefined. null is set by the programmer; undefined usually appears automatically."
+  },
+  "quiz": {
+    "question": "What does null mean?",
+    "options": [
+      "An intentionally empty value",
+      "An error",
+      "Any text"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — null",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}
