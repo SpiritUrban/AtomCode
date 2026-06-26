@@ -3,7 +3,7 @@ pid: 16052
 cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
 command: "npm run dev"
 started_at: 2026-06-26T03:33:10.389Z
-running_for_ms: 1435007  
+running_for_ms: 2129995  
 ---
 
 > atomcode@0.1.0 dev
@@ -460,3 +460,92 @@ https://nextjs.org/docs/messages/module-not-found
  ○ Compiling / ...
  ✓ Compiled / in 506ms
  GET / 200 in 959ms
+ ✓ Compiled in 443ms
+ ✓ Compiled in 55ms
+ ✓ Compiled / in 209ms
+ GET / 200 in 583ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.5.19 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.101:3000
+
+ ✓ Starting...
+ ✓ Ready in 3.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 8.1s
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.y2sq1aqlyhq'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.y2sq1aqlyhq'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 4.9s
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.h5xyr557ly9'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.h5xyr557ly9'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.y2sq1aqlyhq'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.y2sq1aqlyhq'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.6fuoiri9tq4'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.6fuoiri9tq4'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.0x24gwaig2x'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.0x24gwaig2x'
+}
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 649ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.ac1e40oe2ho'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.ac1e40oe2ho'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.63ecz65amnf'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.63ecz65amnf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.or8ihenckj'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.or8ihenckj'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.63ecz65amnf'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.63ecz65amnf'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.wdyhe9g9q7'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.wdyhe9g9q7'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.slrq7spftdh'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.slrq7spftdh'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode\node_modules\.cache\atomcode-next\static\development\_buildManifest.js.tmp.vmcdrgg5o5'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.vmcdrgg5o5'
+}

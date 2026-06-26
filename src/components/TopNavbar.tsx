@@ -1,7 +1,6 @@
 "use client";
 
 import type { Section } from "@/types/lesson";
-
 type TopNavbarProps = {
   sections: Section[];
   activeSectionId: string;

@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Lesson } from "@/types/lesson";
-import { getPrerequisiteChain } from "@/lib/lessons";
 import { getLearnedLessons, toggleLessonLearned } from "@/lib/progress";
 import LessonImage from "@/components/LessonImage";
 import LessonContent from "@/components/LessonContent";
@@ -121,8 +120,6 @@ export default function LessonViewer({
 
   if (!lesson) return null;
 
-  const prerequisites = getPrerequisiteChain(lessonsRecord, lesson.code);
-
   const handleCopyCode = async () => {
     if (!lesson.codeExample) return;
     try {
@@ -157,8 +154,6 @@ export default function LessonViewer({
       <div className="h-full min-w-[18rem] flex-1 basis-0 overflow-hidden bg-atom-surface">
         <LessonContent
           lesson={lesson}
-          prerequisites={prerequisites}
-          onPrerequisiteSelect={goToCode}
           onPrevious={handlePrevious}
           onNext={handleNext}
           onMarkLearned={handleMarkLearned}

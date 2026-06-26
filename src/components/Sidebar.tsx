@@ -1,19 +1,24 @@
 "use client";
 
+import Link from "next/link";
 import type { Lesson } from "@/types/lesson";
+import type { Locale } from "@/lib/i18n";
+import { lessonPath } from "@/lib/routes";
 
 type SidebarProps = {
   lessons: Lesson[];
+  locale: Locale;
+  sectionSlug: string;
   activeLessonCode: string;
   learnedIds: Set<string>;
-  onLessonSelect: (code: string) => void;
 };
 
 export default function Sidebar({
   lessons,
+  locale,
+  sectionSlug,
   activeLessonCode,
   learnedIds,
-  onLessonSelect,
 }: SidebarProps) {
   return (
     <aside className="flex h-full w-56 shrink-0 flex-col border-r border-atom-border bg-atom-surface">
@@ -27,12 +32,12 @@ export default function Sidebar({
         {lessons.map((lesson) => {
           const isActive = lesson.code === activeLessonCode;
           const isLearned = learnedIds.has(lesson.code);
+          const href = lessonPath(locale, sectionSlug, lesson.slug);
 
           return (
-            <button
+            <Link
               key={lesson.code}
-              type="button"
-              onClick={() => onLessonSelect(lesson.code)}
+              href={href}
               className={[
                 "flex w-full items-start gap-2 px-4 py-2.5 text-left transition-all",
                 isActive
@@ -49,7 +54,7 @@ export default function Sidebar({
                   <span className="text-xs text-atom-accent">✓ learned</span>
                 )}
               </div>
-            </button>
+            </Link>
           );
         })}
       </nav>

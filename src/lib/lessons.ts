@@ -11,31 +11,6 @@ export function getLessonByCode(
   return record[code];
 }
 
-export function getPrerequisiteChain(
-  record: Record<string, Lesson>,
-  code: string,
-): Lesson[] {
-  const visited = new Set<string>();
-  const chain: Lesson[] = [];
-
-  function walk(lessonCode: string) {
-    const lesson = record[lessonCode];
-    if (!lesson) return;
-
-    for (const prereq of lesson.prerequisites) {
-      if (!visited.has(prereq)) {
-        visited.add(prereq);
-        walk(prereq);
-        const prereqLesson = record[prereq];
-        if (prereqLesson) chain.push(prereqLesson);
-      }
-    }
-  }
-
-  walk(code);
-  return chain;
-}
-
 export function searchLessonsByTag(
   lessons: Lesson[],
   query: string,

@@ -1,11 +1,7 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import { buildSiteMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "AtomCode — Learn programming one atom at a time",
-  description:
-    "Visual educational platform for atomic programming learning. One small topic = one atom of knowledge = one screen.",
-};
+export const metadata = buildSiteMetadata();
 
 export default function RootLayout({
   children,
@@ -13,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>{children}</body>
     </html>
   );

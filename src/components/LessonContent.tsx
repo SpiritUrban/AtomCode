@@ -5,13 +5,10 @@ import { difficultyLabel } from "@/types/lesson";
 import CodeBlock from "@/components/CodeBlock";
 import QuizBlock from "@/components/QuizBlock";
 import LessonControls from "@/components/LessonControls";
-import PrerequisitesPanel from "@/components/PrerequisitesPanel";
 import ResourcesPanel from "@/components/ResourcesPanel";
 
 type LessonContentProps = {
   lesson: Lesson;
-  prerequisites: Lesson[];
-  onPrerequisiteSelect: (code: string) => void;
   onPrevious: () => void;
   onNext: () => void;
   onMarkLearned: () => void;
@@ -24,8 +21,6 @@ type LessonContentProps = {
 
 export default function LessonContent({
   lesson,
-  prerequisites,
-  onPrerequisiteSelect,
   onPrevious,
   onNext,
   onMarkLearned,
@@ -66,11 +61,6 @@ export default function LessonContent({
       <p className="mt-1 text-sm text-atom-muted">{lesson.subtitle}</p>
 
       <div className="mt-5 space-y-4">
-        <PrerequisitesPanel
-          prerequisites={prerequisites}
-          onLessonSelect={onPrerequisiteSelect}
-        />
-
         <section>
           <h2 className="mb-1 text-xs font-semibold uppercase tracking-wider text-atom-accent">
             Goal

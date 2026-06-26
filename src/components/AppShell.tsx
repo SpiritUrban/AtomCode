@@ -1,45 +1,70 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import type { Section } from "@/types/lesson";
-import { getDefaultSection, getSectionById } from "@/lib/sections";
+import type { Locale } from "@/lib/i18n";
+import { getSectionById } from "@/lib/sections";
 import { getLearnedLessons } from "@/lib/progress";
+import { getSectionSlug, lessonPath } from "@/lib/routes";
 import TopNavbar from "@/components/TopNavbar";
 import Sidebar from "@/components/Sidebar";
 import LessonViewer from "@/components/LessonViewer";
 
 type AppShellProps = {
   sections: Section[];
+  locale: Locale;
+  activeSectionId: string;
+  activeLessonCode: string;
 };
 
-export default function AppShell({ sections }: AppShellProps) {
-  const defaultSection = getDefaultSection(sections);
-  const [activeSectionId, setActiveSectionId] = useState(defaultSection.id);
-  const [activeLessonCode, setActiveLessonCode] = useState(
-    defaultSection.lessons[0]?.code ?? "",
-  );
-  const [learnedIds, setLearnedIds] = useState<Set<string>>(new Set());
-
+export default function AppShell({
+  sections,
+  locale,
+  activeSectionId,
+  activeLessonCode,
+}: AppShellProps) {
+  const router = useRouter();
   const activeSection =
-    getSectionById(sections, activeSectionId) ?? defaultSection;
+    getSectionById(sections, activeSectionId) ?? sections[0];
+
+  const navigateToLesson = useCallback(
+    (sectionId: string, lessonCode: string) => {
+      const section = getSectionById(sections, sectionId);
+      if (!section) return;
+
+      const lesson = section.lessonsRecord[lessonCode];
+      if (!lesson) return;
+
+      router.push(
+        lessonPath(locale, getSectionSlug(sectionId), lesson.slug),
+      );
+    },
+    [sections, locale, router],
+  );
 
   const handleSectionChange = useCallback(
     (sectionId: string) => {
       const section = getSectionById(sections, sectionId);
-      if (!section || !section.enabled) return;
-      setActiveSectionId(sectionId);
-      if (section.lessons.length > 0) {
-        setActiveLessonCode(section.lessons[0].code);
-      }
-      setLearnedIds(getLearnedLessons());
+      if (!section || !section.enabled || section.lessons.length === 0) return;
+
+      navigateToLesson(sectionId, section.lessons[0].code);
     },
-    [sections],
+    [sections, navigateToLesson],
   );
 
-  const handleLessonSelect = useCallback((code: string) => {
-    setActiveLessonCode(code);
+  const handleLessonSelect = useCallback(
+    (code: string) => {
+      navigateToLesson(activeSectionId, code);
+    },
+    [activeSectionId, navigateToLesson],
+  );
+
+  const [learnedIds, setLearnedIds] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
     setLearnedIds(getLearnedLessons());
-  }, []);
+  }, [activeLessonCode]);
 
   return (
     <div className="flex h-screen flex-col bg-atom-bg">
@@ -52,9 +77,10 @@ export default function AppShell({ sections }: AppShellProps) {
       <div className="flex flex-1 overflow-hidden pt-14">
         <Sidebar
           lessons={activeSection.lessons}
+          locale={locale}
+          sectionSlug={getSectionSlug(activeSectionId)}
           activeLessonCode={activeLessonCode}
           learnedIds={learnedIds}
-          onLessonSelect={handleLessonSelect}
         />
 
         {activeSection.lessons.length > 0 ? (
