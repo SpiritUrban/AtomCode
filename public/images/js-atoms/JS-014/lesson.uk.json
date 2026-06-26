@@ -1,14 +1,58 @@
 {
   "number": 14,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "comments",
+  "title": "Comments",
+  "subtitle": "Notes for humans",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "comments",
+    "documentation",
+    "readability",
+    "beginner"
+  ],
+  "prerequisites": ["JS-013"],
+  "previous": "JS-013",
+  "next": "JS-015",
+  "estimatedReadingTime": 2,
+  "goal": "Learn what comments are and why programmers use them.",
+  "explanation": [
+    "Коментарі — це пояснення всередині коду.",
+    "JavaScript повністю ігнорує коментарі під час виконання програми.",
+    "Вони потрібні людям, щоб пояснювати складні місця або залишати нотатки.",
+    "Однорядковий коментар починається з символів //.",
+    "Хороші коментарі пояснюють чому щось зроблено, а не просто дублюють код."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Коментар схожий на стікер із нотаткою. Людина його читає, а JavaScript просто проходить повз."
+  },
+  "codeExample": "// User age\nlet age = 25;\n\nconsole.log(age);",
+  "result": "25",
+  "remember": [
+    "Коментарі читають люди.",
+    "JavaScript ігнорує коментарі.",
+    "// створює однорядковий коментар."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Не потрібно коментувати кожен рядок коду. Коментарі повинні пояснювати те, що неочевидно."
+  },
+  "quiz": {
+    "question": "Хто використовує коментарі?",
+    "options": [
+      "Програмісти",
+      "JavaScript",
+      "Браузер"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Comments",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#comments",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

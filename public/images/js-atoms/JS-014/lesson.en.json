@@ -1,14 +1,58 @@
 {
   "number": 14,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "comments",
+  "title": "Comments",
+  "subtitle": "Notes for humans",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "comments",
+    "documentation",
+    "readability",
+    "beginner"
+  ],
+  "prerequisites": ["JS-013"],
+  "previous": "JS-013",
+  "next": "JS-015",
+  "estimatedReadingTime": 2,
+  "goal": "Learn what comments are and why programmers use them.",
+  "explanation": [
+    "Comments are explanations inside the code.",
+    "JavaScript completely ignores comments when running the program.",
+    "They are for people—to explain tricky parts or leave notes.",
+    "A single-line comment starts with //.",
+    "Good comments explain why something was done, not just repeat the code."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "A comment is like a sticky note. A person reads it, but JavaScript walks right past it."
+  },
+  "codeExample": "// User age\nlet age = 25;\n\nconsole.log(age);",
+  "result": "25",
+  "remember": [
+    "Comments are read by people.",
+    "JavaScript ignores comments.",
+    "// creates a single-line comment."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "You don't need to comment every line of code. Comments should explain what isn't obvious."
+  },
+  "quiz": {
+    "question": "Who uses comments?",
+    "options": [
+      "Programmers",
+      "JavaScript",
+      "The browser"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Comments",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#comments",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

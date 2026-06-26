@@ -1,14 +1,59 @@
 {
   "number": 15,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "console-log",
+  "title": "console.log()",
+  "subtitle": "Show the value",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "console",
+    "console.log",
+    "debugging",
+    "output",
+    "beginner"
+  ],
+  "prerequisites": ["JS-014"],
+  "previous": "JS-014",
+  "next": "JS-016",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how to display values in the JavaScript console.",
+  "explanation": [
+    "console.log() виводить значення в консоль.",
+    "Це один із найважливіших інструментів програміста для перевірки роботи програми.",
+    "За допомогою console.log() можна побачити значення змінних, результат обчислень або повідомлення.",
+    "Консоль допомагає знаходити помилки та розуміти, що відбувається всередині програми.",
+    "Під час навчання майже кожен приклад варто перевіряти через console.log()."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "console.log() схожий на ліхтарик. Він підсвічує те, що знаходиться всередині твоєї програми."
+  },
+  "codeExample": "let name = \"Vitalii\";\n\nconsole.log(name);",
+  "result": "Vitalii",
+  "remember": [
+    "console.log() показує значення.",
+    "Результат з'являється в консолі.",
+    "Це головний інструмент для перевірки коду."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Деякі новачки очікують, що console.log() покаже інформацію на сторінці сайту. Насправді результат виводиться лише в консоль розробника."
+  },
+  "quiz": {
+    "question": "Де з'являється результат роботи console.log()?",
+    "options": [
+      "У консолі",
+      "На сторінці сайту",
+      "У файлі JavaScript"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — console.log()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/console/log_static",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

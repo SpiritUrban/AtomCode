@@ -1,14 +1,59 @@
 {
   "number": 13,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "naming-variables",
+  "title": "Naming Variables",
+  "subtitle": "Choose good names",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "variables",
+    "naming",
+    "best-practices",
+    "readability",
+    "beginner"
+  ],
+  "prerequisites": ["JS-012"],
+  "previous": "JS-012",
+  "next": "JS-014",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how to choose clear and meaningful variable names.",
+  "explanation": [
+    "A variable name should explain what it stores.",
+    "The clearer the name, the easier the code is to read.",
+    "Good names help you understand your own program days later.",
+    "Usually English words that describe the data are used: age, userName, price.",
+    "Avoid meaningless names like x, abc, or test when they explain nothing."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "A label on a box should immediately explain what is inside. 'userName' is much better than just 'x'."
+  },
+  "codeExample": "let userName = \"Vitalii\";\nlet age = 42;\n\nconsole.log(userName);",
+  "result": "Vitalii",
+  "remember": [
+    "The name should describe the data.",
+    "Use clear English words.",
+    "Good names make code readable."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often use x, a, test, or abc. This quickly makes code hard to understand."
+  },
+  "quiz": {
+    "question": "Which variable name best describes a user's name?",
+    "options": [
+      "userName",
+      "x",
+      "abc"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Variables",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,59 @@
 {
   "number": 13,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "naming-variables",
+  "title": "Naming Variables",
+  "subtitle": "Choose good names",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "variables",
+    "naming",
+    "best-practices",
+    "readability",
+    "beginner"
+  ],
+  "prerequisites": ["JS-012"],
+  "previous": "JS-012",
+  "next": "JS-014",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how to choose clear and meaningful variable names.",
+  "explanation": [
+    "Назва змінної повинна пояснювати, що саме вона зберігає.",
+    "Чим зрозуміліша назва, тим легше читати код.",
+    "Добрі назви допомагають тобі самому через кілька днів зрозуміти власну програму.",
+    "Зазвичай використовують англійські слова, що описують дані: age, userName, price.",
+    "Уникай беззмістовних назв на кшталт x, abc або test, якщо вони нічого не пояснюють."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Підпис на коробці має одразу пояснювати, що лежить всередині. 'userName' значно кращий за просто 'x'."
+  },
+  "codeExample": "let userName = \"Vitalii\";\nlet age = 42;\n\nconsole.log(userName);",
+  "result": "Vitalii",
+  "remember": [
+    "Назва повинна описувати дані.",
+    "Використовуй зрозумілі англійські слова.",
+    "Хороші назви роблять код читабельним."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто використовують x, a, test або abc. Через це код швидко стає незрозумілим."
+  },
+  "quiz": {
+    "question": "Яка назва змінної найкраще описує ім'я користувача?",
+    "options": [
+      "userName",
+      "x",
+      "abc"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Variables",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

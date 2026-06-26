@@ -1,14 +1,59 @@
 {
   "number": 15,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "console-log",
+  "title": "console.log()",
+  "subtitle": "Show the value",
   "difficulty": "Beginner",
   "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "tags": [
+    "console",
+    "console.log",
+    "debugging",
+    "output",
+    "beginner"
+  ],
+  "prerequisites": ["JS-014"],
+  "previous": "JS-014",
+  "next": "JS-016",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how to display values in the JavaScript console.",
+  "explanation": [
+    "console.log() prints a value to the console.",
+    "It is one of a programmer's most important tools for checking how a program works.",
+    "With console.log() you can see variable values, calculation results, or messages.",
+    "The console helps find bugs and understand what is happening inside the program.",
+    "While learning, almost every example is worth checking with console.log()."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "console.log() is like a flashlight. It shines a light on what is inside your program."
+  },
+  "codeExample": "let name = \"Vitalii\";\n\nconsole.log(name);",
+  "result": "Vitalii",
+  "remember": [
+    "console.log() shows values.",
+    "The result appears in the console.",
+    "It is the main tool for checking code."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Some beginners expect console.log() to show information on the website page. In reality, the output goes only to the developer console."
+  },
+  "quiz": {
+    "question": "Where does the output of console.log() appear?",
+    "options": [
+      "In the console",
+      "On the website page",
+      "In the JavaScript file"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — console.log()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/console/log_static",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }
