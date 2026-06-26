@@ -1,0 +1,20 @@
+[
+  {
+    "id": "data-core",
+    "label": {
+      "en": "01. Data Core",
+      "uk": "01. Data Core"
+    },
+    "from": 1,
+    "to": 15
+  },
+  {
+    "id": "expressions-operators",
+    "label": {
+      "en": "02. Expressions & Operators",
+      "uk": "02. Expressions & Operators"
+    },
+    "from": 16,
+    "to": 35
+  }
+]

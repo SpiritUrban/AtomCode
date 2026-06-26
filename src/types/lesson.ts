@@ -57,6 +57,12 @@ export interface Lesson {
   playground?: boolean;
 }
 
+export type LessonGroup = {
+  id: string;
+  label: string;
+  lessons: Lesson[];
+};
+
 export type Section = {
   id: string;
   name: string;
@@ -64,4 +70,5 @@ export type Section = {
   enabled: boolean;
   lessons: Lesson[];
   lessonsRecord: Record<string, Lesson>;
+  lessonGroups: LessonGroup[];
 };

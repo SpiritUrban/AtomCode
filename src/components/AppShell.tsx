@@ -81,7 +81,7 @@ export default function AppShell({
 
       <div className="flex flex-1 overflow-hidden pt-14">
         <Sidebar
-          lessons={activeSection.lessons}
+          lessonGroups={activeSection.lessonGroups}
           locale={locale}
           sectionSlug={getSectionSlug(activeSectionId)}
           activeLessonCode={activeLessonCode}

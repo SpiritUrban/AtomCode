@@ -1,6 +1,11 @@
 import fs from "fs";
 import path from "path";
 import { lessonsToArray } from "@/lib/lessons";
+import {
+  buildLessonGroups,
+  isPublishedLesson,
+  type LessonGroupConfig,
+} from "@/lib/lessonGroups";
 import type { Locale } from "@/lib/i18n";
 import { Difficulty, type Lesson, type Section } from "@/types/lesson";
 
@@ -62,12 +67,32 @@ function loadSectionLessons(
   };
 }
 
+function loadLessonGroups(
+  lessons: Lesson[],
+  locale: Locale,
+  groupsPath: string,
+): Section["lessonGroups"] {
+  const published = lessons.filter(isPublishedLesson);
+
+  if (!fs.existsSync(groupsPath)) {
+    return published.length
+      ? [{ id: "all", label: "Lessons", lessons: published }]
+      : [];
+  }
+
+  const config = readJsonFile<LessonGroupConfig[]>(groupsPath);
+  return buildLessonGroups(lessons, locale, config);
+}
+
+const emptyLessonGroups: Section["lessonGroups"] = [];
+
 export function buildSections(locale: Locale): Section[] {
   const publicDir = path.join(process.cwd(), "public");
+  const jsAtomsBase = path.join(publicDir, "images", "js-atoms");
   const jsAtoms = loadSectionLessons(
     "jsAtoms",
-    path.join(publicDir, "images", "js-atoms"),
-    path.join(publicDir, "images", "js-atoms", "manifest.json"),
+    jsAtomsBase,
+    path.join(jsAtomsBase, "manifest.json"),
     locale,
   );
 
@@ -79,6 +104,11 @@ export function buildSections(locale: Locale): Section[] {
       enabled: true,
       lessons: jsAtoms.lessons,
       lessonsRecord: jsAtoms.lessonsRecord,
+      lessonGroups: loadLessonGroups(
+        jsAtoms.lessons,
+        locale,
+        path.join(jsAtomsBase, "groups.json"),
+      ),
     },
     {
       id: "cssAtoms",
@@ -87,6 +117,7 @@ export function buildSections(locale: Locale): Section[] {
       enabled: false,
       lessons: [],
       lessonsRecord: {},
+      lessonGroups: emptyLessonGroups,
     },
     {
       id: "htmlAtoms",
@@ -95,6 +126,7 @@ export function buildSections(locale: Locale): Section[] {
       enabled: false,
       lessons: [],
       lessonsRecord: {},
+      lessonGroups: emptyLessonGroups,
     },
     {
       id: "gitAtoms",
@@ -103,6 +135,7 @@ export function buildSections(locale: Locale): Section[] {
       enabled: false,
       lessons: [],
       lessonsRecord: {},
+      lessonGroups: emptyLessonGroups,
     },
     {
       id: "reactAtoms",
@@ -111,6 +144,7 @@ export function buildSections(locale: Locale): Section[] {
       enabled: false,
       lessons: [],
       lessonsRecord: {},
+      lessonGroups: emptyLessonGroups,
     },
     {
       id: "tsAtoms",
@@ -119,6 +153,7 @@ export function buildSections(locale: Locale): Section[] {
       enabled: false,
       lessons: [],
       lessonsRecord: {},
+      lessonGroups: emptyLessonGroups,
     },
     {
       id: "nodeAtoms",
@@ -127,6 +162,7 @@ export function buildSections(locale: Locale): Section[] {
       enabled: false,
       lessons: [],
       lessonsRecord: {},
+      lessonGroups: emptyLessonGroups,
     },
     {
       id: "linuxAtoms",
@@ -135,6 +171,7 @@ export function buildSections(locale: Locale): Section[] {
       enabled: false,
       lessons: [],
       lessonsRecord: {},
+      lessonGroups: emptyLessonGroups,
     },
   ];
 }
