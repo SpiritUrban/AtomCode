@@ -70,6 +70,11 @@ export default function AppShell({
     <div className="flex h-screen flex-col bg-atom-bg">
       <TopNavbar
         sections={sections}
+        locale={locale}
+        sectionSlug={getSectionSlug(activeSectionId)}
+        lessonSlug={
+          activeSection.lessonsRecord[activeLessonCode]?.slug ?? ""
+        }
         activeSectionId={activeSectionId}
         onSectionChange={handleSectionChange}
       />

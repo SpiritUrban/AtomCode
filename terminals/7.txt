@@ -3,7 +3,7 @@ pid: 16052
 cwd: "C:\Users\spiri\OneDrive\Documents\GitHub\AtomCode"
 command: "npm run dev"
 started_at: 2026-06-26T03:33:10.389Z
-running_for_ms: 2129995  
+running_for_ms: 2579992  
 ---
 
 > atomcode@0.1.0 dev
@@ -549,3 +549,6 @@ https://nextjs.org/docs/messages/module-not-found
   syscall: 'open',
   path: 'C:\\Users\\spiri\\OneDrive\\Documents\\GitHub\\AtomCode\\node_modules\\.cache\\atomcode-next\\static\\development\\_buildManifest.js.tmp.vmcdrgg5o5'
 }
+ ✓ Compiled in 351ms
+ ✓ Compiled in 213ms
+ ✓ Compiled in 101ms

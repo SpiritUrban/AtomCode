@@ -1,0 +1,59 @@
+{
+  "number": 5,
+  "slug": "string",
+  "title": "String",
+  "subtitle": "Text inside quotes",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "string",
+    "text",
+    "quotes",
+    "primitive-types",
+    "beginner"
+  ],
+  "prerequisites": ["JS-004"],
+  "previous": "JS-004",
+  "next": "JS-006",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how JavaScript stores text values.",
+  "explanation": [
+    "String is the data type for text.",
+    "All words, sentences, messages, and names in JavaScript are stored as Strings.",
+    "To tell JavaScript that something is text, you must wrap it in quotes.",
+    "Strings can use double quotes, single quotes, or backticks.",
+    "Without quotes, JavaScript treats the word as a variable name."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "A String is like writing on a sign. As long as the text is inside quotes, JavaScript knows it is just text."
+  },
+  "codeExample": "let name = \"Vitalii\";\n\nconsole.log(name);",
+  "result": "Vitalii",
+  "remember": [
+    "String stores text.",
+    "Text must be wrapped in quotes.",
+    "\"Hello\", \"AtomCode\", and \"JavaScript\" are strings."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "If you write Vitalii without quotes, JavaScript will look for a variable with that name instead of treating it as text."
+  },
+  "quiz": {
+    "question": "Which value has the String type?",
+    "options": [
+      "\"Hello\"",
+      "42",
+      "false"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — String",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

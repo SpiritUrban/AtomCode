@@ -1,0 +1,61 @@
+{
+  "number": 6,
+  "slug": "boolean",
+  "title": "Boolean",
+  "subtitle": "True or False",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "boolean",
+    "true",
+    "false",
+    "logic",
+    "primitive-types",
+    "beginner"
+  ],
+  "prerequisites": ["JS-005"],
+  "previous": "JS-005",
+  "next": "JS-007",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how JavaScript stores true and false values.",
+  "explanation": [
+    "Boolean is a data type that can hold only two values: true or false.",
+    "It is used when the answer can only be \"yes\" or \"no\".",
+    "For example: is the door open or closed, is the user logged in, is the product available.",
+    "Boolean is very important for conditions and decision-making in a program.",
+    "Almost every if statement checks a boolean value."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Boolean is like a light switch. It can only be in two states: on or off."
+  },
+  "codeExample": "let isOpen = true;\nlet isLoggedIn = false;\n\nconsole.log(isOpen);",
+  "result": "true",
+  "remember": [
+    "Boolean has only two values.",
+    "true means \"yes\".",
+    "false means \"no\".",
+    "Boolean is used for program logic."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Do not confuse the boolean true with the string \"true\". The first is a logical value; the second is plain text."
+  },
+  "quiz": {
+    "question": "How many values does the Boolean type have?",
+    "options": [
+      "2",
+      "3",
+      "Infinite"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Boolean",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

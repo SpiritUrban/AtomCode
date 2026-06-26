@@ -1,0 +1,61 @@
+﻿{
+  "number": 6,
+  "slug": "boolean",
+  "title": "Boolean",
+  "subtitle": "True or False",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "boolean",
+    "true",
+    "false",
+    "logic",
+    "primitive-types",
+    "beginner"
+  ],
+  "prerequisites": ["JS-005"],
+  "previous": "JS-005",
+  "next": "JS-007",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how JavaScript stores true and false values.",
+  "explanation": [
+    "Boolean — це тип даних, який може містити лише два значення: true або false.",
+    "Його використовують тоді, коли відповідь може бути тільки «так» або «ні».",
+    "Наприклад: двері відкриті чи закриті, користувач увійшов чи ні, товар доступний чи недоступний.",
+    "Boolean дуже важливий для умов і прийняття рішень у програмі.",
+    "Майже кожен оператор if перевіряє саме boolean-значення."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Boolean схожий на вимикач світла. Він може бути лише у двох станах: увімкнено або вимкнено."
+  },
+  "codeExample": "let isOpen = true;\nlet isLoggedIn = false;\n\nconsole.log(isOpen);",
+  "result": "true",
+  "remember": [
+    "Boolean має лише два значення.",
+    "true означає «так».",
+    "false означає «ні».",
+    "Boolean використовується для логіки програми."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Не плутай boolean true з рядком \"true\". Перше — логічне значення, друге — звичайний текст."
+  },
+  "quiz": {
+    "question": "Скільки значень має тип Boolean?",
+    "options": [
+      "2",
+      "3",
+      "Безліч"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Boolean",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

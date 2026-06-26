@@ -1,0 +1,52 @@
+{
+  "number": 3,
+  "slug": "primitive-types",
+  "title": "Primitive Types",
+  "subtitle": "The basic building blocks",
+  "difficulty": "Beginner",
+  "duration": "3 min",
+  "tags": ["types", "primitives", "string", "number", "boolean", "basics", "beginner"],
+  "prerequisites": ["JS-001", "JS-002"],
+  "previous": "JS-002",
+  "next": "JS-004",
+  "estimatedReadingTime": 3,
+  "goal": "Learn the basic data types in JavaScript.",
+  "explanation": [
+    "Every piece of information in JavaScript has a type.",
+    "Numbers are used for mathematical calculations.",
+    "Strings store text.",
+    "Boolean has only two values: true or false.",
+    "null means an intentionally empty value.",
+    "undefined means the value has not been set yet."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Data types are like different kinds of LEGO bricks. They look different, but your whole program is built from them."
+  },
+  "codeExample": "let age = 42;\n\nlet name = \"Vitalii\";\n\nlet isAdmin = true;\n\nlet empty = null;\n\nlet future;",
+  "result": "42\n\"Vitalii\"\ntrue\nnull\nundefined",
+  "remember": [
+    "Number — numbers.",
+    "String — text.",
+    "Boolean — true / false.",
+    "null — intentionally empty.",
+    "undefined — no value yet."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often confuse null and undefined. They are different values with different purposes."
+  },
+  "quiz": {
+    "question": "Which type is used for text?",
+    "options": ["String", "Boolean", "Number"],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Data types",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Data_structures",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

@@ -1,0 +1,59 @@
+﻿{
+  "number": 4,
+  "slug": "number",
+  "title": "Number",
+  "subtitle": "Everything starts with numbers",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "number",
+    "numeric-values",
+    "math",
+    "primitive-types",
+    "beginner"
+  ],
+  "prerequisites": ["JS-003"],
+  "previous": "JS-003",
+  "next": "JS-005",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how JavaScript stores and uses numeric values.",
+  "explanation": [
+    "Number — це тип даних для чисел у JavaScript.",
+    "Числа потрібні для підрахунків: вік, ціна, кількість, рейтинг, відстань, координати.",
+    "У JavaScript цілі та дробові числа належать до одного типу — Number.",
+    "З числами можна виконувати математичні дії: додавання, віднімання, множення та ділення.",
+    "Якщо значення потрібно використовувати для обчислень — це майже завжди Number."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Number схожий на цінник або калькулятор. Якщо потрібно щось порахувати — JavaScript використовує Number."
+  },
+  "codeExample": "let age = 25;\nlet price = 19.99;\n\nconsole.log(age);",
+  "result": "25",
+  "remember": [
+    "Number зберігає числові значення.",
+    "Number використовується для математичних обчислень.",
+    "25, 0, -8 і 19.99 — це числа."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Не плутай число 25 і рядок \"25\". Для JavaScript це різні типи даних."
+  },
+  "quiz": {
+    "question": "Яке з цих значень має тип Number?",
+    "options": [
+      "25",
+      "\"25\"",
+      "true"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Number",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

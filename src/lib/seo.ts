@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import type { Lesson, Section } from "@/types/lesson";
-import type { Locale } from "@/lib/i18n";
+import { locales, type Locale } from "@/lib/i18n";
 import { getBasePath, getSectionSlug, lessonPath } from "@/lib/routes";
 
 const SITE_NAME = "AtomCode";
@@ -28,6 +28,12 @@ export function buildLessonMetadata(
     description,
     alternates: {
       canonical,
+      languages: Object.fromEntries(
+        locales.map((loc) => [
+          loc,
+          `${getSiteUrl()}${lessonPath(loc, sectionSlug, lesson.slug)}`,
+        ]),
+      ),
     },
     openGraph: {
       title,

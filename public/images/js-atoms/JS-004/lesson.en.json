@@ -1,0 +1,59 @@
+{
+  "number": 4,
+  "slug": "number",
+  "title": "Number",
+  "subtitle": "Everything starts with numbers",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "number",
+    "numeric-values",
+    "math",
+    "primitive-types",
+    "beginner"
+  ],
+  "prerequisites": ["JS-003"],
+  "previous": "JS-003",
+  "next": "JS-005",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how JavaScript stores and uses numeric values.",
+  "explanation": [
+    "Number is the data type for numbers in JavaScript.",
+    "Numbers are used for counts: age, price, quantity, rating, distance, coordinates.",
+    "In JavaScript, whole numbers and decimals belong to the same type — Number.",
+    "You can perform math with numbers: addition, subtraction, multiplication, and division.",
+    "If a value is needed for calculations, it is almost always a Number."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Number is like a price tag or a calculator. When something needs to be counted, JavaScript uses Number."
+  },
+  "codeExample": "let age = 25;\nlet price = 19.99;\n\nconsole.log(age);",
+  "result": "25",
+  "remember": [
+    "Number stores numeric values.",
+    "Number is used for mathematical calculations.",
+    "25, 0, -8, and 19.99 are numbers."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Do not confuse the number 25 with the string \"25\". To JavaScript, these are different data types."
+  },
+  "quiz": {
+    "question": "Which of these values has the Number type?",
+    "options": [
+      "25",
+      "\"25\"",
+      "true"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Number",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

@@ -1,0 +1,54 @@
+{
+  "number": 2,
+  "slug": "let-vs-const",
+  "title": "let vs const",
+  "subtitle": "Can the value change?",
+  "difficulty": "Beginner",
+  "duration": "3 min",
+  "tags": ["let", "const", "variables", "basics", "beginner"],
+  "prerequisites": ["JS-001"],
+  "previous": "JS-001",
+  "next": "JS-003",
+  "estimatedReadingTime": 3,
+  "goal": "Understand when to use let and when to use const.",
+  "explanation": [
+    "JavaScript offers two modern ways to create variables.",
+    "const means the variable must always refer to the same value.",
+    "let means you can change the value later.",
+    "If you do not plan to change anything — use const.",
+    "If the value will change while the program runs — use let."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "const is a locked box. let is a regular box you can open and change what is inside."
+  },
+  "codeExample": "let score = 10;\n\nscore = 20;\n\nconst age = 30;\n\n// age = 31 ❌",
+  "result": "TypeError: Assignment to constant variable.",
+  "remember": [
+    "let can be changed.",
+    "const cannot be reassigned.",
+    "Use const by default."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Many people think const makes data completely immutable. In reality, it only prevents reassigning the variable itself."
+  },
+  "quiz": {
+    "question": "Which variable should you use by default?",
+    "options": ["const", "let", "var"],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — let",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let",
+      "type": "mdn"
+    },
+    {
+      "title": "MDN — const",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

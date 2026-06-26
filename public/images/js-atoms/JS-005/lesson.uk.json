@@ -1,0 +1,59 @@
+﻿{
+  "number": 5,
+  "slug": "string",
+  "title": "String",
+  "subtitle": "Text inside quotes",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": [
+    "string",
+    "text",
+    "quotes",
+    "primitive-types",
+    "beginner"
+  ],
+  "prerequisites": ["JS-004"],
+  "previous": "JS-004",
+  "next": "JS-006",
+  "estimatedReadingTime": 2,
+  "goal": "Learn how JavaScript stores text values.",
+  "explanation": [
+    "String — це тип даних для тексту.",
+    "Усі слова, речення, повідомлення та назви у JavaScript зберігаються як String.",
+    "Щоб JavaScript зрозумів, що це саме текст, його потрібно записати в лапках.",
+    "Для рядків можна використовувати подвійні лапки, одинарні лапки або бектики.",
+    "Без лапок JavaScript сприйматиме слово як назву змінної."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "String схожий на напис на табличці. Поки текст знаходиться в лапках, JavaScript знає, що це просто текст."
+  },
+  "codeExample": "let name = \"Vitalii\";\n\nconsole.log(name);",
+  "result": "Vitalii",
+  "remember": [
+    "String зберігає текст.",
+    "Текст потрібно брати в лапки.",
+    "\"Hello\", \"AtomCode\" і \"JavaScript\" — це рядки."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Якщо написати Vitalii без лапок, JavaScript буде шукати змінну з такою назвою, а не текст."
+  },
+  "quiz": {
+    "question": "Яке значення має тип String?",
+    "options": [
+      "\"Hello\"",
+      "42",
+      "false"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — String",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}

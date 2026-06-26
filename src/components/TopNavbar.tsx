@@ -1,27 +1,36 @@
 "use client";
 
 import type { Section } from "@/types/lesson";
+import type { Locale } from "@/lib/i18n";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+
 type TopNavbarProps = {
   sections: Section[];
+  locale: Locale;
+  sectionSlug: string;
+  lessonSlug: string;
   activeSectionId: string;
   onSectionChange: (sectionId: string) => void;
 };
 
 export default function TopNavbar({
   sections,
+  locale,
+  sectionSlug,
+  lessonSlug,
   activeSectionId,
   onSectionChange,
 }: TopNavbarProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-14 border-b border-atom-border bg-atom-surface/95 backdrop-blur-md">
       <nav className="flex h-full items-center gap-1 px-4">
-        <div className="mr-4 flex items-center gap-2">
+        <div className="mr-4 flex shrink-0 items-center gap-2">
           <span className="text-lg font-bold tracking-tight text-atom-accent">
             ⚛ AtomCode
           </span>
         </div>
 
-        <div className="flex items-center gap-1 overflow-x-auto">
+        <div className="flex min-w-0 items-center gap-1 overflow-x-auto">
           {sections.map((section) => {
             const isActive = section.id === activeSectionId;
             const isDisabled = !section.enabled;
@@ -53,6 +62,14 @@ export default function TopNavbar({
             About
           </button>
         </div>
+
+        {lessonSlug && (
+          <LanguageSwitcher
+            locale={locale}
+            sectionSlug={sectionSlug}
+            lessonSlug={lessonSlug}
+          />
+        )}
       </nav>
     </header>
   );

@@ -17,7 +17,7 @@ type PageProps = {
 export const dynamicParams = false;
 
 export async function generateStaticParams() {
-  const sections = buildSections();
+  const sections = buildSections("en");
   return getAllLessonRoutes(sections);
 }
 
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   if (!isValidLocale(locale)) return {};
 
-  const sections = buildSections();
+  const sections = buildSections(locale);
   const resolved = resolveLessonRoute(sections, locale, section, lesson);
   if (!resolved) return {};
 
@@ -38,7 +38,7 @@ export default async function LessonPage({ params }: PageProps) {
 
   if (!isValidLocale(locale)) notFound();
 
-  const sections = buildSections();
+  const sections = buildSections(locale);
   const resolved = resolveLessonRoute(sections, locale, section, lesson);
   if (!resolved) notFound();
 

@@ -1,6 +1,6 @@
 import { notFound, redirect } from "next/navigation";
 import { buildSections } from "@/lib/loadContent";
-import { isValidLocale } from "@/lib/i18n";
+import { isValidLocale, locales } from "@/lib/i18n";
 import { getDefaultLessonPath } from "@/lib/routes";
 
 type PageProps = {
@@ -8,7 +8,7 @@ type PageProps = {
 };
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }];
+  return locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleHomePage({ params }: PageProps) {
@@ -16,6 +16,6 @@ export default async function LocaleHomePage({ params }: PageProps) {
 
   if (!isValidLocale(locale)) notFound();
 
-  const sections = buildSections();
+  const sections = buildSections(locale);
   redirect(getDefaultLessonPath(sections, locale));
 }

@@ -1,0 +1,48 @@
+{
+  "number": 1,
+  "slug": "variables",
+  "title": "Variables",
+  "subtitle": "Boxes for your data",
+  "difficulty": "Beginner",
+  "duration": "2 min",
+  "tags": ["variables", "memory", "basics", "beginner"],
+  "prerequisites": [],
+  "next": "JS-002",
+  "estimatedReadingTime": 2,
+  "goal": "Learn what a variable is and why programmers use it.",
+  "explanation": [
+    "Imagine a regular box. You can put anything inside it and take it out later.",
+    "In JavaScript, a variable plays the role of that box.",
+    "A variable has a name. Through that name, the program knows where the stored value lives.",
+    "Once you write a value, you can use it as many times as you need.",
+    "This lets programs remember information between different instructions."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "A variable is like a labeled box. The label on the outside says 'name', and 'Vitalii' is stored inside."
+  },
+  "codeExample": "let name = \"Vitalii\";\n\nconsole.log(name);",
+  "result": "Vitalii",
+  "remember": [
+    "A variable stores data.",
+    "Every variable has a name.",
+    "You can get the value through its name."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think a variable is the value itself. In reality, it is a place where the value is stored."
+  },
+  "quiz": {
+    "question": "What does a variable store?",
+    "options": ["Data", "Browser functions", "CSS"],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — JavaScript Variables",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
+}
