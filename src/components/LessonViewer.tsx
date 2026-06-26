@@ -133,13 +133,14 @@ export default function LessonViewer({
 
   const handleMarkLearned = () => {
     const nowLearned = toggleLessonLearned(lesson.code);
-    setLearnedIds((prev) => {
-      const next = new Set(prev);
-      if (nowLearned) next.add(lesson.code);
-      else next.delete(lesson.code);
-      onLearnedChange?.(next);
-      return next;
-    });
+    const next = new Set(learnedIds);
+    if (nowLearned) {
+      next.add(lesson.code);
+    } else {
+      next.delete(lesson.code);
+    }
+    setLearnedIds(next);
+    onLearnedChange?.(next);
   };
 
   return (
