@@ -1,14 +1,60 @@
 {
   "number": 35,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "nan",
+  "title": "NaN",
+  "subtitle": "Not a Number",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "nan",
+    "number",
+    "type-conversion",
+    "errors",
+    "beginner"
+  ],
+  "prerequisites": ["JS-034"],
+  "previous": "JS-034",
+  "next": "JS-036",
+  "estimatedReadingTime": 4,
+  "goal": "Зрозумій, що означає NaN і коли він з'являється.",
+  "explanation": [
+    "NaN означає Not a Number.",
+    "Він з'являється тоді, коли JavaScript не може отримати коректне число.",
+    "Наприклад, Number(\"Pizza\") поверне NaN.",
+    "NaN має тип Number, хоча фактично означає помилку числового перетворення.",
+    "Для перевірки використовують Number.isNaN()."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви калькулятор, якому дали задачу порахувати слово 'Pizza'. Він не знає, що робити, тому повертає спеціальну позначку NaN."
+  },
+  "codeExample": "console.log(Number(\"Pizza\"));\nconsole.log(Number(\"123\"));",
+  "result": "NaN\n123",
+  "remember": [
+    "NaN означає Not a Number.",
+    "NaN з'являється після невдалого перетворення.",
+    "Number.isNaN() перевіряє NaN.",
+    "NaN має тип Number."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки думають, що NaN є рядком або помилкою. Насправді це спеціальне числове значення."
+  },
+  "quiz": {
+    "question": "Що поверне Number(\"Pizza\")?",
+    "options": [
+      "NaN",
+      "Pizza",
+      "0"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — NaN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,61 @@
 {
   "number": 34,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "greater-less",
+  "title": "Greater / Less",
+  "subtitle": "Більше чи менше?",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "comparison",
+    "greater-than",
+    "less-than",
+    "operators",
+    "boolean",
+    "beginner"
+  ],
+  "prerequisites": ["JS-033"],
+  "previous": "JS-033",
+  "next": "JS-035",
+  "estimatedReadingTime": 3,
+  "goal": "Навчись порівнювати значення за допомогою >, <, >= та <=.",
+  "explanation": [
+    "JavaScript може перевіряти, яке значення більше або менше.",
+    "Оператор > означає «більше ніж».",
+    "Оператор < означає «менше ніж».",
+    "Оператори >= та <= враховують також рівність.",
+    "Результатом будь-якого порівняння буде true або false."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви ваги. JavaScript кладе значення на різні сторони та визначає, яке з них важче."
+  },
+  "codeExample": "console.log(10 > 5);\nconsole.log(5 < 10);\nconsole.log(10 >= 10);",
+  "result": "true\ntrue\ntrue",
+  "remember": [
+    "> означає більше.",
+    "< означає менше.",
+    ">= означає більше або дорівнює.",
+    "<= означає менше або дорівнює."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді плутають напрямок символів > та <. Пам'ятай: широкий бік дивиться на більше число."
+  },
+  "quiz": {
+    "question": "Що поверне вираз 5 > 10?",
+    "options": [
+      "false",
+      "true",
+      "5"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Comparison operators",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,60 @@
 {
   "number": 35,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "nan",
+  "title": "NaN",
+  "subtitle": "Not a Number",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "nan",
+    "number",
+    "type-conversion",
+    "errors",
+    "beginner"
+  ],
+  "prerequisites": ["JS-034"],
+  "previous": "JS-034",
+  "next": "JS-036",
+  "estimatedReadingTime": 4,
+  "goal": "Understand what NaN means and when it appears.",
+  "explanation": [
+    "NaN means Not a Number.",
+    "It appears when JavaScript cannot produce a valid number.",
+    "For example, Number(\"Pizza\") returns NaN.",
+    "NaN has the Number type, even though it actually represents an invalid numeric result.",
+    "Use Number.isNaN() to check for NaN."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine giving a calculator the task of calculating the word “Pizza.” It does not know what to do, so it returns the special value NaN."
+  },
+  "codeExample": "console.log(Number(\"Pizza\"));\nconsole.log(Number(\"123\"));",
+  "result": "NaN\n123",
+  "remember": [
+    "NaN means Not a Number.",
+    "NaN appears after a failed numeric conversion.",
+    "Number.isNaN() checks for NaN.",
+    "NaN has the Number type."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners may think NaN is a string or an error. It is actually a special numeric value."
+  },
+  "quiz": {
+    "question": "What does Number(\"Pizza\") return?",
+    "options": [
+      "NaN",
+      "Pizza",
+      "0"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — NaN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

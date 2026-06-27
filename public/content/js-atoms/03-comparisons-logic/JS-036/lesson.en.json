@@ -1,14 +1,60 @@
 {
   "number": 36,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "truthy",
+  "title": "Truthy",
+  "subtitle": "Behaves like true",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "truthy",
+    "boolean",
+    "logic",
+    "conditions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-035"],
+  "previous": "JS-035",
+  "next": "JS-037",
+  "estimatedReadingTime": 4,
+  "goal": "Understand which values JavaScript treats as true in a Boolean context.",
+  "explanation": [
+    "Truthy values are values that become true when converted to Boolean.",
+    "Most values in JavaScript are truthy.",
+    "Examples include 42, \"Hello\", [], {}, and -5.",
+    "In if statements, JavaScript automatically checks whether a value is truthy or falsy.",
+    "Understanding truthy values is very important when working with conditions."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a checkpoint. Most values pass the check and receive true status."
+  },
+  "codeExample": "console.log(Boolean(42));\nconsole.log(Boolean(\"Hello\"));\nconsole.log(Boolean([]));",
+  "result": "true\ntrue\ntrue",
+  "remember": [
+    "Truthy values become true.",
+    "Most JavaScript values are truthy.",
+    "Non-empty strings are truthy.",
+    "Arrays and objects are truthy."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think that any unusual value becomes false. In fact, most values convert to true."
+  },
+  "quiz": {
+    "question": "Which value is truthy?",
+    "options": [
+      "42",
+      "0",
+      "\"\""
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Boolean coercion",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/Truthy",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

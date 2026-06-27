@@ -1,14 +1,61 @@
 {
   "number": 34,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "greater-less",
+  "title": "Greater / Less",
+  "subtitle": "Greater or less?",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "comparison",
+    "greater-than",
+    "less-than",
+    "operators",
+    "boolean",
+    "beginner"
+  ],
+  "prerequisites": ["JS-033"],
+  "previous": "JS-033",
+  "next": "JS-035",
+  "estimatedReadingTime": 3,
+  "goal": "Learn to compare values using >, <, >=, and <=.",
+  "explanation": [
+    "JavaScript can check whether one value is greater or less than another.",
+    "The > operator means “greater than.”",
+    "The < operator means “less than.”",
+    "The >= and <= operators also include equality.",
+    "Every comparison returns either true or false."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a balance scale. JavaScript places the values on opposite sides and determines which one is heavier."
+  },
+  "codeExample": "console.log(10 > 5);\nconsole.log(5 < 10);\nconsole.log(10 >= 10);",
+  "result": "true\ntrue\ntrue",
+  "remember": [
+    "> means greater than.",
+    "< means less than.",
+    ">= means greater than or equal to.",
+    "<= means less than or equal to."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes confuse the direction of the > and < symbols. Remember: the wide side faces the greater number."
+  },
+  "quiz": {
+    "question": "What does the expression 5 > 10 return?",
+    "options": [
+      "false",
+      "true",
+      "5"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Comparison operators",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

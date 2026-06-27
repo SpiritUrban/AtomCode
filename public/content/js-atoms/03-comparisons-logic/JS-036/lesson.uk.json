@@ -1,14 +1,60 @@
 {
   "number": 36,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "truthy",
+  "title": "Truthy",
+  "subtitle": "Поводиться як true",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "truthy",
+    "boolean",
+    "logic",
+    "conditions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-035"],
+  "previous": "JS-035",
+  "next": "JS-037",
+  "estimatedReadingTime": 4,
+  "goal": "Зрозумій, які значення JavaScript вважає true у логічному контексті.",
+  "explanation": [
+    "Truthy називають значення, які при перетворенні в Boolean стають true.",
+    "Більшість значень у JavaScript є truthy.",
+    "Наприклад: 42, \"Hello\", [], {}, -5.",
+    "У конструкціях if JavaScript автоматично перевіряє truthy або falsy значення.",
+    "Розуміння truthy дуже важливе для роботи з умовами."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви пропускний пункт. Більшість значень проходять перевірку і отримують статус true."
+  },
+  "codeExample": "console.log(Boolean(42));\nconsole.log(Boolean(\"Hello\"));\nconsole.log(Boolean([]));",
+  "result": "true\ntrue\ntrue",
+  "remember": [
+    "Truthy значення стають true.",
+    "Більшість значень у JavaScript truthy.",
+    "Рядки з текстом truthy.",
+    "Масиви та об'єкти truthy."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що будь-яке дивне значення стає false. Насправді більшість значень перетворюються на true."
+  },
+  "quiz": {
+    "question": "Яке значення є truthy?",
+    "options": [
+      "42",
+      "0",
+      "\"\""
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Boolean coercion",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/Truthy",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }
