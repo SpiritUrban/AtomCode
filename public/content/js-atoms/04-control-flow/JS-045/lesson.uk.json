@@ -1,14 +1,60 @@
 {
   "number": 45,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "else-if",
+  "title": "else if",
+  "subtitle": "Ще одна перевірка",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": [
+    "else-if",
+    "conditions",
+    "branching",
+    "control-flow",
+    "logic",
+    "beginner"
+  ],
+  "prerequisites": ["JS-044"],
+  "previous": "JS-044",
+  "next": "JS-046",
+  "estimatedReadingTime": 5,
+  "goal": "Навчись перевіряти кілька умов послідовно за допомогою else if.",
+  "explanation": [
+    "else if дозволяє додати нову перевірку після if.",
+    "Якщо перша умова не спрацювала, JavaScript перевіряє наступну.",
+    "Можна створювати ланцюжок із багатьох умов.",
+    "Виконається лише перший блок, умова якого стала true.",
+    "else if часто використовують для вибору одного варіанта з кількох."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Ти спочатку дивишся чи спекотно. Якщо ні — перевіряєш чи тепло. Якщо ні — перевіряєш чи холодно."
+  },
+  "codeExample": "if (isHot) {\n  console.log(\"T-shirt\");\n} else if (isWarm) {\n  console.log(\"Jacket\");\n} else {\n  console.log(\"Coat\");\n}",
+  "result": "Jacket",
+  "remember": [
+    "else if додає додаткову умову.",
+    "Умови перевіряються зверху вниз.",
+    "Після першого true решта перевірок не виконуються."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки думають, що всі else if виконуються. Насправді виконується лише перший блок з true-умовою."
+  },
+  "quiz": {
+    "question": "Що робить else if?",
+    "options": [
+      "Перевіряє наступну умову",
+      "Створює змінну",
+      "Завершує програму"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — if...else",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

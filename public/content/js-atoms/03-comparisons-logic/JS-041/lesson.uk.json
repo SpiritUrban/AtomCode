@@ -1,14 +1,60 @@
 {
   "number": 41,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "nullish-coalescing",
+  "title": "Nullish Coalescing ??",
+  "subtitle": "Запасне значення",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "nullish",
+    "coalescing",
+    "fallback",
+    "null",
+    "undefined",
+    "beginner"
+  ],
+  "prerequisites": ["JS-040"],
+  "previous": "JS-040",
+  "next": "JS-042",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись використовувати ?? для підстановки запасного значення, коли даних немає.",
+  "explanation": [
+    "Оператор ?? називається Nullish Coalescing.",
+    "Він повертає ліве значення, якщо воно існує.",
+    "Якщо ліве значення null або undefined — повертається праве.",
+    "?? часто використовують для значень за замовчуванням.",
+    "Це зручний спосіб показати запасний варіант."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Якщо на дверях немає таблички з іменем, ти ставиш табличку «Гість». Якщо ім'я є — використовуєш його."
+  },
+  "codeExample": "let username = null;\n\nconsole.log(username ?? \"Guest\");\nconsole.log(\"Vitalii\" ?? \"Guest\");",
+  "result": "Guest\nVitalii",
+  "remember": [
+    "?? працює з null і undefined.",
+    "Якщо значення є — використовується воно.",
+    "Якщо значення немає — використовується запасне."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки плутають ?? з ||. Оператор ?? реагує лише на null та undefined."
+  },
+  "quiz": {
+    "question": "Що поверне null ?? \"Guest\"?",
+    "options": [
+      "Guest",
+      "null",
+      "undefined"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Nullish Coalescing (??)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

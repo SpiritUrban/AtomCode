@@ -1,14 +1,60 @@
 {
   "number": 47,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "ternary-operator",
+  "title": "Ternary Operator",
+  "subtitle": "Короткий if else",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "ternary",
+    "conditional",
+    "if-else",
+    "operator",
+    "control-flow",
+    "beginner"
+  ],
+  "prerequisites": ["JS-046"],
+  "previous": "JS-046",
+  "next": "JS-048",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись використовувати тернарний оператор як короткий запис if else.",
+  "explanation": [
+    "Тернарний оператор дозволяє вибрати одне з двох значень.",
+    "Він складається з трьох частин: умова, значення для true, значення для false.",
+    "Синтаксис має вигляд: умова ? значення1 : значення2.",
+    "Якщо умова true — повертається перше значення.",
+    "Якщо умова false — повертається друге значення."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви питання з двома варіантами відповіді. Якщо відповідь «так» — отримуєш один результат, якщо «ні» — інший."
+  },
+  "codeExample": "let result = isAdult ? \"Adult\" : \"Child\";\n\nconsole.log(result);",
+  "result": "Adult",
+  "remember": [
+    "Тернарний оператор — це короткий if else.",
+    "? означає варіант для true.",
+    ": означає варіант для false."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки плутають порядок частин. Після ? завжди йде результат для true, після : — для false."
+  },
+  "quiz": {
+    "question": "Що поверне true ? \"Yes\" : \"No\"?",
+    "options": [
+      "Yes",
+      "No",
+      "undefined"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Conditional Operator",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

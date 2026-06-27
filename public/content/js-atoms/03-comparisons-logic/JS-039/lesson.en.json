@@ -1,14 +1,60 @@
 {
   "number": 39,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "logical-or",
+  "title": "Logical OR ||",
+  "subtitle": "One true condition is enough",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "logical-or",
+    "or",
+    "logic",
+    "boolean",
+    "conditions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-038"],
+  "previous": "JS-038",
+  "next": "JS-040",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to use the || operator when at least one true condition is enough.",
+  "explanation": [
+    "The || operator means logical OR.",
+    "It returns true if at least one side is true.",
+    "The result is false only when both sides are false.",
+    "|| is often used when several alternatives are acceptable.",
+    "This operator is very useful for conditions, checks, and fallback values."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine that either of two keys can open a door. If you have at least one key, you can enter."
+  },
+  "codeExample": "console.log(true || false);\nconsole.log(false || true);\nconsole.log(false || false);",
+  "result": "true\ntrue\nfalse",
+  "remember": [
+    "|| returns true if at least one side is true.",
+    "The result is false only when every side is false.",
+    "|| is used for alternative options."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes think || requires two true values. In fact, just one true value is enough for ||."
+  },
+  "quiz": {
+    "question": "What does false || true return?",
+    "options": [
+      "true",
+      "false",
+      "null"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Logical OR (||)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

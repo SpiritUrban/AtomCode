@@ -1,14 +1,60 @@
 {
   "number": 43,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "if",
+  "title": "if",
+  "subtitle": "Виконати код якщо true",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "if",
+    "condition",
+    "control-flow",
+    "boolean",
+    "branching",
+    "beginner"
+  ],
+  "prerequisites": ["JS-042"],
+  "previous": "JS-042",
+  "next": "JS-044",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись виконувати код лише тоді, коли умова повертає true.",
+  "explanation": [
+    "if — це базова конструкція прийняття рішень у JavaScript.",
+    "Спочатку перевіряється умова всередині дужок.",
+    "Якщо результат true — код виконується.",
+    "Якщо результат false — код пропускається.",
+    "if є основою майже всієї логіки програм."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Якщо надворі сонячно — йдеш гуляти. Якщо ні — нічого не робиш. Саме так працює if."
+  },
+  "codeExample": "if (isSunny) {\n  console.log(\"Go outside\");\n}",
+  "result": "Go outside",
+  "remember": [
+    "if перевіряє умову.",
+    "Код виконується лише при true.",
+    "При false блок пропускається."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що код усередині if виконується завжди. Насправді лише коли умова true."
+  },
+  "quiz": {
+    "question": "Коли виконується код усередині if?",
+    "options": [
+      "Коли умова true",
+      "Завжди",
+      "Коли умова false"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — if...else",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,60 @@
 {
   "number": 41,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "nullish-coalescing",
+  "title": "Nullish Coalescing ??",
+  "subtitle": "A fallback value",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "nullish",
+    "coalescing",
+    "fallback",
+    "null",
+    "undefined",
+    "beginner"
+  ],
+  "prerequisites": ["JS-040"],
+  "previous": "JS-040",
+  "next": "JS-042",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to use ?? to provide a fallback value when data is missing.",
+  "explanation": [
+    "The ?? operator is called Nullish Coalescing.",
+    "It returns the left-hand value if that value exists.",
+    "If the left-hand value is null or undefined, it returns the right-hand value.",
+    "?? is often used to provide default values.",
+    "It is a convenient way to supply a fallback."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "If a door has no nameplate, you put up one that says “Guest.” If a name is present, you use it."
+  },
+  "codeExample": "let username = null;\n\nconsole.log(username ?? \"Guest\");\nconsole.log(\"Vitalii\" ?? \"Guest\");",
+  "result": "Guest\nVitalii",
+  "remember": [
+    "?? works with null and undefined.",
+    "If a value is present, that value is used.",
+    "If a value is missing, the fallback is used."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners confuse ?? with ||. The ?? operator responds only to null and undefined."
+  },
+  "quiz": {
+    "question": "What does null ?? \"Guest\" return?",
+    "options": [
+      "Guest",
+      "null",
+      "undefined"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Nullish Coalescing (??)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

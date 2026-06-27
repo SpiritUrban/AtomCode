@@ -1,14 +1,49 @@
 {
   "number": 48,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "switch",
+  "title": "switch",
+  "subtitle": "Many options to choose from",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": ["switch", "case", "control-flow", "conditions", "branching", "beginner"],
+  "prerequisites": ["JS-047"],
+  "previous": "JS-047",
+  "next": "JS-049",
+  "estimatedReadingTime": 5,
+  "goal": "Learn to use switch to select one option from many.",
+  "explanation": [
+    "switch is used when there are many possible values.",
+    "Each option is described with a case.",
+    "JavaScript looks for a case that matches the value.",
+    "When a match is found, the corresponding code runs.",
+    "switch often makes code clearer than a long chain of if...else statements."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a drinks menu. You choose one item, and the bartender prepares that specific order."
+  },
+  "codeExample": "switch (day) {\n  case \"Tuesday\":\n    console.log(\"Match\");\n    break;\n}",
+  "result": "Match",
+  "remember": [
+    "switch compares a value with each case.",
+    "The matching case runs.",
+    "break stops further execution."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often forget break. The code may then continue running the following cases."
+  },
+  "quiz": {
+    "question": "What is switch used for?",
+    "options": ["Selecting one option from many", "Creating variables", "Adding numbers"],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — switch",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

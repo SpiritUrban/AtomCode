@@ -1,14 +1,60 @@
 {
   "number": 42,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "optional-chaining",
+  "title": "Optional Chaining ?.",
+  "subtitle": "Safe property access",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "optional-chaining",
+    "property-access",
+    "null",
+    "undefined",
+    "objects",
+    "beginner"
+  ],
+  "prerequisites": ["JS-041"],
+  "previous": "JS-041",
+  "next": "JS-043",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to safely access object properties using ?.",
+  "explanation": [
+    "The ?. operator is called Optional Chaining.",
+    "It lets you access properties safely.",
+    "If the object exists, the property is read.",
+    "If the object is null or undefined, no error is thrown.",
+    "Instead of an error, it returns undefined."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "You want to look inside a box. If the box exists, you look inside. If it does not, you simply get the answer “there is nothing here” without a crash."
+  },
+  "codeExample": "let user = null;\n\nconsole.log(user?.name);",
+  "result": "undefined",
+  "remember": [
+    "?. prevents property-access errors.",
+    "If the object is missing, it returns undefined.",
+    "?. is often used when working with APIs and user data."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners access user.name even when user may be null. This causes an error. ?. solves this problem."
+  },
+  "quiz": {
+    "question": "What does user?.name return when user = null?",
+    "options": [
+      "undefined",
+      "Error",
+      "null"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Optional Chaining (?.)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

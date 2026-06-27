@@ -1,14 +1,59 @@
 {
   "number": 50,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "early-return",
+  "title": "Early Return",
+  "subtitle": "Return a result early",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "early-return",
+    "return",
+    "functions",
+    "control-flow",
+    "beginner"
+  ],
+  "prerequisites": ["JS-049"],
+  "previous": "JS-049",
+  "next": "JS-051",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to return a result immediately when the answer is already known.",
+  "explanation": [
+    "Early Return means returning a result before the end of a function.",
+    "If the answer is already known, there is no reason to run the remaining code.",
+    "return ends the function immediately.",
+    "This makes code simpler and quicker to read.",
+    "Early Return is used very often in real-world projects."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "If a teacher can already see that a test has failed, they record the result immediately instead of checking the remaining pages."
+  },
+  "codeExample": "function check(score) {\n  if (score < 50) {\n    return \"Fail\";\n  }\n\n  return \"Pass\";\n}",
+  "result": "Fail",
+  "remember": [
+    "return ends a function.",
+    "If the answer is known, return it immediately.",
+    "Do not run unnecessary code."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners write many unnecessary checks after the result is already known."
+  },
+  "quiz": {
+    "question": "What does return do?",
+    "options": [
+      "Returns a result and ends the function",
+      "Creates a variable",
+      "Creates a loop"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — return",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

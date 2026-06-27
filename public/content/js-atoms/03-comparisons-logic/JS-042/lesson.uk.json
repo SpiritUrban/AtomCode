@@ -1,14 +1,60 @@
 {
   "number": 42,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "optional-chaining",
+  "title": "Optional Chaining ?.",
+  "subtitle": "Безпечний доступ до властивостей",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "optional-chaining",
+    "property-access",
+    "null",
+    "undefined",
+    "objects",
+    "beginner"
+  ],
+  "prerequisites": ["JS-041"],
+  "previous": "JS-041",
+  "next": "JS-043",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись безпечно отримувати властивості об'єктів за допомогою ?.",
+  "explanation": [
+    "Оператор ?. називається Optional Chaining.",
+    "Він дозволяє безпечно звертатися до властивостей.",
+    "Якщо об'єкт існує — властивість буде прочитана.",
+    "Якщо об'єкт дорівнює null або undefined — помилки не буде.",
+    "Замість помилки повернеться undefined."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Ти хочеш зазирнути в коробку. Якщо коробка є — дивишся всередину. Якщо коробки немає — просто отримуєш відповідь «нічого немає», без аварії."
+  },
+  "codeExample": "let user = null;\n\nconsole.log(user?.name);",
+  "result": "undefined",
+  "remember": [
+    "?. запобігає помилкам доступу до властивостей.",
+    "Якщо об'єкт відсутній — повертається undefined.",
+    "?. часто використовують при роботі з API та даними користувачів."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки звертаються до user.name навіть коли user може бути null. Це викликає помилку. ?. вирішує цю проблему."
+  },
+  "quiz": {
+    "question": "Що поверне user?.name, якщо user = null?",
+    "options": [
+      "undefined",
+      "Error",
+      "null"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Optional Chaining (?.)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

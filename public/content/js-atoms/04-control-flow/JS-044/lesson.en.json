@@ -1,14 +1,49 @@
 {
   "number": 44,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "else",
+  "title": "else",
+  "subtitle": "What to do otherwise",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": ["else", "if-else", "condition", "control-flow", "branching", "beginner"],
+  "prerequisites": ["JS-043"],
+  "previous": "JS-043",
+  "next": "JS-045",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to define an alternative path using else.",
+  "explanation": [
+    "else works together with if.",
+    "If the if condition returns false, the else block runs.",
+    "This lets you describe two different paths.",
+    "One path is for true, and the other is for false.",
+    "This is the most common form of branching in programming."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "If it is sunny, you go for a walk. Otherwise, you stay home. else describes the “otherwise” option."
+  },
+  "codeExample": "if (isSunny) {\n  console.log(\"Go outside\");\n} else {\n  console.log(\"Stay home\");\n}",
+  "result": "Stay home",
+  "remember": [
+    "else runs when if returns false.",
+    "if and else describe two possible paths.",
+    "else cannot exist without if."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes think else checks a new condition. In fact, else simply runs when the preceding condition did not pass."
+  },
+  "quiz": {
+    "question": "When does else run?",
+    "options": ["When if returns false", "When if returns true", "Always"],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — if...else",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

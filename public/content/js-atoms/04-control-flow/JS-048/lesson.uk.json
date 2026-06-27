@@ -1,14 +1,60 @@
 {
   "number": 48,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "switch",
+  "title": "switch",
+  "subtitle": "Багато варіантів вибору",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": [
+    "switch",
+    "case",
+    "control-flow",
+    "conditions",
+    "branching",
+    "beginner"
+  ],
+  "prerequisites": ["JS-047"],
+  "previous": "JS-047",
+  "next": "JS-049",
+  "estimatedReadingTime": 5,
+  "goal": "Навчись використовувати switch для вибору одного варіанта серед багатьох.",
+  "explanation": [
+    "switch використовується, коли є багато можливих значень.",
+    "Кожен варіант описується через case.",
+    "JavaScript шукає case, який збігається зі значенням.",
+    "Після знаходження збігу виконується відповідний код.",
+    "switch часто робить код зрозумілішим за довгий ланцюжок if else."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви меню напоїв. Ти обираєш один пункт, і бармен виконує саме цей варіант замовлення."
+  },
+  "codeExample": "switch (day) {\n  case \"Tuesday\":\n    console.log(\"Match\");\n    break;\n}",
+  "result": "Match",
+  "remember": [
+    "switch порівнює значення з case.",
+    "Виконується лише відповідний case.",
+    "break зупиняє подальше виконання."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто забувають break. Тоді код може продовжити виконувати наступні case."
+  },
+  "quiz": {
+    "question": "Для чого використовується switch?",
+    "options": [
+      "Для вибору одного варіанта серед багатьох",
+      "Для створення змінних",
+      "Для додавання чисел"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — switch",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

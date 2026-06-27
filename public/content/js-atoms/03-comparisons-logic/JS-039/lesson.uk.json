@@ -1,14 +1,60 @@
 {
   "number": 39,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "logical-or",
+  "title": "Logical OR ||",
+  "subtitle": "Достатньо однієї true-умови",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "logical-or",
+    "or",
+    "logic",
+    "boolean",
+    "conditions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-038"],
+  "previous": "JS-038",
+  "next": "JS-040",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись використовувати оператор ||, коли достатньо хоча б однієї правильної умови.",
+  "explanation": [
+    "Оператор || означає логічне OR.",
+    "Він повертає true, якщо хоча б одна сторона є true.",
+    "Результат буде false лише тоді, коли обидві сторони false.",
+    "|| часто використовують, коли є кілька допустимих варіантів.",
+    "Цей оператор дуже корисний для умов, перевірок і запасних значень."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви, що для входу достатньо одного з двох ключів. Якщо є хоча б один ключ — ти можеш увійти."
+  },
+  "codeExample": "console.log(true || false);\nconsole.log(false || true);\nconsole.log(false || false);",
+  "result": "true\ntrue\nfalse",
+  "remember": [
+    "|| повертає true, якщо хоча б одна сторона true.",
+    "false буде лише коли всі сторони false.",
+    "|| використовують для альтернативних варіантів."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді думають, що || потребує двох true. Насправді для || достатньо лише одного true."
+  },
+  "quiz": {
+    "question": "Що поверне false || true?",
+    "options": [
+      "true",
+      "false",
+      "null"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Logical OR (||)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

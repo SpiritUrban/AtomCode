@@ -1,14 +1,60 @@
 {
   "number": 37,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "falsy",
+  "title": "Falsy",
+  "subtitle": "Поводиться як false",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "falsy",
+    "boolean",
+    "logic",
+    "conditions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-036"],
+  "previous": "JS-036",
+  "next": "JS-038",
+  "estimatedReadingTime": 4,
+  "goal": "Зрозумій, які значення JavaScript вважає false у логічному контексті.",
+  "explanation": [
+    "Falsy називають значення, які при перетворенні в Boolean стають false.",
+    "У JavaScript є невеликий набір falsy-значень.",
+    "Найчастіші falsy-значення: false, 0, порожній рядок, null, undefined і NaN.",
+    "У конструкціях if такі значення поводяться як false.",
+    "Розуміння falsy допомагає правильно писати умови."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви пропускний пункт. Falsy-значення не проходять перевірку й отримують статус false."
+  },
+  "codeExample": "console.log(Boolean(0));\nconsole.log(Boolean(\"\"));\nconsole.log(Boolean(null));",
+  "result": "false\nfalse\nfalse",
+  "remember": [
+    "Falsy значення стають false.",
+    "0 є falsy.",
+    "Порожній рядок є falsy.",
+    "null, undefined і NaN теж falsy."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що рядок \"false\" є falsy. Насправді це непорожній рядок, тому він truthy."
+  },
+  "quiz": {
+    "question": "Яке значення є falsy?",
+    "options": [
+      "0",
+      "\"Hello\"",
+      "[]"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Falsy",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/Falsy",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

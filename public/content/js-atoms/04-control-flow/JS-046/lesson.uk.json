@@ -1,14 +1,60 @@
 {
   "number": 46,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "nested-if",
+  "title": "Nested if",
+  "subtitle": "if всередині if",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "nested-if",
+    "if",
+    "conditions",
+    "control-flow",
+    "logic",
+    "beginner"
+  ],
+  "prerequisites": ["JS-045"],
+  "previous": "JS-045",
+  "next": "JS-047",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись використовувати один if всередині іншого для багаторівневих перевірок.",
+  "explanation": [
+    "Nested if означає вкладений if.",
+    "Спочатку виконується зовнішня перевірка.",
+    "Лише якщо вона true, виконується внутрішній if.",
+    "Так можна будувати складніші умови крок за кроком.",
+    "Nested if часто використовують для перевірки доступу, ролей і прав користувачів."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Щоб потрапити у VIP-зону, спочатку потрібно пройти через головний вхід. Лише після цього перевіряють VIP-статус."
+  },
+  "codeExample": "if (loggedIn) {\n  if (isVIP) {\n    console.log(\"Access\");\n  }\n}",
+  "result": "Access",
+  "remember": [
+    "Внутрішній if перевіряється лише після зовнішнього.",
+    "Nested if — це if всередині if.",
+    "Дозволяє створювати послідовні перевірки."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки думають, що всі if перевіряються одночасно. Насправді внутрішній if виконається лише після проходження зовнішнього."
+  },
+  "quiz": {
+    "question": "Коли виконується внутрішній if?",
+    "options": [
+      "Коли зовнішній if повернув true",
+      "Завжди",
+      "Лише коли зовнішній if повернув false"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — if...else",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

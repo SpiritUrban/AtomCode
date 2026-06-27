@@ -1,14 +1,60 @@
 {
   "number": 40,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "logical-not",
+  "title": "Logical NOT !",
+  "subtitle": "Змінює true на false",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "logical-not",
+    "not",
+    "boolean",
+    "logic",
+    "operator",
+    "beginner"
+  ],
+  "prerequisites": ["JS-039"],
+  "previous": "JS-039",
+  "next": "JS-041",
+  "estimatedReadingTime": 3,
+  "goal": "Навчись використовувати оператор ! для зміни true на false і false на true.",
+  "explanation": [
+    "Оператор ! означає логічне NOT.",
+    "Він змінює булеве значення на протилежне.",
+    "!true повертає false.",
+    "!false повертає true.",
+    "NOT часто використовують для перевірки протилежної умови."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви перемикач світла. Якщо світло увімкнене — оператор ! його вимикає. Якщо вимкнене — вмикає."
+  },
+  "codeExample": "console.log(!true);\nconsole.log(!false);",
+  "result": "false\ntrue",
+  "remember": [
+    "! змінює значення на протилежне.",
+    "!true → false.",
+    "!false → true."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді думають, що ! просто перевіряє значення. Насправді він повертає протилежний boolean."
+  },
+  "quiz": {
+    "question": "Що поверне !false?",
+    "options": [
+      "true",
+      "false",
+      "null"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Logical NOT (!)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

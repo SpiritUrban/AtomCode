@@ -1,14 +1,60 @@
 {
   "number": 37,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "falsy",
+  "title": "Falsy",
+  "subtitle": "Behaves like false",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "falsy",
+    "boolean",
+    "logic",
+    "conditions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-036"],
+  "previous": "JS-036",
+  "next": "JS-038",
+  "estimatedReadingTime": 4,
+  "goal": "Understand which values JavaScript treats as false in a Boolean context.",
+  "explanation": [
+    "Falsy values are values that become false when converted to Boolean.",
+    "JavaScript has a small set of falsy values.",
+    "The most common falsy values are false, 0, an empty string, null, undefined, and NaN.",
+    "In if statements, these values behave like false.",
+    "Understanding falsy values helps you write conditions correctly."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a checkpoint. Falsy values do not pass the check and receive false status."
+  },
+  "codeExample": "console.log(Boolean(0));\nconsole.log(Boolean(\"\"));\nconsole.log(Boolean(null));",
+  "result": "false\nfalse\nfalse",
+  "remember": [
+    "Falsy values become false.",
+    "0 is falsy.",
+    "An empty string is falsy.",
+    "null, undefined, and NaN are also falsy."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think the string \"false\" is falsy. In fact, it is a non-empty string, so it is truthy."
+  },
+  "quiz": {
+    "question": "Which value is falsy?",
+    "options": [
+      "0",
+      "\"Hello\"",
+      "[]"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Falsy",
+      "url": "https://developer.mozilla.org/en-US/docs/Glossary/Falsy",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

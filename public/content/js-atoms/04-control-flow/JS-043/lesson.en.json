@@ -1,14 +1,49 @@
 {
   "number": 43,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "if",
+  "title": "if",
+  "subtitle": "Run code when a condition is true",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": ["if", "condition", "control-flow", "boolean", "branching", "beginner"],
+  "prerequisites": ["JS-042"],
+  "previous": "JS-042",
+  "next": "JS-044",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to run code only when a condition returns true.",
+  "explanation": [
+    "if is the basic decision-making statement in JavaScript.",
+    "First, the condition inside the parentheses is checked.",
+    "If the result is true, the code runs.",
+    "If the result is false, the code is skipped.",
+    "if is the foundation of almost all program logic."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "If it is sunny outside, you go for a walk. Otherwise, you do nothing. That is exactly how if works."
+  },
+  "codeExample": "if (isSunny) {\n  console.log(\"Go outside\");\n}",
+  "result": "Go outside",
+  "remember": [
+    "if checks a condition.",
+    "The code runs only when the condition is true.",
+    "When the condition is false, the block is skipped."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think the code inside if always runs. It actually runs only when the condition is true."
+  },
+  "quiz": {
+    "question": "When does the code inside an if statement run?",
+    "options": ["When the condition is true", "Always", "When the condition is false"],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — if...else",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

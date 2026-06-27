@@ -1,14 +1,60 @@
 {
   "number": 44,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "else",
+  "title": "else",
+  "subtitle": "Що робити якщо ні",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "else",
+    "if-else",
+    "condition",
+    "control-flow",
+    "branching",
+    "beginner"
+  ],
+  "prerequisites": ["JS-043"],
+  "previous": "JS-043",
+  "next": "JS-045",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись задавати альтернативний сценарій через else.",
+  "explanation": [
+    "else працює разом з if.",
+    "Якщо умова if повернула false — виконується else.",
+    "Таким чином можна описати два різні сценарії.",
+    "Один для true, інший для false.",
+    "Це найпоширеніша форма розгалуження в програмуванні."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Якщо сонячно — йдеш гуляти. Інакше залишаєшся вдома. else описує варіант «інакше»."
+  },
+  "codeExample": "if (isSunny) {\n  console.log(\"Go outside\");\n} else {\n  console.log(\"Stay home\");\n}",
+  "result": "Stay home",
+  "remember": [
+    "else виконується коли if повернув false.",
+    "if та else описують два варіанти розвитку подій.",
+    "else не може існувати без if."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді думають, що else перевіряє нову умову. Насправді else просто виконується коли попередня умова не спрацювала."
+  },
+  "quiz": {
+    "question": "Коли виконується else?",
+    "options": [
+      "Коли if повернув false",
+      "Коли if повернув true",
+      "Завжди"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — if...else",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

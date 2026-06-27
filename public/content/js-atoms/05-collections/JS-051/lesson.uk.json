@@ -1,14 +1,59 @@
 {
   "number": 51,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array",
+  "title": "Array",
+  "subtitle": "Зберігай багато значень",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": [
+    "array",
+    "arrays",
+    "collection",
+    "data-structure",
+    "beginner"
+  ],
+  "prerequisites": ["JS-050"],
+  "previous": "JS-050",
+  "next": "JS-052",
+  "estimatedReadingTime": 5,
+  "goal": "Навчись використовувати масиви для зберігання кількох значень в одній змінній.",
+  "explanation": [
+    "Array (масив) — це впорядкований список значень.",
+    "У масиві можна зберігати багато елементів.",
+    "Елементи записуються всередині квадратних дужок [].",
+    "Кожен елемент має свій номер — індекс.",
+    "Масиви використовуються майже в кожній програмі."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви коробку з кількома фруктами. Замість окремої коробки для кожного фрукта ти зберігаєш усе в одному контейнері."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits[0]);",
+  "result": "Apple",
+  "remember": [
+    "Array зберігає багато значень.",
+    "Масив створюється через [].",
+    "Елементи мають індекси."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що перший індекс дорівнює 1. Насправді масиви починаються з індексу 0."
+  },
+  "quiz": {
+    "question": "Що поверне fruits[0] для [\"Apple\", \"Banana\", \"Orange\"]?",
+    "options": [
+      "Apple",
+      "Banana",
+      "Orange"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

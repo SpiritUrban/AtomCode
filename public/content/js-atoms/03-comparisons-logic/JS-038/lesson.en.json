@@ -1,14 +1,60 @@
 {
   "number": 38,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "logical-and",
+  "title": "Logical AND &&",
+  "subtitle": "Both conditions must be true",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "logical-and",
+    "and",
+    "logic",
+    "boolean",
+    "conditions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-037"],
+  "previous": "JS-037",
+  "next": "JS-039",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to use the && operator to check multiple conditions at the same time.",
+  "explanation": [
+    "The && operator means logical AND.",
+    "It returns true only when both sides are true.",
+    "If at least one side is false, the result is false.",
+    "&& is often used in checks where several conditions must be met at the same time.",
+    "This operator is very important for if statements and program logic."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a door with two requirements: you need a key and permission. If you have only one of them, the door will not open."
+  },
+  "codeExample": "console.log(true && true);\nconsole.log(true && false);\nconsole.log(false && true);\nconsole.log(false && false);",
+  "result": "true\nfalse\nfalse\nfalse",
+  "remember": [
+    "&& returns true only if both sides are true.",
+    "If one side is false, the result is false.",
+    "&& is used for multiple required conditions."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes expect true when at least one condition is true. But with &&, every condition must be true."
+  },
+  "quiz": {
+    "question": "What does true && false return?",
+    "options": [
+      "false",
+      "true",
+      "undefined"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Logical AND (&&)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

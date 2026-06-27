@@ -1,14 +1,60 @@
 {
   "number": 38,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "logical-and",
+  "title": "Logical AND &&",
+  "subtitle": "Обидві умови мають бути true",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "logical-and",
+    "and",
+    "logic",
+    "boolean",
+    "conditions",
+    "beginner"
+  ],
+  "prerequisites": ["JS-037"],
+  "previous": "JS-037",
+  "next": "JS-039",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись використовувати оператор && для перевірки кількох умов одночасно.",
+  "explanation": [
+    "Оператор && означає логічне AND.",
+    "Він повертає true лише тоді, коли обидві сторони є true.",
+    "Якщо хоча б одна сторона false, результат буде false.",
+    "&& часто використовують у перевірках, де потрібно виконати кілька умов одночасно.",
+    "Цей оператор дуже важливий для if та логіки програми."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви двері з двома умовами: потрібен ключ і дозвіл. Якщо є тільки щось одне — двері не відкриються."
+  },
+  "codeExample": "console.log(true && true);\nconsole.log(true && false);\nconsole.log(false && true);\nconsole.log(false && false);",
+  "result": "true\nfalse\nfalse\nfalse",
+  "remember": [
+    "&& повертає true лише якщо обидві сторони true.",
+    "Якщо одна сторона false — результат false.",
+    "&& використовують для кількох обов'язкових умов."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді очікують true, якщо хоча б одна умова правильна. Але для && правильними мають бути всі умови."
+  },
+  "quiz": {
+    "question": "Що поверне true && false?",
+    "options": [
+      "false",
+      "true",
+      "undefined"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Logical AND (&&)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

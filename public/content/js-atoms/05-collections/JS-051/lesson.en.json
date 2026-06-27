@@ -1,14 +1,59 @@
 {
   "number": 51,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array",
+  "title": "Array",
+  "subtitle": "Store multiple values",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": [
+    "array",
+    "arrays",
+    "collection",
+    "data-structure",
+    "beginner"
+  ],
+  "prerequisites": ["JS-050"],
+  "previous": "JS-050",
+  "next": "JS-052",
+  "estimatedReadingTime": 5,
+  "goal": "Learn to use arrays to store multiple values in a single variable.",
+  "explanation": [
+    "An Array is an ordered list of values.",
+    "An array can hold many elements.",
+    "Elements are written inside square brackets [].",
+    "Each element has its own number called an index.",
+    "Arrays are used in almost every program."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a box containing several fruits. Instead of using a separate box for each fruit, you store them all in one container."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits[0]);",
+  "result": "Apple",
+  "remember": [
+    "An Array stores multiple values.",
+    "An array is created using [].",
+    "Elements have indexes."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think the first index is 1. In fact, array indexes start at 0."
+  },
+  "quiz": {
+    "question": "What does fruits[0] return for [\"Apple\", \"Banana\", \"Orange\"]?",
+    "options": [
+      "Apple",
+      "Banana",
+      "Orange"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,60 @@
 {
   "number": 49,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "guard-clause",
+  "title": "Guard Clause",
+  "subtitle": "Exit early",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "guard-clause",
+    "return",
+    "if",
+    "conditions",
+    "control-flow",
+    "beginner"
+  ],
+  "prerequisites": ["JS-048"],
+  "previous": "JS-048",
+  "next": "JS-050",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to use a Guard Clause to exit unwanted scenarios early.",
+  "explanation": [
+    "A Guard Clause is a check at the beginning of a function.",
+    "If a condition is invalid, the function ends immediately.",
+    "This helps avoid unnecessary nested if statements.",
+    "The code becomes simpler and easier to read.",
+    "Guard Clauses are often used to validate access or input data."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "A security guard checks tickets at the entrance. If someone has no ticket, they cannot go any farther."
+  },
+  "codeExample": "if (!isLoggedIn) {\n  return;\n}\n\nconsole.log(\"Welcome\");",
+  "result": "Welcome",
+  "remember": [
+    "Check invalid scenarios first.",
+    "Use return when requirements are not met.",
+    "A Guard Clause simplifies code."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners write many nested if statements instead of ending the function immediately."
+  },
+  "quiz": {
+    "question": "What is a Guard Clause used for?",
+    "options": [
+      "To end an unwanted scenario immediately",
+      "To create an array",
+      "To add a variable"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — return",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

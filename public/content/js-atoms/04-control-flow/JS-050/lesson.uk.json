@@ -1,14 +1,59 @@
 {
   "number": 50,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "early-return",
+  "title": "Early Return",
+  "subtitle": "Повернути результат раніше",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "early-return",
+    "return",
+    "functions",
+    "control-flow",
+    "beginner"
+  ],
+  "prerequisites": ["JS-049"],
+  "previous": "JS-049",
+  "next": "JS-051",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись повертати результат одразу, коли відповідь вже відома.",
+  "explanation": [
+    "Early Return означає раннє повернення результату.",
+    "Якщо відповідь вже відома, немає сенсу виконувати решту коду.",
+    "return одразу завершує функцію.",
+    "Це робить код простішим і швидшим для читання.",
+    "Early Return дуже часто використовують у реальних проєктах."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Якщо викладач уже бачить, що тест провалений, він одразу ставить результат і не перевіряє решту сторінок."
+  },
+  "codeExample": "function check(score) {\n  if (score < 50) {\n    return \"Fail\";\n  }\n\n  return \"Pass\";\n}",
+  "result": "Fail",
+  "remember": [
+    "return завершує функцію.",
+    "Якщо відповідь відома — поверни її одразу.",
+    "Не виконуй зайвий код."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки пишуть багато зайвих перевірок після того, як результат уже відомий."
+  },
+  "quiz": {
+    "question": "Що робить return?",
+    "options": [
+      "Повертає результат і завершує функцію",
+      "Створює змінну",
+      "Створює цикл"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — return",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

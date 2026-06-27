@@ -1,14 +1,60 @@
 {
   "number": 40,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "logical-not",
+  "title": "Logical NOT !",
+  "subtitle": "Changes true to false",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "3 min",
+  "tags": [
+    "logical-not",
+    "not",
+    "boolean",
+    "logic",
+    "operator",
+    "beginner"
+  ],
+  "prerequisites": ["JS-039"],
+  "previous": "JS-039",
+  "next": "JS-041",
+  "estimatedReadingTime": 3,
+  "goal": "Learn to use the ! operator to change true to false and false to true.",
+  "explanation": [
+    "The ! operator means logical NOT.",
+    "It changes a Boolean value to its opposite.",
+    "!true returns false.",
+    "!false returns true.",
+    "NOT is often used to check the opposite of a condition."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a light switch. If the light is on, the ! operator turns it off. If it is off, the operator turns it on."
+  },
+  "codeExample": "console.log(!true);\nconsole.log(!false);",
+  "result": "false\ntrue",
+  "remember": [
+    "! changes a value to its opposite.",
+    "!true → false.",
+    "!false → true."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes think ! only checks a value. In fact, it returns the opposite Boolean value."
+  },
+  "quiz": {
+    "question": "What does !false return?",
+    "options": [
+      "true",
+      "false",
+      "null"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Logical NOT (!)",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_NOT",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

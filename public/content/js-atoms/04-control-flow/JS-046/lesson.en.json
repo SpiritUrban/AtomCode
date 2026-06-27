@@ -1,14 +1,49 @@
 {
   "number": 46,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "nested-if",
+  "title": "Nested if",
+  "subtitle": "An if statement inside another if",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": ["nested-if", "if", "conditions", "control-flow", "logic", "beginner"],
+  "prerequisites": ["JS-045"],
+  "previous": "JS-045",
+  "next": "JS-047",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to use one if statement inside another for multi-level checks.",
+  "explanation": [
+    "Nested if means an if statement placed inside another if.",
+    "The outer condition is checked first.",
+    "Only when it is true does the inner if run.",
+    "This lets you build more complex conditions step by step.",
+    "Nested if statements are often used to check access, roles, and user permissions."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "To enter a VIP area, you must first pass through the main entrance. Only then is your VIP status checked."
+  },
+  "codeExample": "if (loggedIn) {\n  if (isVIP) {\n    console.log(\"Access\");\n  }\n}",
+  "result": "Access",
+  "remember": [
+    "The inner if is checked only after the outer one passes.",
+    "Nested if means an if statement inside another if.",
+    "It lets you create checks that run in sequence."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners may think all if statements are checked at the same time. In fact, the inner if runs only after the outer one passes."
+  },
+  "quiz": {
+    "question": "When does the inner if run?",
+    "options": ["When the outer if returns true", "Always", "Only when the outer if returns false"],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — if...else",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

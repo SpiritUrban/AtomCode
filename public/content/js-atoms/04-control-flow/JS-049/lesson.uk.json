@@ -1,14 +1,60 @@
 {
   "number": 49,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "guard-clause",
+  "title": "Guard Clause",
+  "subtitle": "Завершити раніше",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "guard-clause",
+    "return",
+    "if",
+    "conditions",
+    "control-flow",
+    "beginner"
+  ],
+  "prerequisites": ["JS-048"],
+  "previous": "JS-048",
+  "next": "JS-050",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись використовувати Guard Clause для раннього виходу з небажаних сценаріїв.",
+  "explanation": [
+    "Guard Clause — це перевірка на початку функції.",
+    "Якщо умова погана, функція завершується одразу.",
+    "Це дозволяє уникнути зайвих вкладених if.",
+    "Код стає простішим і легшим для читання.",
+    "Guard Clause часто використовують для перевірки доступу або вхідних даних."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Охоронець перевіряє квиток біля входу. Якщо квитка немає — людина не проходить далі."
+  },
+  "codeExample": "if (!isLoggedIn) {\n  return;\n}\n\nconsole.log(\"Welcome\");",
+  "result": "Welcome",
+  "remember": [
+    "Спочатку перевіряємо погані сценарії.",
+    "При невиконанні вимог робимо return.",
+    "Guard Clause спрощує код."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки пишуть багато вкладених if замість того, щоб завершити функцію одразу."
+  },
+  "quiz": {
+    "question": "Для чого використовують Guard Clause?",
+    "options": [
+      "Щоб завершити небажаний сценарій одразу",
+      "Щоб створити масив",
+      "Щоб додати змінну"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — return",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

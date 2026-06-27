@@ -1,14 +1,49 @@
 {
   "number": 45,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "else-if",
+  "title": "else if",
+  "subtitle": "Another condition to check",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": ["else-if", "conditions", "branching", "control-flow", "logic", "beginner"],
+  "prerequisites": ["JS-044"],
+  "previous": "JS-044",
+  "next": "JS-046",
+  "estimatedReadingTime": 5,
+  "goal": "Learn to check several conditions in sequence using else if.",
+  "explanation": [
+    "else if lets you add another check after if.",
+    "If the first condition does not pass, JavaScript checks the next one.",
+    "You can create a chain of many conditions.",
+    "Only the first block whose condition is true will run.",
+    "else if is often used to choose one option from several."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "First, you check whether it is hot. If not, you check whether it is warm. If not, you check whether it is cold."
+  },
+  "codeExample": "if (isHot) {\n  console.log(\"T-shirt\");\n} else if (isWarm) {\n  console.log(\"Jacket\");\n} else {\n  console.log(\"Coat\");\n}",
+  "result": "Jacket",
+  "remember": [
+    "else if adds another condition.",
+    "Conditions are checked from top to bottom.",
+    "After the first true condition, the remaining checks are skipped."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners may think every else if block runs. In fact, only the first block with a true condition runs."
+  },
+  "quiz": {
+    "question": "What does else if do?",
+    "options": ["Checks the next condition", "Creates a variable", "Ends the program"],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — if...else",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }
