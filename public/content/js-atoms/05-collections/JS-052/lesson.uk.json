@@ -1,14 +1,59 @@
 {
   "number": 52,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-index",
+  "title": "Array Index",
+  "subtitle": "Позиція елемента",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "index",
+    "arrays",
+    "data-structure",
+    "beginner"
+  ],
+  "prerequisites": ["JS-051"],
+  "previous": "JS-051",
+  "next": "JS-053",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись знаходити елементи масиву за їхнім індексом.",
+  "explanation": [
+    "Кожен елемент масиву має свій номер.",
+    "Цей номер називається індексом.",
+    "Перший елемент завжди має індекс 0.",
+    "Другий елемент має індекс 1.",
+    "За допомогою індексу можна отримати будь-який елемент масиву."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви полиці в шафі. Кожна полиця має номер, тому ти легко знаходиш потрібну річ."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits[0]);",
+  "result": "Apple",
+  "remember": [
+    "Індекс — це номер елемента.",
+    "Перший індекс завжди 0.",
+    "Елементи отримують через квадратні дужки []."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що перший елемент має індекс 1. У JavaScript індексація починається з 0."
+  },
+  "quiz": {
+    "question": "Який індекс має перший елемент масиву?",
+    "options": [
+      "0",
+      "1",
+      "-1"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Indexed Collections",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

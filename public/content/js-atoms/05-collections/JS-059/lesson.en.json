@@ -1,14 +1,60 @@
 {
   "number": 59,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-indexof",
+  "title": "indexOf()",
+  "subtitle": "Find an element's position",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "indexof",
+    "search",
+    "index",
+    "arrays",
+    "beginner"
+  ],
+  "prerequisites": ["JS-058"],
+  "previous": "JS-058",
+  "next": "JS-060",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to find an element's position in an array using indexOf().",
+  "explanation": [
+    "indexOf() searches for a value in an array.",
+    "If the value is found, its index is returned.",
+    "If the value is not found, -1 is returned.",
+    "The method helps determine an element's position.",
+    "indexOf() is often used together with conditions."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "You are looking for a book on a shelf and want to know not only whether it is there, but also where it is located."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits.indexOf(\"Banana\"));\nconsole.log(fruits.indexOf(\"Mango\"));",
+  "result": "1\n-1",
+  "remember": [
+    "indexOf() returns an element's index.",
+    "If the element is absent, it returns -1.",
+    "The first element has index 0."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think -1 means the last element. In fact, it means the element was not found."
+  },
+  "quiz": {
+    "question": "What does [\"Apple\", \"Banana\"].indexOf(\"Banana\") return?",
+    "options": [
+      "1",
+      "0",
+      "true"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.indexOf()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

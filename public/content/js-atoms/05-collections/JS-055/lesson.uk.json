@@ -1,14 +1,59 @@
 {
   "number": 55,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-pop",
+  "title": "pop()",
+  "subtitle": "Видалити з кінця масиву",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "pop",
+    "arrays",
+    "methods",
+    "beginner"
+  ],
+  "prerequisites": ["JS-054"],
+  "previous": "JS-054",
+  "next": "JS-056",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись видаляти останній елемент масиву за допомогою pop().",
+  "explanation": [
+    "pop() видаляє останній елемент масиву.",
+    "Після виклику pop() масив стає коротшим.",
+    "Метод змінює початковий масив.",
+    "Видаляється саме останній елемент.",
+    "pop() часто використовують для роботи зі стеком даних."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви стопку тарілок. pop() прибирає верхню тарілку зі стопки."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nfruits.pop();\n\nconsole.log(fruits);",
+  "result": "[\"Apple\", \"Banana\"]",
+  "remember": [
+    "pop() видаляє останній елемент.",
+    "pop() змінює масив.",
+    "Працює з кінцем масиву."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді думають, що pop() видаляє перший елемент. Насправді він працює лише з останнім."
+  },
+  "quiz": {
+    "question": "Що залишиться після pop() для [\"Apple\", \"Banana\", \"Orange\"]?",
+    "options": [
+      "[\"Apple\", \"Banana\"]",
+      "[\"Banana\", \"Orange\"]",
+      "[\"Apple\", \"Orange\"]"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.pop()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,59 @@
 {
   "number": 56,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-shift",
+  "title": "shift()",
+  "subtitle": "Видалити з початку масиву",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "shift",
+    "arrays",
+    "methods",
+    "beginner"
+  ],
+  "prerequisites": ["JS-055"],
+  "previous": "JS-055",
+  "next": "JS-057",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись видаляти перший елемент масиву за допомогою shift().",
+  "explanation": [
+    "shift() видаляє перший елемент масиву.",
+    "Після видалення всі інші елементи зміщуються ліворуч.",
+    "Метод змінює початковий масив.",
+    "Працює з початком масиву.",
+    "shift() корисний для роботи з чергами."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви чергу в магазині. shift() прибирає людину, яка стоїть першою."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nfruits.shift();\n\nconsole.log(fruits);",
+  "result": "[\"Banana\", \"Orange\"]",
+  "remember": [
+    "shift() видаляє перший елемент.",
+    "Працює з початком масиву.",
+    "Змінює масив."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки плутають shift() і pop(). shift() працює з початком масиву, а pop() — з кінцем."
+  },
+  "quiz": {
+    "question": "Що поверне shift() для [\"Apple\", \"Banana\", \"Orange\"]?",
+    "options": [
+      "Видалить Apple",
+      "Видалить Orange",
+      "Видалить Banana"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.shift()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

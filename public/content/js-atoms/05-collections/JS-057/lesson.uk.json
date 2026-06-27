@@ -1,14 +1,59 @@
 {
   "number": 57,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-unshift",
+  "title": "unshift()",
+  "subtitle": "Додати на початок масиву",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "unshift",
+    "arrays",
+    "methods",
+    "beginner"
+  ],
+  "prerequisites": ["JS-056"],
+  "previous": "JS-056",
+  "next": "JS-058",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись додавати нові елементи на початок масиву за допомогою unshift().",
+  "explanation": [
+    "unshift() додає новий елемент на початок масиву.",
+    "Існуючі елементи зміщуються вправо.",
+    "Метод змінює початковий масив.",
+    "Працює з початком масиву.",
+    "unshift() є протилежністю shift()."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви чергу людей. unshift() ставить нову людину на самий початок черги."
+  },
+  "codeExample": "const fruits = [\n  \"Banana\",\n  \"Orange\"\n];\n\nfruits.unshift(\"Apple\");\n\nconsole.log(fruits);",
+  "result": "[\"Apple\", \"Banana\", \"Orange\"]",
+  "remember": [
+    "unshift() додає елемент на початок.",
+    "Працює з першим елементом масиву.",
+    "Змінює початковий масив."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто плутають unshift() і push(). unshift() додає на початок, а push() — у кінець."
+  },
+  "quiz": {
+    "question": "Куди додає елемент метод unshift()?",
+    "options": [
+      "На початок масиву",
+      "У кінець масиву",
+      "У середину масиву"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.unshift()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

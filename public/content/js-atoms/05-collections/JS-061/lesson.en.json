@@ -1,14 +1,60 @@
 {
   "number": 61,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-splice",
+  "title": "splice()",
+  "subtitle": "Modify an array from within",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": [
+    "array",
+    "splice",
+    "arrays",
+    "remove",
+    "insert",
+    "beginner"
+  ],
+  "prerequisites": ["JS-060"],
+  "previous": "JS-060",
+  "next": "JS-062",
+  "estimatedReadingTime": 5,
+  "goal": "Learn to remove or insert elements within an array using splice().",
+  "explanation": [
+    "splice() changes the original array.",
+    "You can use it to remove elements.",
+    "It can also insert new elements.",
+    "It operates using indexes.",
+    "splice() is one of the most powerful array methods."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a list of students. You can remove a student from the middle of the list or insert a new student in their place."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nfruits.splice(1, 1);\n\nconsole.log(fruits);",
+  "result": "[\"Apple\", \"Orange\"]",
+  "remember": [
+    "splice() changes an array.",
+    "It can remove elements.",
+    "It can insert elements."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often confuse slice() with splice(). slice() creates a copy, while splice() changes the original array."
+  },
+  "quiz": {
+    "question": "What does splice() do?",
+    "options": [
+      "Changes an array",
+      "Only reads an array",
+      "Returns the array's length"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.splice()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

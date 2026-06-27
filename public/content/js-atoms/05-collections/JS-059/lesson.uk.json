@@ -1,14 +1,60 @@
 {
   "number": 59,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-indexof",
+  "title": "indexOf()",
+  "subtitle": "Знайти позицію елемента",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "indexof",
+    "search",
+    "index",
+    "arrays",
+    "beginner"
+  ],
+  "prerequisites": ["JS-058"],
+  "previous": "JS-058",
+  "next": "JS-060",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись знаходити позицію елемента в масиві через indexOf().",
+  "explanation": [
+    "indexOf() шукає значення в масиві.",
+    "Якщо значення знайдено — повертається його індекс.",
+    "Якщо значення не знайдено — повертається -1.",
+    "Метод допомагає визначити розташування елемента.",
+    "indexOf() часто використовують разом з умовами."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Ти шукаєш книгу на полиці й хочеш знати не лише чи вона існує, а й на якому місці стоїть."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits.indexOf(\"Banana\"));\nconsole.log(fruits.indexOf(\"Mango\"));",
+  "result": "1\n-1",
+  "remember": [
+    "indexOf() повертає індекс елемента.",
+    "Якщо елемент відсутній — повертається -1.",
+    "Перший елемент має індекс 0."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що -1 означає останній елемент. Насправді це означає, що елемент не знайдено."
+  },
+  "quiz": {
+    "question": "Що поверне [\"Apple\", \"Banana\"].indexOf(\"Banana\")?",
+    "options": [
+      "1",
+      "0",
+      "true"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.indexOf()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

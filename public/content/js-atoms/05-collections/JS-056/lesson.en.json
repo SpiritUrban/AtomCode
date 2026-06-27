@@ -1,14 +1,59 @@
 {
   "number": 56,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-shift",
+  "title": "shift()",
+  "subtitle": "Remove from the beginning of an array",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "shift",
+    "arrays",
+    "methods",
+    "beginner"
+  ],
+  "prerequisites": ["JS-055"],
+  "previous": "JS-055",
+  "next": "JS-057",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to remove the first element of an array using shift().",
+  "explanation": [
+    "shift() removes the first element of an array.",
+    "After it is removed, all the other elements shift to the left.",
+    "The method changes the original array.",
+    "It works with the beginning of an array.",
+    "shift() is useful when working with queues."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a line at a store. shift() removes the person standing first in line."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nfruits.shift();\n\nconsole.log(fruits);",
+  "result": "[\"Banana\", \"Orange\"]",
+  "remember": [
+    "shift() removes the first element.",
+    "It works with the beginning of an array.",
+    "It changes the array."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners confuse shift() with pop(). shift() works with the beginning of an array, while pop() works with the end."
+  },
+  "quiz": {
+    "question": "What does shift() do to [\"Apple\", \"Banana\", \"Orange\"]?",
+    "options": [
+      "Removes Apple",
+      "Removes Orange",
+      "Removes Banana"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.shift()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

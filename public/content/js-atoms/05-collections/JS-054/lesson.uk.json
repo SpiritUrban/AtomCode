@@ -1,14 +1,59 @@
 {
   "number": 54,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-push",
+  "title": "push()",
+  "subtitle": "Додати в кінець масиву",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "push",
+    "arrays",
+    "methods",
+    "beginner"
+  ],
+  "prerequisites": ["JS-053"],
+  "previous": "JS-053",
+  "next": "JS-055",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись додавати нові елементи в кінець масиву за допомогою push().",
+  "explanation": [
+    "push() додає новий елемент у кінець масиву.",
+    "Можна додавати рядки, числа та інші значення.",
+    "Після виклику push() масив змінюється.",
+    "Новий елемент стає останнім у списку.",
+    "push() є одним із найпопулярніших методів масивів."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви чергу людей. push() додає нову людину в самий кінець черги."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\"\n];\n\nfruits.push(\"Orange\");\n\nconsole.log(fruits);",
+  "result": "[\"Apple\", \"Banana\", \"Orange\"]",
+  "remember": [
+    "push() додає елемент у кінець масиву.",
+    "push() змінює початковий масив.",
+    "Новий елемент стає останнім."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді очікують, що push() додасть елемент на початок. Насправді він завжди додає його в кінець."
+  },
+  "quiz": {
+    "question": "Що буде після fruits.push(\"Orange\") для [\"Apple\", \"Banana\"]?",
+    "options": [
+      "[\"Apple\", \"Banana\", \"Orange\"]",
+      "[\"Orange\", \"Apple\", \"Banana\"]",
+      "[\"Apple\", \"Orange\"]"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.push()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

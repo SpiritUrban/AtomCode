@@ -1,14 +1,59 @@
 {
   "number": 57,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-unshift",
+  "title": "unshift()",
+  "subtitle": "Add to the beginning of an array",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "unshift",
+    "arrays",
+    "methods",
+    "beginner"
+  ],
+  "prerequisites": ["JS-056"],
+  "previous": "JS-056",
+  "next": "JS-058",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to add new elements to the beginning of an array using unshift().",
+  "explanation": [
+    "unshift() adds a new element to the beginning of an array.",
+    "The existing elements shift to the right.",
+    "The method changes the original array.",
+    "It works with the beginning of an array.",
+    "unshift() is the opposite of shift()."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a line of people. unshift() places a new person at the very beginning of the line."
+  },
+  "codeExample": "const fruits = [\n  \"Banana\",\n  \"Orange\"\n];\n\nfruits.unshift(\"Apple\");\n\nconsole.log(fruits);",
+  "result": "[\"Apple\", \"Banana\", \"Orange\"]",
+  "remember": [
+    "unshift() adds an element to the beginning.",
+    "It works with the first element of an array.",
+    "It changes the original array."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often confuse unshift() with push(). unshift() adds to the beginning, while push() adds to the end."
+  },
+  "quiz": {
+    "question": "Where does unshift() add an element?",
+    "options": [
+      "At the beginning of an array",
+      "At the end of an array",
+      "In the middle of an array"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.unshift()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,59 @@
 {
   "number": 53,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-length",
+  "title": "Array Length",
+  "subtitle": "Кількість елементів",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "length",
+    "arrays",
+    "property",
+    "beginner"
+  ],
+  "prerequisites": ["JS-052"],
+  "previous": "JS-052",
+  "next": "JS-054",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись визначати кількість елементів у масиві через властивість length.",
+  "explanation": [
+    "У кожного масиву є властивість length.",
+    "Вона показує кількість елементів у масиві.",
+    "length автоматично оновлюється при зміні масиву.",
+    "Ця властивість дуже часто використовується в циклах.",
+    "length допомагає швидко дізнатися розмір масиву."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Якщо в коробці лежать яблука, тобі не потрібно рахувати їх щоразу вручну — length вже знає кількість."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits.length);",
+  "result": "3",
+  "remember": [
+    "length показує кількість елементів.",
+    "length є властивістю масиву.",
+    "length оновлюється автоматично."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки плутають останній індекс і length. Якщо length дорівнює 3, останній індекс буде 2."
+  },
+  "quiz": {
+    "question": "Що поверне [\"A\", \"B\", \"C\"].length?",
+    "options": [
+      "3",
+      "2",
+      "4"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.length",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

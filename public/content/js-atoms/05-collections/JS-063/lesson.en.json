@@ -1,14 +1,60 @@
 {
   "number": 63,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-map",
+  "title": "map()",
+  "subtitle": "Transform every element",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "6 min",
+  "tags": [
+    "array",
+    "map",
+    "arrays",
+    "transform",
+    "functional",
+    "beginner"
+  ],
+  "prerequisites": ["JS-062"],
+  "previous": "JS-062",
+  "next": "JS-064",
+  "estimatedReadingTime": 6,
+  "goal": "Learn to create a new array by transforming every element with map().",
+  "explanation": [
+    "map() iterates over every element in an array.",
+    "A function runs for each element.",
+    "The results are collected in a new array.",
+    "The original array does not change.",
+    "map() is often used to prepare data."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a conveyor belt. Regular apples go in, and peeled apples come out the other side. Every element undergoes the same transformation."
+  },
+  "codeExample": "const numbers = [1, 2, 3];\n\nconst doubled = numbers.map(\n  n => n * 2\n);\n\nconsole.log(doubled);",
+  "result": "[2, 4, 6]",
+  "remember": [
+    "map() creates a new array.",
+    "The original array does not change.",
+    "Every element undergoes a transformation."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think map() changes the original array. In fact, it creates a new one."
+  },
+  "quiz": {
+    "question": "What does [1, 2, 3].map(n => n * 2) return?",
+    "options": [
+      "[2, 4, 6]",
+      "[1, 2, 3]",
+      "6"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.map()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

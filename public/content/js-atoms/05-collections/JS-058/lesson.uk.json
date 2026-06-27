@@ -1,14 +1,60 @@
 {
   "number": 58,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-includes",
+  "title": "includes()",
+  "subtitle": "Перевірка наявності елемента",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "includes",
+    "search",
+    "boolean",
+    "arrays",
+    "beginner"
+  ],
+  "prerequisites": ["JS-057"],
+  "previous": "JS-057",
+  "next": "JS-059",
+  "estimatedReadingTime": 4,
+  "goal": "Навчись перевіряти чи існує елемент у масиві за допомогою includes().",
+  "explanation": [
+    "includes() перевіряє наявність значення в масиві.",
+    "Якщо значення знайдено — повертається true.",
+    "Якщо значення відсутнє — повертається false.",
+    "Метод не повертає позицію елемента.",
+    "includes() дуже зручний для швидких перевірок."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Ти дивишся в холодильник і перевіряєш чи є там молоко. Відповідь лише одна: є або немає."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits.includes(\"Banana\"));\nconsole.log(fruits.includes(\"Mango\"));",
+  "result": "true\nfalse",
+  "remember": [
+    "includes() повертає true або false.",
+    "Використовується для перевірки існування значення.",
+    "Не повертає індекс елемента."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді очікують отримати номер елемента. Для цього існує indexOf()."
+  },
+  "quiz": {
+    "question": "Що поверне [\"Apple\", \"Banana\"].includes(\"Banana\")?",
+    "options": [
+      "true",
+      "false",
+      "1"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.includes()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

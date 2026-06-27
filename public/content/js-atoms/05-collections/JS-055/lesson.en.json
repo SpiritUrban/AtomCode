@@ -1,14 +1,59 @@
 {
   "number": 55,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-pop",
+  "title": "pop()",
+  "subtitle": "Remove from the end of an array",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "pop",
+    "arrays",
+    "methods",
+    "beginner"
+  ],
+  "prerequisites": ["JS-054"],
+  "previous": "JS-054",
+  "next": "JS-056",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to remove the last element of an array using pop().",
+  "explanation": [
+    "pop() removes the last element of an array.",
+    "After pop() is called, the array becomes shorter.",
+    "The method changes the original array.",
+    "It specifically removes the last element.",
+    "pop() is often used when working with a stack of data."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a stack of plates. pop() removes the top plate from the stack."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nfruits.pop();\n\nconsole.log(fruits);",
+  "result": "[\"Apple\", \"Banana\"]",
+  "remember": [
+    "pop() removes the last element.",
+    "pop() changes the array.",
+    "It works with the end of an array."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes think pop() removes the first element. In fact, it only works with the last one."
+  },
+  "quiz": {
+    "question": "What remains after calling pop() on [\"Apple\", \"Banana\", \"Orange\"]?",
+    "options": [
+      "[\"Apple\", \"Banana\"]",
+      "[\"Banana\", \"Orange\"]",
+      "[\"Apple\", \"Orange\"]"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.pop()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

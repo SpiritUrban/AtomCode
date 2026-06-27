@@ -1,14 +1,60 @@
 {
   "number": 58,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-includes",
+  "title": "includes()",
+  "subtitle": "Check whether an element exists",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "includes",
+    "search",
+    "boolean",
+    "arrays",
+    "beginner"
+  ],
+  "prerequisites": ["JS-057"],
+  "previous": "JS-057",
+  "next": "JS-059",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to check whether an element exists in an array using includes().",
+  "explanation": [
+    "includes() checks whether an array contains a value.",
+    "If the value is found, it returns true.",
+    "If the value is absent, it returns false.",
+    "The method does not return the element's position.",
+    "includes() is very convenient for quick checks."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "You look in the refrigerator to check whether there is any milk. There are only two possible answers: yes or no."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits.includes(\"Banana\"));\nconsole.log(fruits.includes(\"Mango\"));",
+  "result": "true\nfalse",
+  "remember": [
+    "includes() returns true or false.",
+    "It is used to check whether a value exists.",
+    "It does not return the element's index."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes expect to get the element's position. Use indexOf() for that."
+  },
+  "quiz": {
+    "question": "What does [\"Apple\", \"Banana\"].includes(\"Banana\") return?",
+    "options": [
+      "true",
+      "false",
+      "1"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.includes()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

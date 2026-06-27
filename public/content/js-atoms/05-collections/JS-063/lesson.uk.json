@@ -1,14 +1,60 @@
 {
   "number": 63,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-map",
+  "title": "map()",
+  "subtitle": "Перетворення кожного елемента",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "6 min",
+  "tags": [
+    "array",
+    "map",
+    "arrays",
+    "transform",
+    "functional",
+    "beginner"
+  ],
+  "prerequisites": ["JS-062"],
+  "previous": "JS-062",
+  "next": "JS-064",
+  "estimatedReadingTime": 6,
+  "goal": "Навчись створювати новий масив шляхом перетворення кожного елемента через map().",
+  "explanation": [
+    "map() проходить по всіх елементах масиву.",
+    "Для кожного елемента виконується функція.",
+    "Результати збираються в новий масив.",
+    "Початковий масив не змінюється.",
+    "map() часто використовують для підготовки даних."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви конвеєр. На нього потрапляють звичайні яблука, а з іншого боку виходять очищені яблука. Кожен елемент проходить однакове перетворення."
+  },
+  "codeExample": "const numbers = [1, 2, 3];\n\nconst doubled = numbers.map(\n  n => n * 2\n);\n\nconsole.log(doubled);",
+  "result": "[2, 4, 6]",
+  "remember": [
+    "map() створює новий масив.",
+    "Оригінальний масив не змінюється.",
+    "Кожен елемент проходить перетворення."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто думають, що map() змінює вихідний масив. Насправді він створює новий."
+  },
+  "quiz": {
+    "question": "Що поверне [1, 2, 3].map(n => n * 2)?",
+    "options": [
+      "[2, 4, 6]",
+      "[1, 2, 3]",
+      "6"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.map()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

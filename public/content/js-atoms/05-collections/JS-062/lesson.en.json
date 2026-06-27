@@ -1,14 +1,59 @@
 {
   "number": 62,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "for-of",
+  "title": "for...of",
+  "subtitle": "Iterate over array values",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": [
+    "for-of",
+    "loop",
+    "array",
+    "iteration",
+    "beginner"
+  ],
+  "prerequisites": ["JS-061"],
+  "previous": "JS-061",
+  "next": "JS-063",
+  "estimatedReadingTime": 5,
+  "goal": "Learn to iterate over every element in an array using a for...of loop.",
+  "explanation": [
+    "for...of iterates over the values in an array.",
+    "On each iteration, you receive one element.",
+    "You do not need to work with indexes.",
+    "It is one of the simplest ways to iterate over an array.",
+    "for...of is often used to display or process data."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a basket of fruit. You take one fruit, then the next, and then another until you have looked at all of them."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nfor (const fruit of fruits) {\n  console.log(fruit);\n}",
+  "result": "Apple\nBanana\nOrange",
+  "remember": [
+    "for...of works with values.",
+    "You do not need to use indexes.",
+    "The loop visits every element."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners sometimes expect to receive an index. for...of returns the values themselves, not their positions."
+  },
+  "quiz": {
+    "question": "What does for...of provide when used with an array?",
+    "options": [
+      "Element values",
+      "Element indexes",
+      "The array's length"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — for...of",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

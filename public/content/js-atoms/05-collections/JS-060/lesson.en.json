@@ -1,14 +1,60 @@
 {
   "number": 60,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-slice",
+  "title": "slice()",
+  "subtitle": "Copy part of an array",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": [
+    "array",
+    "slice",
+    "copy",
+    "arrays",
+    "methods",
+    "beginner"
+  ],
+  "prerequisites": ["JS-059"],
+  "previous": "JS-059",
+  "next": "JS-061",
+  "estimatedReadingTime": 5,
+  "goal": "Learn to copy part of an array using slice().",
+  "explanation": [
+    "slice() creates a new array from part of an existing array.",
+    "The original array does not change.",
+    "The first argument specifies the starting index.",
+    "The second argument specifies the index at which copying stops.",
+    "The ending index is not included in the result."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine a loaf of bread. You cut off a few slices for yourself, but the original loaf remains intact."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\",\n  \"Kiwi\"\n];\n\nconsole.log(fruits.slice(1, 3));",
+  "result": "[\"Banana\", \"Orange\"]",
+  "remember": [
+    "slice() creates a new array.",
+    "The original array does not change.",
+    "The ending index is not included."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think slice(1, 3) includes the element at index 3. In fact, it copies only up to that index."
+  },
+  "quiz": {
+    "question": "What does [\"A\", \"B\", \"C\", \"D\"].slice(1, 3) return?",
+    "options": [
+      "[\"B\", \"C\"]",
+      "[\"B\", \"C\", \"D\"]",
+      "[\"A\", \"B\", \"C\"]"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.slice()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

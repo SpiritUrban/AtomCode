@@ -1,14 +1,59 @@
 {
   "number": 52,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-index",
+  "title": "Array Index",
+  "subtitle": "An element's position",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "index",
+    "arrays",
+    "data-structure",
+    "beginner"
+  ],
+  "prerequisites": ["JS-051"],
+  "previous": "JS-051",
+  "next": "JS-053",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to find array elements by their index.",
+  "explanation": [
+    "Every element in an array has its own number.",
+    "This number is called an index.",
+    "The first element always has index 0.",
+    "The second element has index 1.",
+    "You can use an index to access any element in an array."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "Imagine shelves in a cabinet. Each shelf has a number, so you can easily find the item you need."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits[0]);",
+  "result": "Apple",
+  "remember": [
+    "An index is an element's number.",
+    "The first index is always 0.",
+    "Elements are accessed using square brackets []."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners often think the first element has index 1. In JavaScript, indexing starts at 0."
+  },
+  "quiz": {
+    "question": "What is the index of the first element in an array?",
+    "options": [
+      "0",
+      "1",
+      "-1"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Indexed Collections",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

@@ -1,14 +1,59 @@
 {
   "number": 62,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "for-of",
+  "title": "for...of",
+  "subtitle": "Перебір значень масиву",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": [
+    "for-of",
+    "loop",
+    "array",
+    "iteration",
+    "beginner"
+  ],
+  "prerequisites": ["JS-061"],
+  "previous": "JS-061",
+  "next": "JS-063",
+  "estimatedReadingTime": 5,
+  "goal": "Навчись проходити по всіх елементах масиву за допомогою циклу for...of.",
+  "explanation": [
+    "for...of перебирає значення масиву.",
+    "На кожній ітерації ти отримуєш один елемент.",
+    "Не потрібно працювати з індексами.",
+    "Це один із найпростіших способів перебору масиву.",
+    "for...of часто використовують для виведення або обробки даних."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви кошик фруктів. Ти береш один фрукт, потім наступний, потім ще один, поки не переглянеш усі."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nfor (const fruit of fruits) {\n  console.log(fruit);\n}",
+  "result": "Apple\nBanana\nOrange",
+  "remember": [
+    "for...of працює зі значеннями.",
+    "Не потрібно використовувати індекси.",
+    "Цикл проходить по всіх елементах."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки іноді очікують отримати індекс. for...of повертає самі значення, а не їхні номери."
+  },
+  "quiz": {
+    "question": "Що повертає for...of для масиву?",
+    "options": [
+      "Значення елементів",
+      "Індекси елементів",
+      "Довжину масиву"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — for...of",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

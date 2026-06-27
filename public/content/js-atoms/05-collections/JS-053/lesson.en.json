@@ -1,14 +1,59 @@
 {
   "number": 53,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-length",
+  "title": "Array Length",
+  "subtitle": "The number of elements",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "4 min",
+  "tags": [
+    "array",
+    "length",
+    "arrays",
+    "property",
+    "beginner"
+  ],
+  "prerequisites": ["JS-052"],
+  "previous": "JS-052",
+  "next": "JS-054",
+  "estimatedReadingTime": 4,
+  "goal": "Learn to determine the number of elements in an array using the length property.",
+  "explanation": [
+    "Every array has a length property.",
+    "It shows the number of elements in the array.",
+    "length updates automatically when the array changes.",
+    "This property is used very often in loops.",
+    "length lets you quickly find the size of an array."
+  ],
+  "analogy": {
+    "title": "Analogy",
+    "text": "If a box contains apples, you do not need to count them manually every time—length already knows how many there are."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nconsole.log(fruits.length);",
+  "result": "3",
+  "remember": [
+    "length shows the number of elements.",
+    "length is an array property.",
+    "length updates automatically."
+  ],
+  "mistake": {
+    "title": "Common mistake",
+    "text": "Beginners confuse the last index with length. If length is 3, the last index is 2."
+  },
+  "quiz": {
+    "question": "What does [\"A\", \"B\", \"C\"].length return?",
+    "options": [
+      "3",
+      "2",
+      "4"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.length",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }

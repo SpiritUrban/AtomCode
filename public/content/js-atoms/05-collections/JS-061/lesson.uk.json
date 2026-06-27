@@ -1,14 +1,60 @@
 {
   "number": 61,
-  "slug": "",
-  "title": "",
-  "subtitle": "",
+  "slug": "array-splice",
+  "title": "splice()",
+  "subtitle": "Змінити масив всередині",
   "difficulty": "Beginner",
-  "duration": "2 min",
-  "tags": [],
-  "prerequisites": [],
-  "goal": "",
-  "explanation": [],
-  "remember": [],
-  "playground": false
+  "duration": "5 min",
+  "tags": [
+    "array",
+    "splice",
+    "arrays",
+    "remove",
+    "insert",
+    "beginner"
+  ],
+  "prerequisites": ["JS-060"],
+  "previous": "JS-060",
+  "next": "JS-062",
+  "estimatedReadingTime": 5,
+  "goal": "Навчись видаляти або вставляти елементи всередині масиву за допомогою splice().",
+  "explanation": [
+    "splice() змінює початковий масив.",
+    "Його можна використовувати для видалення елементів.",
+    "Також він може вставляти нові елементи.",
+    "Робота відбувається за індексами.",
+    "splice() є одним із найпотужніших методів масивів."
+  ],
+  "analogy": {
+    "title": "Аналогія",
+    "text": "Уяви список учнів. Ти можеш прибрати одного учня із середини списку або вставити нового на його місце."
+  },
+  "codeExample": "const fruits = [\n  \"Apple\",\n  \"Banana\",\n  \"Orange\"\n];\n\nfruits.splice(1, 1);\n\nconsole.log(fruits);",
+  "result": "[\"Apple\", \"Orange\"]",
+  "remember": [
+    "splice() змінює масив.",
+    "Може видаляти елементи.",
+    "Може вставляти елементи."
+  ],
+  "mistake": {
+    "title": "Типова помилка",
+    "text": "Новачки часто плутають slice() і splice(). slice() створює копію, а splice() змінює оригінальний масив."
+  },
+  "quiz": {
+    "question": "Що робить splice()?",
+    "options": [
+      "Змінює масив",
+      "Лише читає масив",
+      "Повертає довжину масиву"
+    ],
+    "answer": 0
+  },
+  "resources": [
+    {
+      "title": "MDN — Array.prototype.splice()",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice",
+      "type": "mdn"
+    }
+  ],
+  "playground": true
 }
