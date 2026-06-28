@@ -23,16 +23,6 @@ export async function generateMetadata({
 
 export default async function LocaleLayout({
   children,
-  params,
 }: LocaleLayoutProps) {
-  const { locale } = await params;
-  const lang: string = isValidLocale(locale) ? locale : "en";
-
-  // Override the html lang attribute per locale.
-  // Next.js allows nested layout to set lang on <html> via suppressHydrationWarning.
-  return (
-    <html lang={lang} suppressHydrationWarning>
-      <body>{children}</body>
-    </html>
-  );
+  return children;
 }

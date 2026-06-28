@@ -36,7 +36,10 @@ export function buildLessonMetadata(
   const path = lessonPathWithBase(locale, sectionSlug, lesson.slug);
   const canonical = `${getSiteUrl()}${path}`;
 
-  const title = `${lesson.title} — ${section.label} | ${SITE_NAME}`;
+  const title =
+    locale === "uk"
+      ? `${lesson.title}: ${lesson.subtitle} — ${section.label} | ${SITE_NAME}`
+      : `${lesson.title} — ${section.label} | ${SITE_NAME}`;
   const description = lesson.goal;
 
   return {
@@ -45,10 +48,16 @@ export function buildLessonMetadata(
     alternates: {
       canonical,
       languages: Object.fromEntries(
-        locales.map((loc) => [
-          loc,
-          `${getSiteUrl()}${lessonPathWithBase(loc, sectionSlug, lesson.slug)}`,
-        ]),
+        [
+          ...locales.map((loc) => [
+            loc,
+            `${getSiteUrl()}${lessonPathWithBase(loc, sectionSlug, lesson.slug)}`,
+          ]),
+          [
+            "x-default",
+            `${getSiteUrl()}${lessonPathWithBase("en", sectionSlug, lesson.slug)}`,
+          ],
+        ],
       ),
     },
     openGraph: {
@@ -94,7 +103,13 @@ export function buildSiteMetadata(locale: Locale = "en"): Metadata {
     alternates: {
       canonical,
       languages: Object.fromEntries(
-        locales.map((loc) => [loc, `${getSiteUrl()}${basePath}/${loc}/`]),
+        [
+          ...locales.map((loc) => [
+            loc,
+            `${getSiteUrl()}${basePath}/${loc}/`,
+          ]),
+          ["x-default", `${getSiteUrl()}${basePath}/en/`],
+        ],
       ),
     },
     openGraph: {
