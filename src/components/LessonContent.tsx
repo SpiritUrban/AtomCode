@@ -33,7 +33,7 @@ export default function LessonContent({
   return (
     <div
       id="lesson-content-scroll"
-      className="flex h-full w-full flex-col overflow-y-auto overscroll-contain p-6"
+      className="flex h-auto w-full flex-col overflow-visible p-4 pb-[max(1rem,env(safe-area-inset-bottom))] sm:p-5 lg:h-full lg:overflow-y-auto lg:overscroll-contain lg:p-6"
     >
       <div className="mb-1 flex flex-wrap items-center gap-2">
         <span className="rounded-full bg-atom-accent/15 px-2 py-0.5 text-xs font-medium text-atom-accent">
@@ -55,7 +55,7 @@ export default function LessonContent({
         ))}
       </div>
 
-      <h1 className="font-display text-3xl font-bold tracking-tight text-atom-text">
+      <h1 className="break-words font-display text-2xl font-bold tracking-tight text-atom-text sm:text-3xl">
         {lesson.title}
       </h1>
       <p className="mt-1 text-sm text-atom-muted">{lesson.subtitle}</p>

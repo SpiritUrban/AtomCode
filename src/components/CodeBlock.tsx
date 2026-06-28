@@ -32,7 +32,7 @@ export default function CodeBlock({ code, onCopy, copied }: CodeBlockProps) {
           {copied ? "Copied!" : "Copy"}
         </button>
       </div>
-      <pre className="code-block overflow-x-auto rounded-xl border border-atom-border bg-[#0d1117] p-4 text-sm leading-relaxed">
+      <pre className="code-block max-w-full overflow-x-auto rounded-xl border border-atom-border bg-[#0d1117] p-3 text-xs leading-relaxed sm:p-4 sm:text-sm">
         <code
           className="hljs font-mono"
           dangerouslySetInnerHTML={{ __html: highlighted }}

@@ -51,13 +51,29 @@ export default function AppShell({
   );
 
   const [learnedIds, setLearnedIds] = useState<Set<string>>(new Set());
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setLearnedIds(getLearnedLessons());
   }, [activeLessonCode]);
 
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [activeLessonCode]);
+
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsMobileMenuOpen(false);
+    };
+
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [isMobileMenuOpen]);
+
   return (
-    <div className="flex h-screen flex-col bg-atom-bg">
+    <div className="flex h-dvh min-h-0 flex-col overflow-hidden bg-atom-bg">
       <TopNavbar
         sections={sections}
         locale={locale}
@@ -66,15 +82,28 @@ export default function AppShell({
           activeSection.lessonsRecord[activeLessonCode]?.slug ?? ""
         }
         activeSectionId={activeSectionId}
+        isMenuOpen={isMobileMenuOpen}
+        onMenuToggle={() => setIsMobileMenuOpen((open) => !open)}
       />
 
-      <div className="flex flex-1 overflow-hidden pt-14">
+      <div className="flex min-h-0 flex-1 overflow-hidden pt-14">
+        {isMobileMenuOpen && (
+          <button
+            type="button"
+            aria-label="Close lessons menu"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="fixed inset-0 top-14 z-30 bg-black/60 backdrop-blur-[1px] lg:hidden"
+          />
+        )}
+
         <Sidebar
           lessonGroups={activeSection.lessonGroups}
           locale={locale}
           sectionSlug={getSectionSlug(activeSectionId)}
           activeLessonCode={activeLessonCode}
           learnedIds={learnedIds}
+          isMobileOpen={isMobileMenuOpen}
+          onClose={() => setIsMobileMenuOpen(false)}
         />
 
         {activeSection.lessons.length > 0 ? (

@@ -144,15 +144,15 @@ export default function LessonViewer({
   };
 
   return (
-    <div className="flex h-full min-w-0 flex-1 overflow-hidden">
+    <main className="flex h-full min-w-0 flex-1 flex-col overflow-y-auto lg:flex-row lg:overflow-hidden">
       <div
-        className="h-full aspect-square shrink-0 max-w-[calc(100%-18rem)] border-r border-atom-border bg-atom-bg"
+        className="h-[min(72vw,20rem)] w-full shrink-0 border-b border-atom-border bg-atom-bg lg:h-full lg:w-auto lg:aspect-square lg:max-w-[calc(100%-18rem)] lg:border-b-0 lg:border-r"
         onWheel={handleCenterScroll}
       >
         <LessonImage src={lesson.image} alt={lesson.title} code={lesson.code} />
       </div>
 
-      <div className="h-full min-w-[18rem] flex-1 basis-0 overflow-hidden bg-atom-surface">
+      <div className="min-w-0 w-full flex-1 bg-atom-surface lg:h-full lg:min-w-[18rem] lg:basis-0 lg:overflow-hidden">
         <LessonContent
           lesson={lesson}
           onPrevious={handlePrevious}
@@ -165,6 +165,6 @@ export default function LessonViewer({
           copied={copied}
         />
       </div>
-    </div>
+    </main>
   );
 }

@@ -13,6 +13,8 @@ type SidebarProps = {
   sectionSlug: string;
   activeLessonCode: string;
   learnedIds: Set<string>;
+  isMobileOpen: boolean;
+  onClose: () => void;
 };
 
 export default function Sidebar({
@@ -21,6 +23,8 @@ export default function Sidebar({
   sectionSlug,
   activeLessonCode,
   learnedIds,
+  isMobileOpen,
+  onClose,
 }: SidebarProps) {
   const activeGroupId = useMemo(
     () => findGroupIdForLesson(lessonGroups, activeLessonCode),
@@ -45,11 +49,25 @@ export default function Sidebar({
   };
 
   return (
-    <aside className="flex h-full w-60 shrink-0 flex-col border-r border-atom-border bg-atom-surface">
-      <div className="border-b border-atom-border px-4 py-3">
+    <aside
+      className={[
+        "fixed bottom-0 left-0 top-14 z-40 flex w-[min(20rem,86vw)] shrink-0 flex-col border-r border-atom-border bg-atom-surface shadow-2xl transition-transform duration-200 lg:static lg:h-full lg:w-60 lg:translate-x-0 lg:shadow-none",
+        isMobileOpen ? "translate-x-0" : "-translate-x-full",
+      ].join(" ")}
+      aria-label="Lessons"
+    >
+      <div className="flex items-center border-b border-atom-border px-4 py-3">
         <div className="text-xs font-semibold uppercase tracking-wider text-atom-muted">
           Lessons
         </div>
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close lessons menu"
+          className="ml-auto grid h-8 w-8 place-items-center rounded-lg text-xl text-atom-muted hover:bg-atom-card hover:text-atom-text lg:hidden"
+        >
+          ×
+        </button>
       </div>
 
       <nav id="sidebar-nav" className="flex-1 overflow-y-auto py-2">
@@ -107,8 +125,9 @@ export default function Sidebar({
                           key={lesson.code}
                           ref={isActive ? activeLessonRef : undefined}
                           href={href}
+                          onClick={onClose}
                           className={[
-                            "flex w-full items-start gap-2 py-2 pl-7 pr-4 text-left transition-all",
+                            "flex min-h-11 w-full items-start gap-2 py-2.5 pl-7 pr-4 text-left transition-all",
                             isActive
                               ? "border-l-2 border-atom-accent bg-atom-accent/10 text-atom-accent"
                               : "border-l-2 border-transparent text-atom-muted hover:bg-atom-card hover:text-atom-text",

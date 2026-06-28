@@ -21,7 +21,7 @@ export default function LessonImage({ src, alt, code }: LessonImageProps) {
           alt={alt}
           fill
           className="object-cover"
-          sizes="(max-height: 100vh) 50vw"
+          sizes="(max-width: 1023px) 100vw, 50vw"
           priority
         />
       </div>

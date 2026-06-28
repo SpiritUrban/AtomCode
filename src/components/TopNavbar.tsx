@@ -12,6 +12,8 @@ type TopNavbarProps = {
   sectionSlug: string;
   lessonSlug: string;
   activeSectionId: string;
+  isMenuOpen: boolean;
+  onMenuToggle: () => void;
 };
 
 export default function TopNavbar({
@@ -20,17 +22,30 @@ export default function TopNavbar({
   sectionSlug,
   lessonSlug,
   activeSectionId,
+  isMenuOpen,
+  onMenuToggle,
 }: TopNavbarProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-14 border-b border-atom-border bg-atom-surface/95 backdrop-blur-md">
-      <nav className="flex h-full items-center gap-1 px-4">
-        <div className="mr-4 flex shrink-0 items-center gap-2">
+      <nav className="flex h-full items-center gap-2 px-3 sm:px-4">
+        <button
+          type="button"
+          onClick={onMenuToggle}
+          aria-label={isMenuOpen ? "Close lessons menu" : "Open lessons menu"}
+          aria-expanded={isMenuOpen}
+          aria-controls="sidebar-nav"
+          className="grid h-10 w-10 shrink-0 place-items-center rounded-lg border border-atom-border bg-atom-card text-xl text-atom-text transition-colors hover:border-atom-accent/50 lg:hidden"
+        >
+          <span aria-hidden>{isMenuOpen ? "×" : "☰"}</span>
+        </button>
+
+        <div className="mr-auto flex shrink-0 items-center gap-2 lg:mr-4">
           <span className="text-lg font-bold tracking-tight text-atom-accent">
             ⚛ AtomCode
           </span>
         </div>
 
-        <div className="flex min-w-0 items-center gap-1 overflow-x-auto">
+        <div className="hidden min-w-0 flex-1 items-center gap-1 overflow-x-auto lg:flex">
           {sections.map((section) => {
             const isActive = section.id === activeSectionId;
             const isDisabled = !section.enabled;
