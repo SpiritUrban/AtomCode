@@ -16,7 +16,15 @@ export function getSiteUrl(): string {
   // NEXT_PUBLIC_SITE_URL must be set WITHOUT a trailing slash and WITHOUT the basePath.
   // For GitHub Pages: https://spiriturban.github.io
   // For custom domain: https://atomcode.dev
-  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://spiriturban.github.io";
+  const configuredUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://spiriturban.github.io";
+  const siteUrl = new URL(configuredUrl);
+
+  // GitHub preserves the account-name casing in github.repository_owner, while
+  // canonical URLs and sitemap entries should use one stable hostname spelling.
+  siteUrl.hostname = siteUrl.hostname.toLowerCase();
+
+  return siteUrl.toString().replace(/\/$/, "");
 }
 
 export function buildLessonMetadata(
