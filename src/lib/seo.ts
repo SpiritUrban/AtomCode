@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { Lesson, Section } from "@/types/lesson";
 import { Difficulty } from "@/types/lesson";
 import { locales, type Locale } from "@/lib/i18n";
+import { buildLessonImageAlt } from "@/lib/imageAlt";
 import {
   getBasePath,
   getSectionSlug,
@@ -41,6 +42,8 @@ export function buildLessonMetadata(
       ? `${lesson.title}: ${lesson.subtitle} — ${section.label} | ${SITE_NAME}`
       : `${lesson.title} — ${section.label} | ${SITE_NAME}`;
   const description = lesson.goal;
+  const imageUrl = `${getSiteUrl()}${getBasePath()}${lesson.image}`;
+  const imageAlt = buildLessonImageAlt(locale, section.label, lesson);
 
   return {
     title,
@@ -69,8 +72,8 @@ export function buildLessonMetadata(
       locale,
       images: [
         {
-          url: `${getSiteUrl()}${getBasePath()}${lesson.image}`,
-          alt: `${lesson.title} — ${lesson.code}`,
+          url: imageUrl,
+          alt: imageAlt,
         },
       ],
     },
@@ -78,6 +81,12 @@ export function buildLessonMetadata(
       card: "summary_large_image",
       title,
       description,
+      images: [
+        {
+          url: imageUrl,
+          alt: imageAlt,
+        },
+      ],
     },
     keywords: [
       lesson.title,
@@ -136,6 +145,8 @@ export function buildLessonJsonLd(
   const sectionSlug = getSectionSlug(section.id);
   const path = lessonPathWithBase(locale, sectionSlug, lesson.slug);
   const url = `${getSiteUrl()}${path}`;
+  const imageUrl = `${getSiteUrl()}${getBasePath()}${lesson.image}`;
+  const imageAlt = buildLessonImageAlt(locale, section.label, lesson);
 
   const diffLabel =
     lesson.difficulty === Difficulty.Beginner
@@ -152,7 +163,13 @@ export function buildLessonJsonLd(
     "description": lesson.goal,
     "inLanguage": locale,
     "url": url,
-    "image": `${getSiteUrl()}${getBasePath()}${lesson.image}`,
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": imageUrl,
+      "url": imageUrl,
+      "name": imageAlt,
+      "caption": imageAlt,
+    },
     "articleSection": section.label,
     "keywords": [lesson.title, section.label, ...lesson.tags].join(", "),
     "about": {

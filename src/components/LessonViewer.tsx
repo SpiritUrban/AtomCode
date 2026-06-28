@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Lesson } from "@/types/lesson";
+import type { Locale } from "@/lib/i18n";
+import { buildLessonImageAlt } from "@/lib/imageAlt";
 import { getLearnedLessons, toggleLessonLearned } from "@/lib/progress";
 import LessonImage from "@/components/LessonImage";
 import LessonContent from "@/components/LessonContent";
@@ -9,6 +11,8 @@ import LessonContent from "@/components/LessonContent";
 type LessonViewerProps = {
   lessons: Lesson[];
   lessonsRecord: Record<string, Lesson>;
+  locale: Locale;
+  sectionLabel: string;
   activeLessonCode: string;
   onLessonChange: (code: string) => void;
   onLearnedChange?: (learnedIds: Set<string>) => void;
@@ -19,6 +23,8 @@ const SCROLL_COOLDOWN_MS = 800;
 export default function LessonViewer({
   lessons,
   lessonsRecord,
+  locale,
+  sectionLabel,
   activeLessonCode,
   onLessonChange,
   onLearnedChange,
@@ -149,7 +155,11 @@ export default function LessonViewer({
         className="h-[min(72vw,20rem)] w-full shrink-0 border-b border-atom-border bg-atom-bg lg:h-full lg:w-auto lg:aspect-square lg:max-w-[calc(100%-18rem)] lg:border-b-0 lg:border-r"
         onWheel={handleCenterScroll}
       >
-        <LessonImage src={lesson.image} alt={lesson.title} code={lesson.code} />
+        <LessonImage
+          src={lesson.image}
+          alt={buildLessonImageAlt(locale, sectionLabel, lesson)}
+          code={lesson.code}
+        />
       </div>
 
       <div className="min-w-0 w-full flex-1 bg-atom-surface lg:h-full lg:min-w-[18rem] lg:basis-0 lg:overflow-hidden">

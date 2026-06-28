@@ -107,10 +107,12 @@ export default function AppShell({
         />
 
         {activeSection.lessons.length > 0 ? (
-          <LessonViewer
-            lessons={activeSection.lessons}
-            lessonsRecord={activeSection.lessonsRecord}
-            activeLessonCode={activeLessonCode}
+        <LessonViewer
+          lessons={activeSection.lessons}
+          lessonsRecord={activeSection.lessonsRecord}
+          locale={locale}
+          sectionLabel={activeSection.label}
+          activeLessonCode={activeLessonCode}
             onLessonChange={handleLessonSelect}
             onLearnedChange={setLearnedIds}
           />
