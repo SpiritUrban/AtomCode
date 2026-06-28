@@ -13,6 +13,19 @@ const SITE_NAME = "AtomCode";
 const SITE_DESCRIPTION =
   "Learn programming one atom at a time. Visual atomic lessons for JavaScript, CSS, HTML and more.";
 
+const HOME_METADATA: Record<Locale, { title: string; description: string }> = {
+  uk: {
+    title: "AtomCode — Вивчення JavaScript через атомарні уроки",
+    description:
+      "Безкоштовний курс JavaScript з коротких взаємопов'язаних уроків. Від змінних і типів даних до масивів, map, filter і reduce.",
+  },
+  en: {
+    title: "AtomCode — Learn JavaScript Through Atomic Lessons",
+    description:
+      "A free JavaScript course built from small connected lessons. Learn variables, types, conditions, arrays, map, filter and reduce step by step.",
+  },
+};
+
 export function getSiteUrl(): string {
   // NEXT_PUBLIC_SITE_URL must be set WITHOUT a trailing slash and WITHOUT the basePath.
   // For GitHub Pages: https://spiriturban.github.io
@@ -134,6 +147,55 @@ export function buildSiteMetadata(locale: Locale = "en"): Metadata {
       title,
       description,
     },
+  };
+}
+
+export function buildHomeMetadata(locale: Locale): Metadata {
+  const { title, description } = HOME_METADATA[locale];
+  const basePath = getBasePath();
+  const canonical = `${getSiteUrl()}${basePath}/${locale}/`;
+
+  return {
+    title,
+    description,
+    metadataBase: new URL(`${getSiteUrl()}${basePath}/`),
+    alternates: {
+      canonical,
+      languages: {
+        en: `${getSiteUrl()}${basePath}/en/`,
+        uk: `${getSiteUrl()}${basePath}/uk/`,
+        "x-default": `${getSiteUrl()}${basePath}/en/`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: SITE_NAME,
+      type: "website",
+      locale,
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+    },
+    keywords:
+      locale === "uk"
+        ? [
+            "вивчення JavaScript",
+            "курс JavaScript",
+            "уроки JavaScript",
+            "JavaScript для початківців",
+            "масиви JavaScript",
+          ]
+        : [
+            "learn JavaScript",
+            "JavaScript course",
+            "JavaScript lessons",
+            "JavaScript for beginners",
+            "JavaScript arrays",
+          ],
   };
 }
 

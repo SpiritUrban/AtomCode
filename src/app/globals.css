@@ -25,6 +25,14 @@ body {
   overscroll-behavior: contain;
 }
 
+.knowledge-grid {
+  background-image:
+    linear-gradient(rgba(110, 231, 183, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(110, 231, 183, 0.045) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
