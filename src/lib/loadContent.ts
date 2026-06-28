@@ -8,9 +8,10 @@ import {
 } from "@/lib/lessonGroups";
 import {
   findGroupConfigForLesson,
-  jsAtomsAssetUrl,
-  jsAtomsPublicDir,
+  trackAssetUrl,
+  trackPublicDir,
 } from "@/lib/contentPaths";
+import { learningTracks } from "@/lib/learningTracks";
 import type { Locale } from "@/lib/i18n";
 import { Difficulty, type Lesson, type Section } from "@/types/lesson";
 
@@ -62,6 +63,7 @@ function resolveLessonJsonPath(
 
 function loadSectionLessons(
   sectionId: string,
+  trackSlug: string,
   basePath: string,
   manifestPath: string,
   groupsPath: string,
@@ -88,7 +90,8 @@ function loadSectionLessons(
       id: code,
       code,
       section: sectionId,
-      image: jsAtomsAssetUrl(
+      image: trackAssetUrl(
+        trackSlug,
         code,
         group?.folder ?? "",
         resolveLessonImageFileName(lessonDir),
@@ -124,92 +127,41 @@ const emptyLessonGroups: Section["lessonGroups"] = [];
 
 export function buildSections(locale: Locale): Section[] {
   const publicDir = path.join(process.cwd(), "public");
-  const jsAtomsBase = path.join(publicDir, ...jsAtomsPublicDir());
-  const groupsPath = path.join(jsAtomsBase, "groups.json");
-  const jsAtoms = loadSectionLessons(
-    "jsAtoms",
-    jsAtomsBase,
-    path.join(jsAtomsBase, "manifest.json"),
-    groupsPath,
-    locale,
-  );
 
-  return [
-    {
-      id: "jsAtoms",
-      name: "JSAtoms",
-      label: "JavaScript",
-      enabled: true,
-      lessons: jsAtoms.lessons,
-      lessonsRecord: jsAtoms.lessonsRecord,
-      lessonGroups: loadLessonGroups(
-        jsAtoms.lessons,
-        locale,
-        groupsPath,
-      ),
-    },
-    {
-      id: "cssAtoms",
-      name: "CSSAtoms",
-      label: "CSS",
-      enabled: false,
-      lessons: [],
-      lessonsRecord: {},
-      lessonGroups: emptyLessonGroups,
-    },
-    {
-      id: "htmlAtoms",
-      name: "HTMLAtoms",
-      label: "HTML",
-      enabled: false,
-      lessons: [],
-      lessonsRecord: {},
-      lessonGroups: emptyLessonGroups,
-    },
-    {
-      id: "gitAtoms",
-      name: "GitAtoms",
-      label: "Git",
-      enabled: false,
-      lessons: [],
-      lessonsRecord: {},
-      lessonGroups: emptyLessonGroups,
-    },
-    {
-      id: "reactAtoms",
-      name: "ReactAtoms",
-      label: "React",
-      enabled: false,
-      lessons: [],
-      lessonsRecord: {},
-      lessonGroups: emptyLessonGroups,
-    },
-    {
-      id: "tsAtoms",
-      name: "TSAtoms",
-      label: "TypeScript",
-      enabled: false,
-      lessons: [],
-      lessonsRecord: {},
-      lessonGroups: emptyLessonGroups,
-    },
-    {
-      id: "nodeAtoms",
-      name: "NodeAtoms",
-      label: "Node.js",
-      enabled: false,
-      lessons: [],
-      lessonsRecord: {},
-      lessonGroups: emptyLessonGroups,
-    },
-    {
-      id: "linuxAtoms",
-      name: "LinuxAtoms",
-      label: "Linux",
-      enabled: false,
-      lessons: [],
-      lessonsRecord: {},
-      lessonGroups: emptyLessonGroups,
-    },
-  ];
+  return learningTracks.map((track) => {
+    const trackBase = path.join(publicDir, ...trackPublicDir(track.slug));
+    const manifestPath = path.join(trackBase, "manifest.json");
+    const groupsPath = path.join(trackBase, "groups.json");
+
+    if (!fs.existsSync(manifestPath)) {
+      return {
+        id: track.sectionId,
+        name: track.name,
+        label: track.technology,
+        enabled: false,
+        lessons: [],
+        lessonsRecord: {},
+        lessonGroups: emptyLessonGroups,
+      };
+    }
+
+    const content = loadSectionLessons(
+      track.sectionId,
+      track.slug,
+      trackBase,
+      manifestPath,
+      groupsPath,
+      locale,
+    );
+
+    return {
+      id: track.sectionId,
+      name: track.name,
+      label: track.technology,
+      enabled: track.status === "available" && content.lessons.length > 0,
+      lessons: content.lessons,
+      lessonsRecord: content.lessonsRecord,
+      lessonGroups: loadLessonGroups(content.lessons, locale, groupsPath),
+    };
+  });
 }

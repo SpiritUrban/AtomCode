@@ -23,7 +23,23 @@ export function jsAtomsAssetUrl(
   return `/content/${JS_ATOMS_SECTION_ID}/${groupFolder}/${lessonCode}/${fileName}`;
 }
 
+export function trackAssetUrl(
+  trackSlug: string,
+  lessonCode: string,
+  groupFolder: string,
+  fileName = "image.png",
+): string {
+  return `/content/${trackSlug}/${groupFolder}/${lessonCode}/${fileName}`;
+}
+
 /** Filesystem path segment under /public for JS atom content. */
 export function jsAtomsPublicDir(...segments: string[]): string[] {
   return ["content", JS_ATOMS_SECTION_ID, ...segments];
+}
+
+export function trackPublicDir(
+  trackSlug: string,
+  ...segments: string[]
+): string[] {
+  return ["content", trackSlug, ...segments];
 }

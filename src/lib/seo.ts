@@ -3,6 +3,7 @@ import type { Lesson, Section } from "@/types/lesson";
 import { Difficulty } from "@/types/lesson";
 import { locales, type Locale } from "@/lib/i18n";
 import { buildLessonImageAlt } from "@/lib/imageAlt";
+import type { LearningTrack } from "@/lib/learningTracks";
 import {
   getBasePath,
   getSectionSlug,
@@ -15,14 +16,14 @@ const SITE_DESCRIPTION =
 
 const HOME_METADATA: Record<Locale, { title: string; description: string }> = {
   uk: {
-    title: "AtomCode — Вивчення JavaScript через атомарні уроки",
+    title: "AtomCode — Атомарна база знань для розробників",
     description:
-      "Безкоштовний курс JavaScript з коротких взаємопов'язаних уроків. Від змінних і типів даних до масивів, map, filter і reduce.",
+      "Вивчай JavaScript, HTML, CSS, React, TypeScript, Node.js, Git і Linux через короткі взаємопов'язані уроки та карти знань.",
   },
   en: {
-    title: "AtomCode — Learn JavaScript Through Atomic Lessons",
+    title: "AtomCode — Atomic Knowledge Base for Developers",
     description:
-      "A free JavaScript course built from small connected lessons. Learn variables, types, conditions, arrays, map, filter and reduce step by step.",
+      "Learn JavaScript, HTML, CSS, React, TypeScript, Node.js, Git and Linux through short connected lessons and structured knowledge maps.",
   },
 };
 
@@ -184,18 +185,63 @@ export function buildHomeMetadata(locale: Locale): Metadata {
       locale === "uk"
         ? [
             "вивчення JavaScript",
-            "курс JavaScript",
-            "уроки JavaScript",
-            "JavaScript для початківців",
-            "масиви JavaScript",
+            "база знань програміста",
+            "уроки веброзробки",
+            "React TypeScript Node.js",
+            "HTML CSS Git Linux",
           ]
         : [
             "learn JavaScript",
-            "JavaScript course",
-            "JavaScript lessons",
-            "JavaScript for beginners",
-            "JavaScript arrays",
+            "developer knowledge base",
+            "web development lessons",
+            "React TypeScript Node.js",
+            "HTML CSS Git Linux",
           ],
+  };
+}
+
+export function buildTrackMetadata(
+  locale: Locale,
+  track: LearningTrack,
+): Metadata {
+  const basePath = getBasePath();
+  const canonical = `${getSiteUrl()}${basePath}/${locale}/${track.slug}/`;
+  const status =
+    track.status === "available"
+      ? locale === "uk"
+        ? "уроки та карта знань"
+        : "lessons and knowledge map"
+      : locale === "uk"
+        ? "майбутній напрямок навчання"
+        : "upcoming learning track";
+  const title = `${track.name} — ${track.technology} | AtomCode`;
+  const description = `${track.description[locale]} ${status}.`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical,
+      languages: {
+        en: `${getSiteUrl()}${basePath}/en/${track.slug}/`,
+        uk: `${getSiteUrl()}${basePath}/uk/${track.slug}/`,
+        "x-default": `${getSiteUrl()}${basePath}/en/${track.slug}/`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: SITE_NAME,
+      type: "website",
+      locale,
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+    },
+    keywords: [track.name, track.technology, ...track.searchTerms, "AtomCode"],
   };
 }
 

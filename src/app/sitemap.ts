@@ -3,6 +3,7 @@ import { buildSections } from "@/lib/loadContent";
 import { locales } from "@/lib/i18n";
 import { getSiteUrl } from "@/lib/seo";
 import { getBasePath, getSectionSlug, lessonPathWithBase } from "@/lib/routes";
+import { learningTracks } from "@/lib/learningTracks";
 
 export const dynamic = "force-static";
 
@@ -24,6 +25,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
       },
     });
+
+    for (const track of learningTracks) {
+      sitemapEntries.push({
+        url: `${siteUrl}${basePath}/${locale}/${track.slug}/`,
+        changeFrequency:
+          track.status === "available" ? "weekly" : "monthly",
+        priority: track.status === "available" ? 0.9 : 0.6,
+        alternates: {
+          languages: {
+            en: `${siteUrl}${basePath}/en/${track.slug}/`,
+            uk: `${siteUrl}${basePath}/uk/${track.slug}/`,
+            "x-default": `${siteUrl}${basePath}/en/${track.slug}/`,
+          },
+        },
+      });
+    }
   }
 
   // Add canonical lesson pages.

@@ -11,6 +11,7 @@ import LessonContent from "@/components/LessonContent";
 type LessonViewerProps = {
   lessons: Lesson[];
   lessonsRecord: Record<string, Lesson>;
+  trackId: string;
   locale: Locale;
   sectionLabel: string;
   activeLessonCode: string;
@@ -23,6 +24,7 @@ const SCROLL_COOLDOWN_MS = 800;
 export default function LessonViewer({
   lessons,
   lessonsRecord,
+  trackId,
   locale,
   sectionLabel,
   activeLessonCode,
@@ -38,8 +40,8 @@ export default function LessonViewer({
   const currentIndex = lessons.findIndex((l) => l.code === activeLessonCode);
 
   useEffect(() => {
-    setLearnedIds(getLearnedLessons());
-  }, []);
+    setLearnedIds(getLearnedLessons(trackId));
+  }, [trackId]);
 
   const goToCode = useCallback(
     (code: string | undefined) => {
@@ -138,7 +140,7 @@ export default function LessonViewer({
   };
 
   const handleMarkLearned = () => {
-    const nowLearned = toggleLessonLearned(lesson.code);
+    const nowLearned = toggleLessonLearned(lesson.code, trackId);
     const next = new Set(learnedIds);
     if (nowLearned) {
       next.add(lesson.code);

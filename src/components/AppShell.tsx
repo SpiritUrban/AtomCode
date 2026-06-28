@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import type { Section } from "@/types/lesson";
 import type { Locale } from "@/lib/i18n";
 import { getSectionById } from "@/lib/sections";
-import { getLearnedLessons } from "@/lib/progress";
+import { getLearnedLessons, setLastVisitedLesson } from "@/lib/progress";
 import { getSectionSlug, lessonPath } from "@/lib/routes";
 import TopNavbar from "@/components/TopNavbar";
 import Sidebar from "@/components/Sidebar";
@@ -54,8 +54,9 @@ export default function AppShell({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    setLearnedIds(getLearnedLessons());
-  }, [activeLessonCode]);
+    setLearnedIds(getLearnedLessons(activeSectionId));
+    setLastVisitedLesson(activeSectionId, activeLessonCode);
+  }, [activeLessonCode, activeSectionId]);
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
@@ -110,6 +111,7 @@ export default function AppShell({
         <LessonViewer
           lessons={activeSection.lessons}
           lessonsRecord={activeSection.lessonsRecord}
+          trackId={activeSectionId}
           locale={locale}
           sectionLabel={activeSection.label}
           activeLessonCode={activeLessonCode}

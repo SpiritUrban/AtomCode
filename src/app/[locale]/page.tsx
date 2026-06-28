@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import PlatformHome from "@/components/PlatformHome";
 import { buildSections } from "@/lib/loadContent";
 import { isValidLocale, locales, type Locale } from "@/lib/i18n";
 import { buildHomeMetadata, getSiteUrl } from "@/lib/seo";
@@ -109,8 +110,14 @@ export default async function LocaleHomePage({ params }: PageProps) {
   if (!isValidLocale(localeParam)) notFound();
 
   const locale = localeParam;
-  const text = copy[locale];
   const sections = buildSections(locale);
+  const hasPlatformRegistry = sections.length > 0;
+  if (hasPlatformRegistry) {
+    return <PlatformHome locale={locale} sections={sections} />;
+  }
+
+  /* Fallback for an empty registry. */
+  const text = copy[locale];
   const activeSection = sections.find((section) => section.enabled);
   if (!activeSection) notFound();
 

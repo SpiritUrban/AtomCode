@@ -4,6 +4,7 @@ import type { Section } from "@/types/lesson";
 import type { Locale } from "@/lib/i18n";
 import Link from "next/link";
 import { getSectionSlug, lessonPath } from "@/lib/routes";
+import { getLearningTrackBySectionId } from "@/lib/learningTracks";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 type TopNavbarProps = {
@@ -40,9 +41,12 @@ export default function TopNavbar({
         </button>
 
         <div className="mr-auto flex shrink-0 items-center gap-2 lg:mr-4">
-          <span className="text-lg font-bold tracking-tight text-atom-accent">
+          <Link
+            href={`/${locale}/`}
+            className="text-lg font-bold tracking-tight text-atom-accent"
+          >
             ⚛ AtomCode
-          </span>
+          </Link>
         </div>
 
         <div className="hidden min-w-0 flex-1 items-center gap-1 overflow-x-auto lg:flex">
@@ -51,13 +55,15 @@ export default function TopNavbar({
             const isDisabled = !section.enabled;
 
             if (isDisabled) {
+              const track = getLearningTrackBySectionId(section.id);
               return (
-                <span
+                <Link
                   key={section.id}
-                  className="cursor-not-allowed text-atom-muted/40 rounded-lg px-3 py-1.5 text-sm font-medium transition-all whitespace-nowrap"
+                  href={`/${locale}/${track?.slug ?? getSectionSlug(section.id)}/`}
+                  className="whitespace-nowrap rounded-lg px-3 py-1.5 text-sm font-medium text-atom-muted/50 transition-all hover:bg-atom-card hover:text-atom-text"
                 >
                   {section.name}
-                </span>
+                </Link>
               );
             }
 
@@ -88,6 +94,49 @@ export default function TopNavbar({
             About
           </button>
         </div>
+
+        <details className="group relative ml-auto lg:hidden">
+          <summary className="flex h-9 cursor-pointer list-none items-center gap-1.5 rounded-lg border border-atom-border bg-atom-card px-2.5 text-xs font-semibold text-atom-muted">
+            {sections
+              .find((section) => section.id === activeSectionId)
+              ?.name.replace("Atoms", "") ?? "Tracks"}
+            <span className="transition-transform group-open:rotate-180" aria-hidden>
+              ▾
+            </span>
+          </summary>
+          <div className="absolute right-0 top-11 z-50 w-44 rounded-xl border border-atom-border bg-atom-surface p-2 shadow-2xl">
+            {sections.map((section) => {
+              const track = getLearningTrackBySectionId(section.id);
+              const href =
+                section.enabled && section.lessons.length
+                  ? lessonPath(
+                      locale,
+                      getSectionSlug(section.id),
+                      section.lessons[0].slug,
+                    )
+                  : `/${locale}/${track?.slug ?? getSectionSlug(section.id)}/`;
+              return (
+                <Link
+                  key={section.id}
+                  href={href}
+                  className={[
+                    "flex items-center justify-between rounded-lg px-3 py-2 text-xs transition-colors hover:bg-atom-card",
+                    section.id === activeSectionId
+                      ? "text-atom-accent"
+                      : "text-atom-muted hover:text-atom-text",
+                  ].join(" ")}
+                >
+                  {section.name}
+                  {!section.enabled && (
+                    <span className="text-[8px] uppercase tracking-wider opacity-60">
+                      soon
+                    </span>
+                  )}
+                </Link>
+              );
+            })}
+          </div>
+        </details>
 
         {lessonSlug && (
           <LanguageSwitcher

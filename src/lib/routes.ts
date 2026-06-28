@@ -1,16 +1,10 @@
 import type { Lesson, Section } from "@/types/lesson";
 import { isValidLocale, locales, type Locale } from "@/lib/i18n";
+import { learningTracks } from "@/lib/learningTracks";
 
-export const SECTION_SLUGS: Record<string, string> = {
-  jsAtoms: "js-atoms",
-  cssAtoms: "css-atoms",
-  htmlAtoms: "html-atoms",
-  gitAtoms: "git-atoms",
-  reactAtoms: "react-atoms",
-  tsAtoms: "ts-atoms",
-  nodeAtoms: "node-atoms",
-  linuxAtoms: "linux-atoms",
-};
+export const SECTION_SLUGS: Record<string, string> = Object.fromEntries(
+  learningTracks.map((track) => [track.sectionId, track.slug]),
+);
 
 const SLUG_TO_SECTION_ID = Object.fromEntries(
   Object.entries(SECTION_SLUGS).map(([id, slug]) => [slug, id]),
