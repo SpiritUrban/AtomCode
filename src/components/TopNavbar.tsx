@@ -2,6 +2,8 @@
 
 import type { Section } from "@/types/lesson";
 import type { Locale } from "@/lib/i18n";
+import Link from "next/link";
+import { getSectionSlug, lessonPath } from "@/lib/routes";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 type TopNavbarProps = {
@@ -10,7 +12,6 @@ type TopNavbarProps = {
   sectionSlug: string;
   lessonSlug: string;
   activeSectionId: string;
-  onSectionChange: (sectionId: string) => void;
 };
 
 export default function TopNavbar({
@@ -19,7 +20,6 @@ export default function TopNavbar({
   sectionSlug,
   lessonSlug,
   activeSectionId,
-  onSectionChange,
 }: TopNavbarProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-14 border-b border-atom-border bg-atom-surface/95 backdrop-blur-md">
@@ -35,23 +35,34 @@ export default function TopNavbar({
             const isActive = section.id === activeSectionId;
             const isDisabled = !section.enabled;
 
+            if (isDisabled) {
+              return (
+                <span
+                  key={section.id}
+                  className="cursor-not-allowed text-atom-muted/40 rounded-lg px-3 py-1.5 text-sm font-medium transition-all whitespace-nowrap"
+                >
+                  {section.name}
+                </span>
+              );
+            }
+
+            const targetHref = section.lessons.length > 0
+              ? lessonPath(locale, getSectionSlug(section.id), section.lessons[0].slug)
+              : "#";
+
             return (
-              <button
+              <Link
                 key={section.id}
-                type="button"
-                disabled={isDisabled}
-                onClick={() => !isDisabled && onSectionChange(section.id)}
+                href={targetHref}
                 className={[
                   "rounded-lg px-3 py-1.5 text-sm font-medium transition-all whitespace-nowrap",
                   isActive
                     ? "bg-atom-accent/15 text-atom-accent"
-                    : isDisabled
-                      ? "cursor-not-allowed text-atom-muted/40"
-                      : "text-atom-muted hover:bg-atom-card hover:text-atom-text",
+                    : "text-atom-muted hover:bg-atom-card hover:text-atom-text",
                 ].join(" ")}
               >
                 {section.name}
-              </button>
+              </Link>
             );
           })}
 

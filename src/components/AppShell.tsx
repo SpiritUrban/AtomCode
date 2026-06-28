@@ -43,16 +43,6 @@ export default function AppShell({
     [sections, locale, router],
   );
 
-  const handleSectionChange = useCallback(
-    (sectionId: string) => {
-      const section = getSectionById(sections, sectionId);
-      if (!section || !section.enabled || section.lessons.length === 0) return;
-
-      navigateToLesson(sectionId, section.lessons[0].code);
-    },
-    [sections, navigateToLesson],
-  );
-
   const handleLessonSelect = useCallback(
     (code: string) => {
       navigateToLesson(activeSectionId, code);
@@ -76,7 +66,6 @@ export default function AppShell({
           activeSection.lessonsRecord[activeLessonCode]?.slug ?? ""
         }
         activeSectionId={activeSectionId}
-        onSectionChange={handleSectionChange}
       />
 
       <div className="flex flex-1 overflow-hidden pt-14">

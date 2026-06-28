@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { Lesson, Section } from "@/types/lesson";
+import { Difficulty } from "@/types/lesson";
 import { locales, type Locale } from "@/lib/i18n";
 import {
   getBasePath,
@@ -12,7 +13,10 @@ const SITE_DESCRIPTION =
   "Learn programming one atom at a time. Visual atomic lessons for JavaScript, CSS, HTML and more.";
 
 export function getSiteUrl(): string {
-  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://atomcode.dev";
+  // NEXT_PUBLIC_SITE_URL must be set WITHOUT a trailing slash and WITHOUT the basePath.
+  // For GitHub Pages: https://spiriturban.github.io
+  // For custom domain: https://atomcode.dev
+  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://spiriturban.github.io";
 }
 
 export function buildLessonMetadata(
@@ -68,9 +72,84 @@ export function buildLessonMetadata(
   };
 }
 
-export function buildSiteMetadata(): Metadata {
+export function buildSiteMetadata(locale: Locale = "en"): Metadata {
+  const title = `${SITE_NAME} — Learn programming one atom at a time`;
+  const description = SITE_DESCRIPTION;
+  const basePath = getBasePath();
+  // Full canonical URL includes basePath for GitHub Pages subpath deployments.
+  const canonical = `${getSiteUrl()}${basePath}/${locale}/`;
+
   return {
-    title: `${SITE_NAME} — Learn programming one atom at a time`,
-    description: SITE_DESCRIPTION,
+    title,
+    description,
+    metadataBase: new URL(`${getSiteUrl()}${basePath}/`),
+    alternates: {
+      canonical,
+      languages: Object.fromEntries(
+        locales.map((loc) => [loc, `${getSiteUrl()}${basePath}/${loc}/`]),
+      ),
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: SITE_NAME,
+      type: "website",
+      locale,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
+
+export function buildLessonJsonLd(
+  locale: Locale,
+  section: Section,
+  lesson: Lesson,
+): Record<string, unknown> {
+  const sectionSlug = getSectionSlug(section.id);
+  const path = lessonPathWithBase(locale, sectionSlug, lesson.slug);
+  const url = `${getSiteUrl()}${path}`;
+
+  const diffLabel =
+    lesson.difficulty === Difficulty.Beginner
+      ? "Beginner"
+      : lesson.difficulty === Difficulty.Intermediate
+        ? "Intermediate"
+        : "Advanced";
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": lesson.title,
+    "headline": `${lesson.title} — ${section.label}`,
+    "description": lesson.goal,
+    "inLanguage": locale,
+    "url": url,
+    "image": `${getSiteUrl()}${getBasePath()}${lesson.image}`,
+    "articleSection": section.label,
+    "keywords": [lesson.title, section.label, ...lesson.tags].join(", "),
+    "about": {
+      "@type": "Thing",
+      "name": section.label,
+    },
+    "educationalLevel": diffLabel,
+    "timeRequired": `PT${lesson.estimatedReadingTime || 2}M`,
+    "author": {
+      "@type": "Organization",
+      "name": SITE_NAME,
+      "url": getSiteUrl(),
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": SITE_NAME,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${getSiteUrl()}/favicon.ico`,
+      },
+    },
   };
 }

@@ -47,9 +47,9 @@ export default function Sidebar({
   return (
     <aside className="flex h-full w-60 shrink-0 flex-col border-r border-atom-border bg-atom-surface">
       <div className="border-b border-atom-border px-4 py-3">
-        <h2 className="text-xs font-semibold uppercase tracking-wider text-atom-muted">
+        <div className="text-xs font-semibold uppercase tracking-wider text-atom-muted">
           Lessons
-        </h2>
+        </div>
       </div>
 
       <nav id="sidebar-nav" className="flex-1 overflow-y-auto py-2">

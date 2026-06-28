@@ -4,7 +4,7 @@ import LocaleSync from "@/components/LocaleSync";
 import { buildSections } from "@/lib/loadContent";
 import { isValidLocale } from "@/lib/i18n";
 import { getAllLessonRoutes, resolveLessonRoute } from "@/lib/routes";
-import { buildLessonMetadata } from "@/lib/seo";
+import { buildLessonMetadata, buildLessonJsonLd } from "@/lib/seo";
 
 type PageProps = {
   params: Promise<{
@@ -42,8 +42,14 @@ export default async function LessonPage({ params }: PageProps) {
   const resolved = resolveLessonRoute(sections, locale, section, lesson);
   if (!resolved) notFound();
 
+  const jsonLd = buildLessonJsonLd(locale, resolved.section, resolved.lesson);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <LocaleSync locale={locale} />
       <AppShell
         sections={sections}
