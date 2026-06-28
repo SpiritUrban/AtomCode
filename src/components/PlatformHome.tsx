@@ -40,10 +40,11 @@ const text = {
     architecture: "Architecture",
     runtime: "Runtime",
     system: "System",
-    latest: "Latest published atoms",
+    latest: "Newly published atoms",
     latestDescription: "Recently available lessons across the AtomCode ecosystem.",
     footer:
       "A growing knowledge system for the full modern developer stack.",
+    developer: "Developer & mentor",
   },
   uk: {
     eyebrow: "Екосистема атомарних знань",
@@ -70,10 +71,11 @@ const text = {
     architecture: "Архітектура",
     runtime: "Середовище",
     system: "Система",
-    latest: "Останні опубліковані атоми",
+    latest: "Нові опубліковані атоми",
     latestDescription: "Нещодавно доступні уроки в екосистемі AtomCode.",
     footer:
       "База знань, що поступово охоплює весь стек сучасного розробника.",
+    developer: "Розробник і ментор",
   },
 } as const;
 
@@ -429,9 +431,21 @@ export default function PlatformHome({
       <footer className="border-t border-atom-border/70">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-10 text-sm text-atom-muted sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p>{copy.footer}</p>
-          <span className="font-mono text-xs text-atom-accent">
-            8 tracks · 1 knowledge system
-          </span>
+          <div className="flex flex-col gap-1 sm:items-end">
+            <span className="font-mono text-xs text-atom-accent">
+              8 tracks · 1 knowledge system
+            </span>
+            <span className="text-xs">
+              {copy.developer}:{" "}
+              <a
+                href="https://spiriturban.github.io"
+                rel="author"
+                className="font-semibold text-atom-text transition-colors hover:text-atom-accent"
+              >
+                Spirit_Urban
+              </a>
+            </span>
+          </div>
         </div>
       </footer>
     </main>

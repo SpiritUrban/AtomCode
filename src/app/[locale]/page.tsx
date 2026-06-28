@@ -335,9 +335,18 @@ export default async function LocaleHomePage({ params }: PageProps) {
 
       <footer className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-10 text-sm text-atom-muted sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
         <p className="max-w-2xl">{text.footer}</p>
-        <Link href={startPath} className="font-semibold text-atom-accent hover:underline">
-          {text.start} →
-        </Link>
+        <div className="flex flex-col gap-2 sm:items-end">
+          <Link href={startPath} className="font-semibold text-atom-accent hover:underline">
+            {text.start} →
+          </Link>
+          <a
+            href="https://spiriturban.github.io"
+            rel="author"
+            className="text-xs font-semibold text-atom-text hover:text-atom-accent"
+          >
+            Spirit_Urban
+          </a>
+        </div>
       </footer>
     </main>
   );
