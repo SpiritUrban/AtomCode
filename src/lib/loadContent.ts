@@ -27,6 +27,26 @@ const difficultyMap: Record<LessonJson["difficulty"], Difficulty> = {
   Advanced: Difficulty.Advanced,
 };
 
+const warnedUnoptimizedImages = new Set<string>();
+
+function resolveLessonImageFileName(lessonDir: string): string {
+  const webpPath = path.join(lessonDir, "image.webp");
+  if (fs.existsSync(webpPath)) return "image.webp";
+
+  const pngPath = path.join(lessonDir, "image.png");
+  if (
+    fs.existsSync(pngPath) &&
+    !warnedUnoptimizedImages.has(pngPath)
+  ) {
+    warnedUnoptimizedImages.add(pngPath);
+    console.warn(
+      `[image-warning] Using unoptimized PNG: ${path.relative(process.cwd(), pngPath)}. Run "npm run optimize:images".`,
+    );
+  }
+
+  return "image.png";
+}
+
 function readJsonFile<T>(filePath: string): T {
   const raw = fs.readFileSync(filePath, "utf-8").replace(/^\uFEFF/, "");
   return JSON.parse(raw) as T;
@@ -68,7 +88,11 @@ function loadSectionLessons(
       id: code,
       code,
       section: sectionId,
-      image: jsAtomsAssetUrl(code, group?.folder ?? ""),
+      image: jsAtomsAssetUrl(
+        code,
+        group?.folder ?? "",
+        resolveLessonImageFileName(lessonDir),
+      ),
       difficulty: difficultyMap[raw.difficulty],
     };
   }
